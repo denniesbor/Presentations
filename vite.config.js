@@ -2,7 +2,7 @@ import { defineConfig } from 'vite';
 import { resolve } from 'path';
 
 export default defineConfig({
-    base: '/presentations/',  // Base path for GitHub Pages
+    base: '/presentations/',
 
     build: {
         outDir: 'dist',
@@ -11,6 +11,12 @@ export default defineConfig({
                 main: resolve(__dirname, 'index.html'),
                 gmuSlides: resolve(__dirname, 'gmu-slides/index.html'),
             }
+        }
+    },
+
+    resolve: {
+        alias: {
+            '/src': resolve(__dirname, 'gmu-slides/src')
         }
     }
 });
