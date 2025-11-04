@@ -88,6 +88,15 @@
   text-align: left !important;
 }
 
+.reveal .controls {
+  z-index: 30 !important; /* Force higher priority */
+}
+
+/* Ensure progress bar is above footer */
+.reveal .progress {
+  z-index: 20 !important;
+}
+
 
 .text-dim {
   color: var(--text-dim);
@@ -99,15 +108,44 @@
    CONTENT CONTAINERS 
    ========================================= */
 .slide-content {
+  /* Core sizing for responsiveness */
   width: 90%;
-  max-width: 1600px;
+  max-width: min(1600px, 95vw);
+  
+  /* Layout & positioning */
   margin: 0 auto;
   padding: 1.5rem;
   box-sizing: border-box;
   position: relative;
   z-index: 10;
-  align-items: flex-start !important; /* This ensures children align to the left */
+  
+  /* Text alignment */
   text-align: left !important;
+  
+  /* Flex behavior for children */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start !important;
+  
+  /* No scrollbars */
+  overflow: visible;
+}
+
+/* Media queries for responsive adjustments */
+@media (max-width: 768px) {
+  .slide-content {
+    width: 95%;
+    padding: 1rem;
+  }
+  
+  /* Convert rows to columns on small screens */
+  .flex-row {
+    flex-direction: column;
+  }
+  .flex-row > div {
+    flex: 1 1 100% !important;
+    width: 100%;
+  }
 }
 
 .slide-dark {
@@ -194,12 +232,9 @@
 
 .figure-img {
   width: 100%;
-  max-height: 55vh;
+  height: auto;
+  max-height: 50vh;
   object-fit: contain;
-  border-radius: 6px;
-  border: 1px solid rgba(255,255,255,0.1);
-  background-color: rgba(0,0,0,0.2);
-  box-shadow: 0 15px 30px rgba(0,0,0,0.4);
 }
 
 .figure-caption, .slidecred {
@@ -278,8 +313,9 @@
 }
 
 .gmu-logo {
-  max-width: 320px;
-  width: 22vw;
+  max-width: 100%;
+  height: auto;
+  width: clamp(150px, 22vw, 320px);
 }
 
 .cover-text-col {
@@ -336,9 +372,10 @@
 .gmu-footer {
   position: fixed;
   left: 0;
-  right: 0;
+  right: 100px;;
   bottom: 0;
   height: 36px;
+  z-index: 10; /* Lower z-index so it doesn't block controls */
   background: linear-gradient(to right, 
     var(--gmu-green) 0%, 
     var(--gmu-green) 5%, 
@@ -346,9 +383,9 @@
     var(--gmu-gold) 95%, 
     var(--gmu-green) 95%
   );
-  z-index: 1000;
-  opacity: 0.9;
+  opacity: 0.7; /* Slightly more transparent */
   transition: opacity 0.3s ease;
+  pointer-events: none; /* This makes it completely non-interactive */
 }
 
 .gmu-footer:hover {

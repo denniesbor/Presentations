@@ -86,8 +86,10 @@ const deck = new Reveal({
   center: true,
 
   // Disable auto-scaling that may cause truncation
-  disableLayout: true,
+  // disableLayout: true,
   disableLayout: false, 
+  minScale: 0.2, // Allow more scaling down for small screens
+  maxScale: 2.0, // Allow more scaling up on large screens
 
   // Additional settings
   hash: true,
