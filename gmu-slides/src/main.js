@@ -77,38 +77,25 @@ document.body.appendChild(footer);
 
 // Initialize Reveal with better settings
 const deck = new Reveal({
-  // Core dimensions
   width: "100%",
   height: "100%",
-  margin: 0,
-
-  // Center slides
+  margin: 0.02,
   center: true,
+  minScale: 0.25,  // scale down gracefully for phones
+  maxScale: 1.5,   // avoid blowing up text on large displays
 
-  // Disable auto-scaling that may cause truncation
-  // disableLayout: true,
-  disableLayout: false, 
-  minScale: 0.2, // Allow more scaling down for small screens
-  maxScale: 2.0, // Allow more scaling up on large screens
-
-  // Additional settings
   hash: true,
   controls: true,
   progress: true,
-
-  // Transitions
   transition: 'slide',
 
-  // Math support
   math: {
     mathjax: 'https://cdn.jsdelivr.net/gh/mathjax/mathjax@2.7.8/MathJax.js',
     config: 'TeX-AMS_HTML-full'
   },
 
-  // Required plugins
   plugins: [RevealMarkdown, RevealMath, RevealHighlight]
 });
-
 // Initialize the deck
 deck.initialize().then(() => {
   // Hide footer on first slide
