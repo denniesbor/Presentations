@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "katex": "^0.16.25",
+    "reveal.js": "^5.2.1"
+  }
+}
