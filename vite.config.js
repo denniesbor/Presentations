@@ -1,12 +1,16 @@
 import { defineConfig } from 'vite';
 import { resolve } from 'path';
 
-// vite configurations
 export default defineConfig({
-    base: '/presentations/',
+    base: '/Presentations/',
 
     build: {
         outDir: 'dist',
+        emptyOutDir: true,
+
+        // Copy all assets to a consistent location
+        assetsDir: 'assets',
+
         rollupOptions: {
             input: {
                 main: resolve(__dirname, 'index.html'),
@@ -15,9 +19,6 @@ export default defineConfig({
         }
     },
 
-    resolve: {
-        alias: {
-            '/src': resolve(__dirname, 'gmu-slides/src')
-        }
-    }
+    // Make sure these directories are publicly accessible
+    publicDir: 'public'
 });
