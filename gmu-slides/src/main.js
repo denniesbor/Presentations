@@ -1,6 +1,5 @@
 import Reveal from 'reveal.js';
 import 'reveal.js/dist/reveal.css';
-// No need for theme/black.css since we're using your custom GMU theme
 import './gmu-theme.css';
 
 // Import plugins (similar to the example)
@@ -24,8 +23,35 @@ import yellowBarUrl from '../assets/branding/yellow_parellelo.png';
 import ribbonImgUrl from '../assets/branding/gmu-ribbon.png';
 
 // FIGURES / CONTENT ASSETS
-import auroraImgUrl from '../assets/figures/aurora_california.png';
-// Add other figure imports as needed
+import mageMHDUrl from '../assets/figures/MAGE.png';
+
+// Power system figures (Publication I)
+import powerMethodUrl from '../assets/figures/power/method-box-detailed.png';
+import powerNetworkUrl from '../assets/figures/power/ehv_grid.png';
+import powerGicScenariosUrl from '../assets/figures/power/gnd_gic_panels_eff_gic.png';
+import powerFailuresUrl from '../assets/figures/power/vulnerable_trafos_eff_gic.png';
+import powerEconomicUrl from '../assets/figures/power/indirect_impact_io_eff_gic.png';
+import gicValidationRegUrl from '../assets/figures/power/regression_validation.png';
+import secsValidationUrl from '../assets/figures/power/nerc_secs_mag_comparison.png';
+import gicValidationImgUrl from '../assets/figures/power/gic_comparison_sim_tva.png';
+
+// power figures (if needed)
+import powerFieldsHistoricalUrl from '../assets/figures/power/event_maps_BE.png';
+import powerFieldsExtremeUrl from '../assets/figures/power/hazard_maps.png';
+
+
+// Satellite figures (Publication II)
+import satFrameworkUrl from '../assets/figures/satellite/sat_method.png';
+import satDistOrbUrl from '../assets/figures/satellite/sat_dist_orb.png';
+import satCostUrl from '../assets/figures/satellite/sat_cost.png';
+import satDensityUrl from '../assets/figures/satellite/atmospheric_density_comparison.png';
+import satPropellantUrl from '../assets/figures/satellite/propellant_comparison.png';
+import satFluxUrl from '../assets/figures/satellite/flux_spectra.png';
+import goesComparisonUrl from '../assets/figures/satellite/goes_penumbra_comparison.png';
+import satEconUrl from '../assets/figures/satellite/economic_impact_3.png';
+
+// Multi-hazard figures (Publication III)
+import multiFrameworkUrl from '../assets/figures/multi-hazard/mult_method.png';
 
 // Combine all sections and inject into the slides container
 const slidesContainer = document.querySelector('.slides');
@@ -60,12 +86,110 @@ function loadAssets() {
   });
 
   // Content figures
-  const auroraImg = document.querySelectorAll('img[data-fig="aurora"]');
-  auroraImg.forEach(node => {
-    if (node) node.src = auroraImgUrl;
+  const mage = document.querySelectorAll('img[data-fig="MAGE"]');
+  mage.forEach(node => {
+    if (node) node.src = mageMHDUrl;
   });
 
-  // Add more content figure assignments as needed
+  // Power system figures
+  const powerMethodImg = document.querySelectorAll('img[data-fig="power-method"]');
+  powerMethodImg.forEach(node => {
+    if (node) node.src = powerMethodUrl;
+  });
+
+  const powerNetworkImg = document.querySelectorAll('img[data-fig="power-network"]');
+  powerNetworkImg.forEach(node => {
+    if (node) node.src = powerNetworkUrl;
+  });
+
+  const powerGicScenariosImg = document.querySelectorAll('img[data-fig="power-gic-scenarios"]');
+  powerGicScenariosImg.forEach(node => {
+    if (node) node.src = powerGicScenariosUrl;
+  });
+
+  const powerFailuresImg = document.querySelectorAll('img[data-fig="power-failures"]');
+  powerFailuresImg.forEach(node => {
+    if (node) node.src = powerFailuresUrl;
+  });
+
+  const powerEconomicImg = document.querySelectorAll('img[data-fig="power-economic"]');
+  powerEconomicImg.forEach(node => {
+    if (node) node.src = powerEconomicUrl;
+  });
+
+  const gicValidationImg = document.querySelectorAll('img[data-fig="gic-validation"]');
+  gicValidationImg.forEach(node => {
+    if (node) node.src = gicValidationRegUrl;
+  });
+
+  const secsValidationImg = document.querySelectorAll('img[data-fig="secs-validation"]');
+  secsValidationImg.forEach(node => {
+    if (node) node.src = secsValidationUrl;
+  });
+
+  const gicValidationCompImg = document.querySelectorAll('img[data-fig="gic-validation"]');
+  gicValidationCompImg.forEach(node => {
+    if (node) node.src = gicValidationImgUrl;
+  });
+
+  // Extreme and historical field maps (optional)
+  const powerFieldsHistoricalImg = document.querySelectorAll('img[data-fig="power-fields-historical"]');
+  powerFieldsHistoricalImg.forEach(node => {
+    if (node) node.src = powerFieldsHistoricalUrl;
+  });
+
+  const powerFieldsExtremeImg = document.querySelectorAll('img[data-fig="power-fields-extreme"]');
+  powerFieldsExtremeImg.forEach(node => {
+    if (node) node.src = powerFieldsExtremeUrl;
+  });
+
+  // Satellite figures
+  const satFrameworkImg = document.querySelectorAll('img[data-fig="sat-framework"]');
+  satFrameworkImg.forEach(node => {
+    if (node) node.src = satFrameworkUrl;
+  });
+
+  const satDistOrbImg = document.querySelectorAll('img[data-fig="sat-dist-orb"]');
+  satDistOrbImg.forEach(node => {
+    if (node) node.src = satDistOrbUrl;
+  });
+
+  const satCostImg = document.querySelectorAll('img[data-fig="sat-cost"]');
+  satCostImg.forEach(node => {
+    if (node) node.src = satCostUrl;
+  });
+
+  const satDensityImg = document.querySelectorAll('img[data-fig="sat-density"]');
+  satDensityImg.forEach(node => {
+    if (node) node.src = satDensityUrl;
+  });
+
+  const satPropellantImg = document.querySelectorAll('img[data-fig="sat-propellant"]');
+  satPropellantImg.forEach(node => {
+    if (node) node.src = satPropellantUrl;
+  });
+
+  const satFluxImg = document.querySelectorAll('img[data-fig="sat-flux"]');
+  satFluxImg.forEach(node => {
+    if (node) node.src = satFluxUrl;
+  });
+
+  const goesComparisonImg = document.querySelectorAll('img[data-fig="goes-comparison"]');
+  goesComparisonImg.forEach(node => {
+    if (node) node.src = goesComparisonUrl;
+  });
+
+  const satEconImg = document.querySelectorAll('img[data-fig="sat-econ"]');
+  satEconImg.forEach(node => {
+    if (node) node.src = satEconUrl;
+  });
+
+  // Multi-hazard figures
+  const multiFrameworkImg = document.querySelectorAll('img[data-fig="multi-framework"]');
+  multiFrameworkImg.forEach(node => {
+    if (node) node.src = multiFrameworkUrl;
+  });
+
 }
 
 loadAssets();

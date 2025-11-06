@@ -1,0 +1,497 @@
+<!-- HORIZONTAL SECTION: POWER SYSTEMS -->
+<section data-transition="zoom" data-background-transition="fade">
+  <style>
+    .full-viewport-figure .figure-container {
+      margin: 0;
+      border: none;
+      background: transparent;
+    }
+    .full-viewport-figure .figure-img {
+      width: 100%;
+      height: calc(100vh - 20vh);
+      max-height: none;
+      object-fit: contain;
+    }
+  </style>
+
+  <section class="compact theme-light">
+    <div class="slide-dark"></div>
+    <div class="slide-content">
+      <h2>Publication I: Power System Vulnerability</h2>
+
+      <div class="flex-row">
+        <div class="flex-col">
+          <div class="gmu-block">
+            <h3>Historical Context</h3>
+            <ul>
+              <li>
+                <strong>March 1989:</strong> Hydro-Québec collapse, 9-hour
+                blackout
+              </li>
+              <li>
+                <strong>May 2024 "Gannon":</strong> Widespread GIC across North
+                America
+              </li>
+            </ul>
+            <p class="text-dim">
+              Cander, 2019; Caraballo et&nbsp;al., 2025; Lawrence et&nbsp;al.,
+              2025
+            </p>
+          </div>
+        </div>
+
+        <div class="flex-col">
+          <div class="gmu-block alert">
+            <p>
+              <strong>Problem:</strong> Disconnect between physics and economics
+            </p>
+            <ul>
+              <li>Economic studies assume blackouts without physical basis</li>
+              <li>Physics studies don't extend to economic impacts</li>
+              <li>Earlier models treat state grids as independent</li>
+            </ul>
+            <p class="text-dim">
+              Schulte et&nbsp;al., 2014; Oughton et&nbsp;al., 2017
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="theme-light">
+    <div class="slide-dark"></div>
+    <div class="slide-content">
+      <h2>Research Questions & Objectives</h2>
+
+      <div class="gmu-block alert">
+        <h3>Hypothesis</h3>
+        <p>
+          Large-scale GMDs can be translated into geographically resolved
+          failure probabilities with quantified uncertainties, then propagated
+          into macroeconomic loss distributions
+        </p>
+      </div>
+
+      <div class="flex-col">
+        <div class="research-question">
+          <h3>RQ1: Vulnerability Assessment</h3>
+          <p>
+            Spatial distribution of transformer/substation failure risk across
+            U.S. grid under extreme storms?
+          </p>
+          <p class="text-dim">
+            Probabilistic: "40% failure probability under 150-yr storm"
+          </p>
+        </div>
+
+        <div class="research-question">
+          <h3>RQ2: Economic Impact Quantification</h3>
+          <p>
+            Per-day economic impact, population, business exposures from
+            failures?
+          </p>
+          <p class="text-dim">
+            Direct loss + indirect sectoral propagation via IO/CGE
+          </p>
+        </div>
+      </div>
+
+      <div class="gmu-block">
+        <h3>Technical Objectives</h3>
+        <p>
+          Compute geoelectric fields → GIC flows (Lehtinen-Pirjola) → failure
+          probability (fragility + aging) → service territories → IO/CGE
+          propagation
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="theme-light">
+    <div class="slide-dark"></div>
+    <div class="slide-content">
+      <h2>Literature Positioning</h2>
+
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Study</th>
+              <th>Contribution</th>
+              <th>Limitation</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Gaunt & Coetzee (2007)</td>
+              <td>Transformer failures in low-GIC regions</td>
+              <td>Case studies; no systematic assessment</td>
+            </tr>
+            <tr>
+              <td>Pulkkinen et al. (2008)</td>
+              <td>GIC extreme value statistics</td>
+              <td>No infrastructure/economics</td>
+            </tr>
+            <tr>
+              <td>Oughton et al. (2017)</td>
+              <td>UK grid IO model</td>
+              <td>Grids independent; deterministic</td>
+            </tr>
+            <tr>
+              <td>Marshalko et al. (2023)</td>
+              <td>3D geoelectric modeling</td>
+              <td>No power system coupling</td>
+            </tr>
+            <tr>
+              <td>Hughes et al. (2022)</td>
+              <td>Network analysis GIC-magnetometer</td>
+              <td>Correlation only; no prediction</td>
+            </tr>
+            <tr>
+              <td><strong>This Work</strong></td>
+              <td><strong>Physics→Engineering→Economics with UQ</strong></td>
+              <td><strong>—</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="gmu-block alert">
+        <p>
+          <strong>Novel:</strong> First continental-scale end-to-end framework
+          with preserved UQ, validated against May 2024 measurements
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="theme-light full-viewport-figure">
+    <div class="slide-dark"></div>
+    <div class="slide-content">
+      <h2>Methodology</h2>
+
+      <div class="flex-row">
+        <div>
+          <div class="figure-container">
+            <img
+              data-fig="power-method"
+              alt="Integrated framework diagram"
+              class="figure-img"
+            />
+          </div>
+          <div class="slidecred">Integrated framework</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<section class="theme-light">
+    <div class="slide-dark"></div>
+    <div class="slide-content">
+      <h2>Methodology</h2>
+
+      <div class="flex-row" style="flex: 1; min-height: 0; align-items: stretch; gap: 1.5rem;">
+        <!-- Left: Power network figure -->
+        <div style="flex: 1.8; display: flex; flex-direction: column; min-height: 0;">
+          <div class="figure-container" style="flex: 1; min-height: 0;">
+            <img
+              data-fig="power-network"
+              alt="U.S. transmission network"
+              class="figure-img"
+              style="width: 100%; height: 100%; max-height: none; object-fit: contain;"
+            />
+          </div>
+          <div class="slidecred">~60,000 substations, 161–765 kV</div>
+        </div>
+
+        <!-- Right: 4 methodology blocks stacked -->
+        <div style="flex: 1.2; display: flex; flex-direction: column; gap: 0.6rem;">
+          <div class="gmu-block" style="flex: 1; display: flex; flex-direction: column; justify-content: center; padding: 0.6rem 0.8rem;">
+            <h3 style="margin: 0 0 0.3rem 0; font-size: 1em;">1. Geomagnetic Model</h3>
+            <p style="margin: 0; font-size: 0.85em;">
+              INTERMAGNET/USGS/NRCan (1985–2024) → SECS interpolation → EarthScope MT → power-law extrapolation
+            </p>
+          </div>
+
+          <div class="gmu-block" style="flex: 1; display: flex; flex-direction: column; justify-content: center; padding: 0.6rem 0.8rem;">
+            <h3 style="margin: 0 0 0.3rem 0; font-size: 1em;">2. GIC Calculation</h3>
+            <p style="margin: 0; font-size: 0.85em;">
+              OSM + EIA grid → Lehtinen–Pirjola: $(Y_e + Y_n)\,V_n = J_e$ → Monte Carlo (topology, grounding)
+            </p>
+          </div>
+
+          <div class="gmu-block" style="flex: 1; display: flex; flex-direction: column; justify-content: center; padding: 0.6rem 0.8rem;">
+            <h3 style="margin: 0 0 0.3rem 0; font-size: 1em;">3. Reliability</h3>
+            <p style="margin: 0; font-size: 0.85em;">
+              Lognormal fragility: $P_{fail}=\Phi\!\left(\frac{\ln I_{GIC}-\ln 75}{\beta}\right)$, $\beta\sim U(0.25,0.50)$ + Weibull aging
+            </p>
+          </div>
+
+          <div class="gmu-block" style="flex: 1; display: flex; flex-direction: column; justify-content: center; padding: 0.6rem 0.8rem;">
+            <h3 style="margin: 0 0 0.3rem 0; font-size: 1em;">4. Economics</h3>
+            <p style="margin: 0; font-size: 0.85em;">
+              Voronoi territories → dasymetric → Ghosh IO → GDP ($/day$) with CIs
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<section class="theme-conclusion">
+    <div class="slide-dark"></div>
+    <div class="slide-content">
+      <h2>Results: Hazard Characterization</h2>
+
+      <div class="flex-row" style="flex: 1; min-height: 0; align-items: stretch; gap: 1.5rem;">
+        <!-- Column 1: Historical image -->
+        <div style="flex: 1; display: flex; flex-direction: column; min-height: 0;">
+          <div class="figure-container" style="flex: 1; min-height: 0;">
+            <img
+              data-fig="power-fields-historical"
+              alt="Historical storms B/E fields"
+              class="figure-img"
+              style="width: 100%; height: 100%; max-height: none; object-fit: contain;"
+            />
+          </div>
+          <div class="slidecred">
+            Historical: March 1989 (2071 nT, 22 V/km), May 2024 "Gannon" (1870 nT, 12 V/km)
+          </div>
+        </div>
+
+        <!-- Column 2: Extreme image -->
+        <div style="flex: 1; display: flex; flex-direction: column; min-height: 0;">
+          <div class="figure-container" style="flex: 1; min-height: 0;">
+            <img
+              data-fig="power-fields-extreme"
+              alt="Extreme scenarios"
+              class="figure-img"
+              style="width: 100%; height: 100%; max-height: none; object-fit: contain;"
+            />
+          </div>
+          <div class="slidecred">
+            Extreme: 100-yr (25 V/km) → 250-yr (31 V/km)
+          </div>
+        </div>
+
+        <!-- Column 3: Findings -->
+        <div style="flex: 1; display: flex; flex-direction: column;">
+          <div class="gmu-block" style="flex: 1; display: flex; flex-direction: column; justify-content: center;">
+            <h3 style="margin-top: 0; margin-bottom: 0.8rem;">Findings</h3>
+            <ul style="margin: 0; padding-left: 1.3em;">
+              <li>Geoelectric maxima in Upper Midwest &amp; Atlantic seaboard</li>
+              <li class="text-dim">Subsurface conductivity amplifies coupling</li>
+              <li>Return-period scaling preserves spatial pattern; magnitudes rise</li>
+              <li class="text-dim">1989 &lt; 2003 &lt; 2024 baseline &lt; 100–250-yr scenarios</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<section class="theme-conclusion">
+    <div class="slide-dark"></div>
+    <div class="slide-content">
+      <h2>Results: GIC Exposure &amp; Failures</h2>
+
+      <div class="flex-row" style="flex: 1; min-height: 0; align-items: stretch; gap: 1.5rem;">
+        <!-- Column 1: GIC exposure -->
+        <div style="flex: 2; display: flex; flex-direction: column; min-height: 0;">
+          <div class="figure-container" style="flex: 1; min-height: 0;">
+            <img
+              data-fig="power-gic-scenarios"
+              alt="GIC exposure"
+              class="figure-img"
+              style="width: 100%; height: 100%; max-height: none; object-fit: contain;"
+            />
+          </div>
+          <div class="slidecred">GIC hotspots: 200–400 A/phase (250-yr)</div>
+        </div>
+
+        <!-- Column 2: Failure probabilities -->
+        <div style="flex: 2; display: flex; flex-direction: column; min-height: 0;">
+          <div class="figure-container" style="flex: 1; min-height: 0;">
+            <img
+              data-fig="power-failures"
+              alt="Failure probabilities"
+              class="figure-img"
+              style="width: 100%; height: 100%; max-height: none; object-fit: contain;"
+            />
+          </div>
+          <div class="slidecred">
+            Transformer failure probabilities: &gt;40% at isolated substations
+          </div>
+        </div>
+
+        <!-- Column 3: Takeaways -->
+        <div style="flex: 1; display: flex; flex-direction: column;">
+          <div class="gmu-block" style="flex: 1; display: flex; flex-direction: column; justify-content: center;">
+            <h3 style="margin-top: 0; margin-bottom: 0.8rem;">Takeaways</h3>
+            <ul style="margin: 0; padding-left: 1.3em;">
+              <li>Hotspots align with conductive subsurface &amp; dense HV topology</li>
+              <li class="text-dim">Higher return period ⇒ broader 200–400 A/phase spread</li>
+              <li>Failure risk concentrates in Northeast &amp; Upper Midwest</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<section class="theme-light">
+    <div class="slide-dark"></div>
+    <div class="slide-content">
+      <h2>Results: Economic Impact</h2>
+
+      <div class="flex-row" style="flex: 1; min-height: 0; align-items: stretch; gap: 1.5rem;">
+        <!-- Left: Economic impact figure -->
+        <div style="flex: 2.5; display: flex; flex-direction: column; min-height: 0;">
+          <div class="figure-container" style="flex: 1; min-height: 0;">
+            <img
+              data-fig="power-economic"
+              alt="GDP losses by sector"
+              class="figure-img"
+              style="width: 100%; height: 100%; max-height: none; object-fit: contain;"
+            />
+          </div>
+          <div class="slidecred">
+            Direct + indirect GDP by sector (Ghosh IO)
+          </div>
+        </div>
+
+        <!-- Right: Economic impacts summary -->
+        <div style="flex: 1; display: flex; flex-direction: column;">
+          <div class="gmu-block" style="flex: 1; display: flex; flex-direction: column; justify-content: center;">
+            <h3 style="margin-top: 0; margin-bottom: 0.8rem;">Economic Impacts (per day)</h3>
+            <ul style="margin: 0; padding-left: 1.3em;">
+              <li><strong>100-yr:</strong> $1.4 ± 0.2 B/day</li>
+              <li><strong>150-yr:</strong> $1.7 ± 0.2 B/day</li>
+              <li><strong>250-yr:</strong> $2.1 ± 0.3 B/day</li>
+            </ul>
+            <p class="text-dim" style="margin-top: 0.8rem; margin-bottom: 0;">
+              Finance, real estate, professional services dominate; indirect adds ~50%.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="theme-conclusion">
+    <div class="slide-dark"></div>
+    <div class="slide-content">
+      <h2>Model Validation: SECS &amp; GIC Time-Domain</h2>
+
+      <div class="flex-row" style="flex: 1; min-height: 0; align-items: stretch; gap: 1.5rem;">
+        <!-- Column 1: SECS validation -->
+        <div style="flex: 2; display: flex; flex-direction: column; min-height: 0;">
+          <div class="figure-container" style="flex: 1; min-height: 0;">
+            <img
+              data-fig="secs-validation"
+              alt="SECS magnetic validation"
+              class="figure-img"
+              style="width: 100%; height: 100%; max-height: none; object-fit: contain;"
+            />
+          </div>
+          <div class="slidecred">
+            SECS interpolation: PE 0.12–0.39, Corr 0.53–0.83
+          </div>
+        </div>
+
+        <!-- Column 2: GIC validation -->
+        <div style="flex: 2; display: flex; flex-direction: column; min-height: 0;">
+          <div class="figure-container" style="flex: 1; min-height: 0;">
+            <img
+              data-fig="gic-validation"
+              alt="GIC time-domain validation"
+              class="figure-img"
+              style="width: 100%; height: 100%; max-height: none; object-fit: contain;"
+            />
+          </div>
+          <div class="slidecred">
+            TVA sites: PE −0.52 to 0.12, |r| 0.02–0.56
+          </div>
+        </div>
+
+        <!-- Column 3: Validation metrics -->
+        <div style="flex: 1; display: flex; flex-direction: column; gap: 0.8rem;">
+          <div class="gmu-block" style="flex: 1; display: flex; flex-direction: column; justify-content: center;">
+            <p style="margin: 0;"><strong>GIC Time-Domain</strong></p>
+            <ul style="margin: 0.3rem 0 0 0; padding-left: 1.3em;">
+              <li style="margin: 0.2rem 0;">Captures timing &amp; peaks (May 11)</li>
+              <li style="margin: 0.2rem 0;" class="text-dim">Spread from topology + grounding</li>
+            </ul>
+          </div>
+
+          <div class="gmu-block" style="flex: 1; display: flex; flex-direction: column; justify-content: center;">
+            <h3 style="margin-top: 0; margin-bottom: 0.5rem; font-size: 1em;">Validation Metric</h3>
+            <p style="margin: 0; font-size: 0.85em;">
+              Prediction efficiency (PE): $PE = 1 - \frac{\sum(y_{pred}- y_{obs})^2}{\sum(y_{obs}-\bar{y})^2}$
+            </p>
+            <p class="text-dim" style="margin: 0.3rem 0 0 0; font-size: 0.8em;">
+              PE near 1.0 = perfect; negative = worse than mean
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="theme-light">
+    <div class="slide-dark"></div>
+    <div class="slide-content">
+      <h2>Contributions & Expected Impact</h2>
+
+      <div class="gmu-block alert">
+        <h3>Key Contributions</h3>
+        <ol>
+          <li>
+            <strong>Physics-to-infrastructure coupling with UQ:</strong>
+            Continental-scale, Monte Carlo across all stages
+          </li>
+          <li>
+            <strong>Spatially explicit probabilistic mapping:</strong>
+            Asset-level failure probabilities (not generic regions)
+          </li>
+          <li>
+            <strong>End-to-end uncertainty propagation:</strong> Physics →
+            economics with confidence intervals
+          </li>
+          <li>
+            <strong>Policy relevance + open-source tools:</strong> NERC GMD
+            standards, reproducible workflows
+          </li>
+        </ol>
+      </div>
+
+      <div class="flex-row">
+        <div>
+          <div class="gmu-block">
+            <h3>Expected Impact</h3>
+            <ul>
+              <li>
+                Risk-informed grid hardening (target high-failure substations)
+              </li>
+              <li>Regulatory compliance (FERC TPL-007)</li>
+              <li>Insurance modeling (probabilistic loss distributions)</li>
+            </ul>
+          </div>
+        </div>
+
+        <div>
+          <div class="gmu-block">
+            <h3>Future Work</h3>
+            <ul>
+              <li>
+                Further Validation work against cross-storm measurement datasets
+              </li>
+              <li>Apply CGE for price adjustments + factor substitution</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</section>

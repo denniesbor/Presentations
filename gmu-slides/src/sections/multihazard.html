@@ -1,0 +1,244 @@
+<!-- HORIZONTAL SECTION: MULTI-HAZARD -->
+<section data-transition="zoom" data-background-transition="fade">
+  
+  <style>
+    .full-viewport-figure .figure-container { margin: 0; border: none; background: transparent; }
+    .full-viewport-figure .figure-img { width: 100%; height: calc(100vh - 20vh); max-height: none; object-fit: contain; }
+  </style>
+
+  <section class="compact theme-light">
+    <div class="slide-dark"></div>
+    <div class="slide-content">
+      <h2>Publication III: Multi-Hazard Comparative Assessment</h2>
+
+      <div class="flex-row">
+        <div class="flex-col">
+          <div class="gmu-block">
+            <h3>Motivation</h3>
+            <p>Space weather risk assessment remains embryonic compared to terrestrial hazards</p>
+            <ul>
+              <li>Studied in isolation</li>
+              <li>Policymakers cannot compare to hurricanes, floods, earthquakes</li>
+              <li>Single-hazard approaches miss compound/cascading effects</li>
+            </ul>
+            <p class="text-dim">Hochrainer-Stigler et&nbsp;al., 2023; Saruniene et&nbsp;al., 2024; Rokhideh et&nbsp;al., 2025</p>
+          </div>
+        </div>
+
+        <div class="flex-col">
+          <div class="gmu-block alert">
+            <p><strong>Problem:</strong> Lack of unified framework for cross-hazard comparison</p>
+            <ul>
+              <li>Existing multi-hazard tools use semi-quantitative scores</li>
+              <li>No physical grounding or uncertainty treatment</li>
+              <li>Cannot produce "apples-to-apples" risk metrics</li>
+            </ul>
+          </div>
+
+          <div class="gmu-block">
+            <p><strong>This Work:</strong> Apply same physics-to-economics framework to space weather, hurricanes, floods, earthquakes → directly comparable metrics</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="theme-light">
+    <div class="slide-dark"></div>
+    <div class="slide-content">
+      <h2>Research Questions & Objectives</h2>
+      
+      <div class="gmu-block alert">
+        <h3>Hypothesis</h3>
+        <p>A unified framework can produce comparable metrics across space weather, tropical cyclones, floods, earthquakes through consistent treatment of forcing, exposure, response, and propagation with explicit UQ</p>
+      </div>
+      
+      <div class="flex-col">
+        <div class="research-question">
+          <h3>RQ1: Methodological Integration</h3>
+          <p>How to harmonize various hazard methodologies while preserving hazard-specific physics?</p>
+        </div>
+        
+        <div class="research-question">
+          <h3>RQ2: Comparative Risk Assessment</h3>
+          <p>How do space weather impacts compare quantitatively to hurricanes, floods, earthquakes?</p>
+          <p class="text-dim">For example: "100-yr GMD ≈ Category X hurricane in region Y"</p>
+        </div>
+        
+        <div class="research-question">
+          <h3>RQ3: Cross-Hazard Interdependencies</h3>
+          <p>How do hazard interactions and infrastructure interdependencies amplify/attenuate impacts?</p>
+        </div>
+      </div>
+    </section>
+  
+  <section class="theme-light">
+    <div class="slide-dark"></div>
+    <div class="slide-content">
+      <h2>Literature Positioning</h2>
+      
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Study</th>
+              <th>Contribution</th>
+              <th>Limitation</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Hochrainer-Stigler et al. (2023)</td>
+              <td>Multi-hazard complexity framework</td>
+              <td>No space weather integration</td>
+            </tr>
+            <tr>
+              <td>Saruniene et al. (2024)</td>
+              <td>Critical infrastructure multi-hazard</td>
+              <td>Semi-quantitative scores; no UQ</td>
+            </tr>
+            <tr>
+              <td>Boni et al. (2025)</td>
+              <td>Multi-hazard methodologies review</td>
+              <td>Limited physical grounding</td>
+            </tr>
+            <tr>
+              <td>Rokhideh et al. (2025)</td>
+              <td>Dynamic risk drivers emphasis</td>
+              <td>Conceptual; no implementation</td>
+            </tr>
+            <tr>
+              <td>Oughton et al. (2019)</td>
+              <td>UK space weather economics</td>
+              <td>Single hazard; no comparison</td>
+            </tr>
+            <tr>
+              <td><strong>This Work</strong></td>
+              <td><strong>Physics-based cross-hazard with UQ</strong></td>
+              <td><strong>—</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      
+      <div class="gmu-block alert">
+        <p><strong>Novel:</strong> First integrated framework bridging space weather and terrestrial hazards with preserved physics and UQ</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="theme-light full-viewport-figure">
+    <div class="slide-dark"></div>
+    <div class="slide-content">
+      <h2>Methodology</h2>
+
+      <div class="flex-row">
+        <div>
+          <div class="figure-container">
+            <img data-fig="multi-framework" alt="Multi-hazard framework diagram" class="figure-img" />
+          </div>
+          <div class="slidecred">Generalized framework: forcing → exposure → response → economics with consistent UQ</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="theme-conclusion full-viewport-figure">
+    <div class="slide-dark"></div>
+    <div class="slide-content">
+      <h2>Expected Results: Comparative Risk Metrics</h2>
+
+      <div class="flex-row">
+        <div>
+          <div class="gmu-block">
+            <h3>Economic Impacts (100-yr events)</h3>
+            <ul>
+              <li><strong>Space Weather:</strong> ~$1.4B/day (power grid)</li>
+              <li><strong>Hurricane (Cat 3):</strong> $0.9–2.1B/day (regional)</li>
+              <li><strong>Earthquake (New Madrid):</strong> $3.5–4.0B/day</li>
+              <li><strong>Major Flood:</strong> $0.8–1.8B/day (basin-dependent)</li>
+            </ul>
+            <p class="text-dim">Direct comparison enables contextualization for stakeholders</p>
+          </div>
+
+          <div class="gmu-block">
+            <h3>Geographic Differentiation</h3>
+            <ul>
+              <li><strong>Space Weather:</strong> Northern latitudes (Northeast, Midwest, PNW)</li>
+              <li><strong>Hurricanes:</strong> Gulf & Atlantic coasts</li>
+              <li><strong>Earthquakes:</strong> Major fault systems</li>
+              <li><strong>Floods:</strong> River basins, coastal zones</li>
+            </ul>
+          </div>
+        </div>
+
+        <div>
+          <div class="gmu-block">
+            <h3>Infrastructure Vulnerability (by hazard)</h3>
+            <ul>
+              <li><strong>Power:</strong> 5–40% (space weather), 10–30% (hurricane), 15–35% (earthquake)</li>
+              <li><strong>Transport:</strong> &lt;5% (space weather), 15–35% (flood/earthquake)</li>
+              <li><strong>Telecom:</strong> Complex dependencies across all hazards</li>
+            </ul>
+          </div>
+
+          <div class="gmu-block">
+            <h3>Recovery Timeframes</h3>
+            <ul>
+              <li><strong>Space Weather:</strong> 12–72 hours (grid); months (satellites)</li>
+              <li><strong>Hurricane/Flood:</strong> 2–4 weeks</li>
+              <li><strong>Earthquake:</strong> 1–6 months (severe areas)</li>
+            </ul>
+          </div>
+
+          <div class="gmu-block alert">
+            <p><strong>Key Finding:</strong> Space weather comparable to regional Cat 3 hurricane but with distinct geographic footprint and recovery profile</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="theme-light">
+    <div class="slide-dark"></div>
+    <div class="slide-content">
+      <h2>Contributions & Expected Impact</h2>
+      
+      <div class="gmu-block alert">
+        <h3>Key Contributions</h3>
+        <ol>
+          <li><strong>Unified Multi-Hazard Framework:</strong> First truly integrated methodology bridging space weather & terrestrial hazards with preserved physics</li>
+          <li><strong>Quantitative Contextualization:</strong> Position space weather within natural hazard landscape using familiar metrics</li>
+          <li><strong>Cross-Domain Interdependency Modeling:</strong> Explicit capture of compound events & cascading failures</li>
+          <li><strong>National-Scale Comparative Metrics:</strong> "Apples-to-apples" comparison with consistent UQ</li>
+        </ol>
+      </div>
+      
+      <div class="flex-row">
+        <div>
+          <div class="gmu-block">
+            <h3>Expected Impact</h3>
+            <ul>
+              <li>Emergency managers understand space weather vs hurricanes</li>
+              <li>Policymakers prioritize resilience investments</li>
+              <li>Insurers incorporate space weather into portfolios</li>
+              <li>Regional multi-hazard exposure profiles</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div>
+          <div class="gmu-block">
+            <h3>Policy Alignment</h3>
+            <ul>
+              <li>Sendai Framework: compound/cascading hazards</li>
+              <li>National Space Weather Strategy: comparative risk</li>
+              <li>UNDRR: national resilience metrics</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+</section>

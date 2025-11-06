@@ -1,113 +1,338 @@
 <!-- HORIZONTAL SECTION: INTRODUCTION -->
 <section data-transition="zoom" data-background-transition="fade">
-  <!-- Why Space Weather Matters -->
-  <section class="compact">
-    <div class="slide-dark"></div>
-    <div class="slide-content">
-      <h2>Why Space Weather Matters</h2>
-      
-      <p>Space weather = variable conditions of the Sun, solar wind, and Earth's magnetosphere–ionosphere 
-         that can disrupt technological systems essential to modern society.</p>
-      
-      <div class="flex-row">
-        <div style="flex: 1 1 55%;">
-          <div class="figure-container">
-            <img data-fig="aurora" alt="Aurora during May 2024 'Gannon' storm" class="figure-img" />
-            <div class="slidecred">
-              May 2024 "Gannon" storm: most severe geomagnetic disturbance since 2003
-            </div>
-          </div>
+  
+  <!-- Slide 1: Motivation (CONDENSED) -->
+<section class="theme-light">
+  <div class="slide-dark"></div>
+  <div class="slide-content">
+    <h2>Motivation</h2>
+
+    <div class="flex-row" style="flex: 1; min-height: 0; align-items: stretch; gap: 1.5rem;">
+      <!-- Left: Image -->
+      <div style="flex: 1.8; display: flex; flex-direction: column; min-height: 0;">
+        <div class="figure-container" style="flex: 1; min-height: 0;">
+          <img
+            data-fig="MAGE"
+            alt="MAGE MHD"
+            class="figure-img"
+            style="width: 100%; height: 100%; max-height: none; object-fit: contain;"
+          />
         </div>
-        <div style="flex: 1 1 45%;">
-          <ul>
-            <li>Infrequent but severe hazards</li>
-            <li>Probability increases during solar maximum (~11-year cycle)</li>
-            <li>March 1989 storm: Hydro-Québec system collapse, millions without power</li>
+        <div class="slidecred">MAGE MHD Simulation — Source: <a href="https://cgs.jhuapl.edu/MAGE/" target="_blank">https://cgs.jhuapl.edu/MAGE/</a></div>
+      </div>
+
+      <!-- Right: stacked gmu blocks -->
+      <div style="flex: 1.2; display: flex; flex-direction: column; gap: 0.6rem;">
+        <div class="gmu-block" style="flex: 1; display: flex; flex-direction: column; justify-content: center; padding: 0.6rem 0.8rem;">
+          <p><strong>Infrastructure Impacts</strong></p>
+          <ul style="margin: 0; font-size: 0.85em;">
+            <li><strong>Power:</strong> GIC → transformer heating → blackouts</li>
+            <li><strong>Satellites:</strong> Drag + radiation → orbital decay</li>
+            <li><strong>GNSS:</strong> Ionospheric disturbance → errors</li>
           </ul>
-          <div class="gmu-block alert">
-            <p>Despite advances in space physics and engineering, quantitative frameworks 
-               linking geophysical forcing to economic loss remain limited</p>
-          </div>
+        </div>
+
+        <div class="gmu-block alert" style="flex: 1; display: flex; flex-direction: column; justify-content: center; padding: 0.6rem 0.8rem;">
+          <p style="margin: 0; font-size: 0.85em;">
+            <strong>Policy Mandate:</strong> 2019 National Space Weather Strategy + 2023 Implementation Plan require quantitative infrastructure impact assessment
+          </p>
+        </div>
+
+        <div class="gmu-block" style="flex: 1; display: flex; flex-direction: column; justify-content: center; padding: 0.6rem 0.8rem;">
+          <p style="margin: 0; font-size: 0.85em;"><strong>Research Gap:</strong> Frameworks linking geophysical forcing → engineering response → economic loss remain limited</p>
+          <p class="text-dim" style="margin: 0; font-size: 0.8em;">Schulte et al., 2014; Ishii et al., 2021; Hochrainer-Stigler et al., 2023</p>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
+
   
-  <!-- Problem Statement -->
+  <!-- Slide 2: Problem Statement - Part 1 (Disciplinary Silos) -->
   <section>
     <div class="slide-dark"></div>
     <div class="slide-content">
-      <h2>Problem Statement</h2>
+      <h2>Problem Statement: Disciplinary Silos</h2>
+      
+      <div class="gmu-block alert">
+        <p><strong>Core Problem:</strong> Studies remain confined within disciplinary boundaries without integrated treatment of uncertainty or cascading effects</p>
+      </div>
+      
+      <div class="flex-row">
+        <div>
+          <div class="gmu-block">
+            <h3>Space Physics</h3>
+            <p>Solar-terrestrial models, magnetosphere dynamics</p>
+            <p class="text-dim">No infrastructure coupling</p>
+          </div>
+        </div>
+        <div>
+          <div class="gmu-block">
+            <h3>Engineering</h3>
+            <p>Power system modeling, component fragility</p>
+            <p class="text-dim">No economic propagation</p>
+          </div>
+        </div>
+        <div>
+          <div class="gmu-block">
+            <h3>Economics</h3>
+            <p>High-level risk estimates, scenario-based</p>
+            <p class="text-dim">No physical grounding</p>
+          </div>
+        </div>
+      </div>
+      
+      <p class="text-dim">Pulkkinen et al., 2008; Marshalko et al., 2023</p>
+    </div>
+  </section>
+  
+  <!-- Slide 3: Problem Statement - Part 2 (Current Limitations) -->
+  <section>
+    <div class="slide-dark"></div>
+    <div class="slide-content">
+      <h2>Problem Statement: Current Limitations</h2>
       
       <div class="gmu-block">
-        <p>Current approaches to space weather risk assessment:</p>
+        <h3>Existing Approaches</h3>
         <ul>
-          <li>Remain confined within disciplinary boundaries</li>
-          <li>Focus on either solar physics, power systems, or economic estimates</li>
-          <li>Lack physically grounded linkages between hazard, infrastructure, and impacts</li>
-          <li>Provide deterministic estimates without uncertainty quantification</li>
+          <li>Isolate infrastructures, rely on deterministic scenarios</li>
+          <li>Neglect uncertainty propagation and inter-sectoral dependencies</li>
+          <li>Treat state-level grids as electrically independent</li>
+          <li>Lack physically grounded hazard-fragility-economics linkages</li>
+        </ul>
+        <p class="text-dim">Oughton et al., 2017; Schulte et al., 2014</p>
+      </div>
+      
+      <div class="gmu-block">
+        <h3>Assessment Challenges</h3>
+        <ul>
+          <li><strong>Power:</strong> Transformer-specific vulnerability patterns from spatially varying GIC</li>
+          <li><strong>Satellites:</strong> Orbital service areas, spectrum licensing, MHD/plasma models</li>
+          <li><strong>Economics:</strong> Deterministic loss estimates without macroeconomic propagation</li>
         </ul>
       </div>
       
-      <p class="text-dim">
-        This work addresses these limitations through a unified, stochastic framework that explicitly propagates 
-        uncertainty from space weather forcing through engineering system behavior to economic losses.
-      </p>
-    </div>
-  </section>
-  
-  <!-- Research Questions -->
-  <section>
-    <div class="slide-dark"></div>
-    <div class="slide-content">
-      <h2>Research Questions</h2>
-      
-      <div class="flex-col">
-        <div class="research-question">
-          <h3>RQ1: Physical Vulnerability</h3>
-          <p>How does extreme space weather physically stress critical infrastructure systems, and what are the quantified uncertainties?</p>
-        </div>
-        
-        <div class="research-question">
-          <h3>RQ2: Socio-Economic Consequence</h3>
-          <p>How do those physical stresses translate into service disruption, affected population, and economic loss?</p>
-        </div>
-        
-        <div class="research-question">
-          <h3>RQ3: Comparative Risk Assessment</h3>
-          <p>How does space weather risk compare to more commonly experienced natural hazards?</p>
-        </div>
+      <div class="gmu-block alert">
+        <p><strong>This Work:</strong> Unified stochastic framework with end-to-end uncertainty propagation from space weather forcing to national-scale economic losses</p>
       </div>
     </div>
   </section>
   
-  <!-- Research Objectives -->
-  <section>
+  <!-- Slide 4: RQ1 -->
+  <section class="theme-light">
+    <div class="slide-dark"></div>
+    <div class="slide-content">
+      <h2>Research Question 1</h2>
+      
+      <div class="research-question">
+        <h3>Physical Vulnerability</h3>
+        <p><strong>How does extreme space weather physically stress critical infrastructure systems, and what are the quantified uncertainties in those stress estimates?</strong></p>
+      </div>
+      
+      <div class="gmu-block">
+        <h3>Power Grid</h3>
+        <ul>
+          <li>GIC loading, transformer overheating probability, spatial clustering of high-risk substations</li>
+          <li>Monte Carlo propagation: network topology, transformer aging, grounding configurations</li>
+        </ul>
+      </div>
+      
+      <div class="gmu-block">
+        <h3>Orbital Assets</h3>
+        <ul>
+          <li>Drag-driven orbital decay, propellant usage, radiation-driven anomaly probability</li>
+          <li>Loss-of-service risk in LEO, MEO, GEO</li>
+          <li>UQ over atmospheric density models, orbital parameters, radiation transport</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Slide 5: RQ2 -->
+  <section class="theme-light">
+    <div class="slide-dark"></div>
+    <div class="slide-content">
+      <h2>Research Question 2</h2>
+      
+      <div class="research-question">
+        <h3>Socio-Economic Consequence</h3>
+        <p><strong>How do those physical stresses and their uncertainties translate into quantifiable service disruption, affected population, and daily economic loss?</strong></p>
+      </div>
+      
+      <div class="gmu-block">
+        <h3>Analysis Chain</h3>
+        <p>Infrastructure degradation → Direct loss of delivered service → Trace through interdependent sectors (IO/CGE models) → Probabilistic loss distributions</p>
+      </div>
+      
+      <div class="gmu-block">
+        <h3>Outputs</h3>
+        <ul>
+          <li>Affected population with spatial distribution</li>
+          <li>Sectoral output loss with uncertainty bounds</li>
+          <li>Economy-wide daily GDP impact with confidence intervals</li>
+          <li><strong>Not deterministic point estimates</strong> — full probability distributions</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Slide 6: RQ3 -->
+  <section class="theme-light">
+    <div class="slide-dark"></div>
+    <div class="slide-content">
+      <h2>Research Question 3</h2>
+      
+      <div class="research-question">
+        <h3>Comparative Risk Assessment</h3>
+        <p><strong>How does space weather risk compare to more commonly experienced natural hazards in terms of physical stress, economic impact, and affected infrastructure?</strong></p>
+      </div>
+      
+      <div class="gmu-block">
+        <h3>Approach</h3>
+        <p>Apply same physics-to-economics framework to:</p>
+        <ul>
+          <li>Space weather (geomagnetic storms, particle flux)</li>
+          <li>Tropical cyclones (wind, surge)</li>
+          <li>Floods (inundation depth/extent)</li>
+          <li>Earthquakes (ground shaking)</li>
+        </ul>
+      </div>
+      
+      <div class="gmu-block alert">
+        <p><strong>Goal:</strong> First national-scale, apples-to-apples comparison of infrastructure vulnerability and economic exposure across hazards with integrated UQ</p>
+        <p class="text-dim">Enable statements like: "A 100-year geomagnetic storm affects X million people vs. Y million for Category 4 hurricane"</p>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Slide 7: Objectives (CONDENSED) -->
+  <section class="theme-light">
     <div class="slide-dark"></div>
     <div class="slide-content">
       <h2>Research Objectives</h2>
       
-      <ul>
-        <li><strong>Physics-to-Engineering Mapping:</strong> Develop coupled physics–engineering models that quantify component stress with explicit propagation of uncertainties</li>
-        <li><strong>Impact Translation:</strong> Translate physical degradation into socio-economic impact with probabilistic loss distributions</li>
-        <li><strong>Cross-Hazard Assessment:</strong> Apply the framework to multiple hazard classes with consistent uncertainty treatment</li>
-      </ul>
+      <div class="gmu-block">
+        <h3>Objective 1: Physics-to-Engineering Coupling</h3>
+        <p>Quantify component stress, degradation, failure probability under extreme storms with explicit propagation of epistemic and aleatory uncertainties</p>
+        <p class="text-dim">GIC exposure, transformer thermal loading, orbital decay, Δv demand, radiation dose, SEE probability</p>
+      </div>
+      
+      <div class="gmu-block">
+        <h3>Objective 2: Impact Propagation</h3>
+        <p>Translate physical degradation into socio-economic impact with probabilistic loss distributions</p>
+        <p class="text-dim">Service territories → affected population → sectoral output → IO/CGE models → economy-wide daily GDP impact with confidence intervals</p>
+      </div>
+      
+      <div class="gmu-block">
+        <h3>Objective 3: Cross-Hazard Assessment</h3>
+        <p>Apply framework to multiple hazard classes with consistent UQ to produce directly comparable risk metrics</p>
+        <p class="text-dim">Space weather contextualized alongside hurricanes, floods, earthquakes</p>
+      </div>
     </div>
   </section>
-
-  <!-- Significance & Contribution -->
+  
+  <!-- Slide 8: Literature Positioning & Novelty -->
   <section>
     <div class="slide-dark"></div>
     <div class="slide-content">
-      <h2>Significance & Contribution</h2>
+      <h2>Literature Positioning & Novelty</h2>
       
-      <ol>
-        <li><strong>End-to-end coupling</strong> from solar forcing to economy-wide impact with preserved uncertainty</li>
-        <li><strong>Multi-system coverage</strong> spanning terrestrial and space-based infrastructure</li>
-        <li><strong>Operator-facing and policy-facing metrics</strong> (transformer failure probability, propellant consumption, affected customers, GDP impact)</li>
-        <li><strong>Cross-hazard comparative assessment</strong> positioning space weather alongside familiar hazards</li>
-        <li><strong>Open-source tooling</strong> with documented workflows for validation and adoption</li>
-      </ol>
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Study</th>
+              <th>Scope</th>
+              <th>Approach</th>
+              <th>Limitation</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Pulkkinen et al. (2008)</td>
+              <td>GIC statistics</td>
+              <td>Extreme value analysis</td>
+              <td>No economic propagation</td>
+            </tr>
+            <tr>
+              <td>Oughton et al. (2017)</td>
+              <td>UK power grid</td>
+              <td>State-level IO model</td>
+              <td>Grids independent; deterministic</td>
+            </tr>
+            <tr>
+              <td>Schulte et al. (2014)</td>
+              <td>Global supply chains</td>
+              <td>Scenario-based</td>
+              <td>No physical grounding; no UQ</td>
+            </tr>
+            <tr>
+              <td>Marshalko et al. (2023)</td>
+              <td>Fennoscandia E-fields</td>
+              <td>3D MHD modeling</td>
+              <td>Physics only; no infrastructure</td>
+            </tr>
+            <tr>
+              <td><strong>This Work</strong></td>
+              <td><strong>US power + satellites</strong></td>
+              <td><strong>Physics→Engineering→Economics</strong></td>
+              <td><strong>End-to-end with preserved UQ</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
   </section>
+  
+  <!-- Slide 9: Significance - Part 1 (Contributions) -->
+  <section>
+    <div class="slide-dark"></div>
+    <div class="slide-content">
+      <h2>Significance: Key Contributions</h2>
+      
+      <div class="gmu-block">
+        <h3>1. End-to-end Coupling with Preserved Uncertainty</h3>
+        <p>Solar forcing → engineering stress → economic impact in single chain with UQ at each stage</p>
+      </div>
+      
+      <div class="gmu-block">
+        <h3>2. Multi-system Coverage</h3>
+        <p>Terrestrial (power grids) + space-based (LEO/MEO/GEO satellites) with consistent UQ</p>
+      </div>
+      
+      <div class="gmu-block">
+        <h3>3. Actionable Metrics for Stakeholders</h3>
+        <p>Failure probabilities, propellant consumption, service coverage loss, affected customers, daily GDP impact ($/day) — all with uncertainty bounds</p>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Slide 10: Significance - Part 2 (Policy & Tools) -->
+  <section>
+    <div class="slide-dark"></div>
+    <div class="slide-content">
+      <h2>Significance: Policy Alignment & Impact</h2>
+      
+      <div class="gmu-block">
+        <h3>4. Cross-hazard Comparative Assessment</h3>
+        <p>Space weather positioned alongside hurricanes, floods, earthquakes using same framework</p>
+        <p class="text-dim">Novel: national-scale comparison with integrated UQ (developed with NSF-NCAR)</p>
+      </div>
+      
+      <div class="gmu-block">
+        <h3>5. Open-source Tools & Reproducibility</h3>
+        <p>Documented workflows enabling validation, adoption by agencies, application to other regions</p>
+      </div>
+      
+      <div class="gmu-block alert">
+        <h3>Policy Alignment</h3>
+        <ul>
+          <li><strong>2019 National Space Weather Strategy + 2023 Implementation Plan:</strong> Quantitative infrastructure assessment</li>
+          <li><strong>Sendai Framework:</strong> National resilience to compound/cascading hazards</li>
+          <li><strong>SDGs 7, 9, 11, 13:</strong> Energy access, resilient infrastructure, risk preparedness</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  
 </section>
