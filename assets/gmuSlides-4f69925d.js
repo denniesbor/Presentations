@@ -154,12 +154,12 @@ https://github.com/highlightjs/highlight.js/issues/2277`),D=T,N=R),y===void 0&&(
   
 </section>`,A_=`<!-- HORIZONTAL SECTION: INTRODUCTION -->
 <section data-transition="zoom" data-background-transition="fade">
-  
-  <!-- Slide 1: Motivation (CONDENSED) -->
+
+<!-- Slide 1: What is Space Weather + Historical Context -->
 <section class="theme-light">
   <div class="slide-dark"></div>
   <div class="slide-content">
-    <h2>Motivation</h2>
+    <h2>What is Space Weather?</h2>
 
     <div class="flex-row" style="flex: 1; min-height: 0; align-items: stretch; gap: 1.5rem;">
       <!-- Left: Image -->
@@ -175,102 +175,123 @@ https://github.com/highlightjs/highlight.js/issues/2277`),D=T,N=R),y===void 0&&(
         <div class="slidecred">MAGE MHD Simulation — Source: <a href="https://cgs.jhuapl.edu/MAGE/" target="_blank">https://cgs.jhuapl.edu/MAGE/</a></div>
       </div>
 
-      <!-- Right: stacked gmu blocks -->
+      <!-- Right: Definition + Historical -->
       <div style="flex: 1.2; display: flex; flex-direction: column; gap: 0.6rem;">
         <div class="gmu-block" style="flex: 1; display: flex; flex-direction: column; justify-content: center; padding: 0.6rem 0.8rem;">
-          <p><strong>Infrastructure Impacts</strong></p>
-          <ul style="margin: 0; font-size: 0.85em;">
-            <li><strong>Power:</strong> GIC → transformer heating → blackouts</li>
-            <li><strong>Satellites:</strong> Drag + radiation → orbital decay</li>
-            <li><strong>GNSS:</strong> Ionospheric disturbance → errors</li>
-          </ul>
+          <p style="margin: 0; font-size: 0.9em;"><strong>Variable conditions of the Sun, solar wind, and Earth's magnetosphere that disrupt technological systems</strong></p>
         </div>
 
         <div class="gmu-block alert" style="flex: 1; display: flex; flex-direction: column; justify-content: center; padding: 0.6rem 0.8rem;">
-          <p style="margin: 0; font-size: 0.85em;">
-            <strong>Policy Mandate:</strong> 2019 National Space Weather Strategy + 2023 Implementation Plan require quantitative infrastructure impact assessment
-          </p>
+          <p style="margin: 0 0 0.3rem 0;"><strong>Unlike other hazards:</strong></p>
+          <ul style="margin: 0; padding-left: 1.2em; font-size: 0.85em;">
+            <li>Invisible — can't see it coming</li>
+            <li>Can't evacuate from it</li>
+            <li>Continental-scale impacts</li>
+          </ul>
         </div>
 
-        <div class="gmu-block" style="flex: 1; display: flex; flex-direction: column; justify-content: center; padding: 0.6rem 0.8rem;">
-          <p style="margin: 0; font-size: 0.85em;"><strong>Research Gap:</strong> Frameworks linking geophysical forcing → engineering response → economic loss remain limited</p>
-          <p class="text-dim" style="margin: 0; font-size: 0.8em;">Schulte et al., 2014; Ishii et al., 2021; Hochrainer-Stigler et al., 2023</p>
+        <div class="gmu-block" style="flex: 1.2; display: flex; flex-direction: column; justify-content: center; padding: 0.6rem 0.8rem;">
+          <p style="margin: 0 0 0.3rem 0; font-size: 0.9em;"><strong>Known for 150+ years:</strong></p>
+          <ul style="margin: 0; padding-left: 1.2em; font-size: 0.8em;">
+            <li><strong>1859 Carrington:</strong> Telegraph fires, tropical aurora</li>
+            <li><strong>1989 Quebec:</strong> 9-hour blackout, millions affected</li>
+            <li><strong>2003 Halloween:</strong> GPS, aviation, power disruptions</li>
+            <li><strong>2024 Gannon:</strong> Most severe since 2003</li>
+          </ul>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-  
-  <!-- Slide 2: Problem Statement - Part 1 (Disciplinary Silos) -->
-  <section>
-    <div class="slide-dark"></div>
-    <div class="slide-content">
-      <h2>Problem Statement: Disciplinary Silos</h2>
-      
-      <div class="gmu-block alert">
-        <p><strong>Core Problem:</strong> Studies remain confined within disciplinary boundaries without integrated treatment of uncertainty or cascading effects</p>
-      </div>
-      
-      <div class="flex-row">
-        <div>
-          <div class="gmu-block">
-            <h3>Space Physics</h3>
-            <p>Solar-terrestrial models, magnetosphere dynamics</p>
-            <p class="text-dim">No infrastructure coupling</p>
-          </div>
-        </div>
-        <div>
-          <div class="gmu-block">
-            <h3>Engineering</h3>
-            <p>Power system modeling, component fragility</p>
-            <p class="text-dim">No economic propagation</p>
-          </div>
-        </div>
-        <div>
-          <div class="gmu-block">
-            <h3>Economics</h3>
-            <p>High-level risk estimates, scenario-based</p>
-            <p class="text-dim">No physical grounding</p>
-          </div>
+<!-- Slide 2: Infrastructure Impacts -->
+<section class="theme-light">
+  <div class="slide-dark"></div>
+  <div class="slide-content">
+    <h2>Infrastructure Impacts</h2>
+
+    <div class="flex-row" style="flex: 1; min-height: 0; gap: 1.5rem;">
+      <div style="flex: 1;">
+        <div class="gmu-block" style="flex: 1; display: flex; flex-direction: column; justify-content: center;">
+          <h3 style="margin-top: 0;">Power Grids</h3>
+          <p><strong>Geomagnetically Induced Currents (GIC)</strong></p>
+          <p class="text-dim">Quasi-DC currents in transmission lines → transformer heating → potential permanent damage</p>
+          <p style="margin: 0.5rem 0 0 0; font-size: 0.85em;"><strong>Example:</strong> 1989 Quebec — 9-hour blackout</p>
         </div>
       </div>
-      
-      <p class="text-dim">Pulkkinen et al., 2008; Marshalko et al., 2023</p>
-    </div>
-  </section>
-  
-  <!-- Slide 3: Problem Statement - Part 2 (Current Limitations) -->
-  <section>
-    <div class="slide-dark"></div>
-    <div class="slide-content">
-      <h2>Problem Statement: Current Limitations</h2>
-      
-      <div class="gmu-block">
-        <h3>Existing Approaches</h3>
-        <ul>
-          <li>Isolate infrastructures, rely on deterministic scenarios</li>
-          <li>Neglect uncertainty propagation and inter-sectoral dependencies</li>
-          <li>Treat state-level grids as electrically independent</li>
-          <li>Lack physically grounded hazard-fragility-economics linkages</li>
-        </ul>
-        <p class="text-dim">Oughton et al., 2017; Schulte et al., 2014</p>
+
+      <div style="flex: 1;">
+        <div class="gmu-block" style="flex: 1; display: flex; flex-direction: column; justify-content: center;">
+          <h3 style="margin-top: 0;">Satellites</h3>
+          <p><strong>Atmospheric Drag + Radiation</strong></p>
+          <p class="text-dim">Thermospheric expansion → orbital decay; particle flux → single-event effects</p>
+          <p style="margin: 0.5rem 0 0 0; font-size: 0.85em;"><strong>Example:</strong> Feb 2022 — SpaceX lost 40 Starlink satellites</p>
+        </div>
       </div>
-      
-      <div class="gmu-block">
-        <h3>Assessment Challenges</h3>
-        <ul>
-          <li><strong>Power:</strong> Transformer-specific vulnerability patterns from spatially varying GIC</li>
-          <li><strong>Satellites:</strong> Orbital service areas, spectrum licensing, MHD/plasma models</li>
-          <li><strong>Economics:</strong> Deterministic loss estimates without macroeconomic propagation</li>
-        </ul>
-      </div>
-      
-      <div class="gmu-block alert">
-        <p><strong>This Work:</strong> Unified stochastic framework with end-to-end uncertainty propagation from space weather forcing to national-scale economic losses</p>
+
+      <div style="flex: 1;">
+        <div class="gmu-block" style="flex: 1; display: flex; flex-direction: column; justify-content: center;">
+          <h3 style="margin-top: 0;">GNSS/Navigation</h3>
+          <p><strong>Ionospheric Disturbances</strong></p>
+          <p class="text-dim">TEC variations → positioning errors amplified 1.5–5×</p>
+          <p style="margin: 0.5rem 0 0 0; font-size: 0.85em;"><strong>Example:</strong> 2024 Gannon — GPS errors</p>
+        </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
+
+<!-- Slide 3: The Problem - No Quantitative Framework + Policy -->
+<section class="theme-light">
+  <div class="slide-dark"></div>
+  <div class="slide-content">
+    <h2>The Problem</h2>
+
+    <div class="gmu-block alert">
+      <p style="font-size: 1em; margin: 0;"><strong>Despite 150+ years of documented impacts, we lack quantitative frameworks connecting solar forcing → infrastructure response → economic loss with uncertainty quantification</strong></p>
+    </div>
+
+    <div class="flex-row" style="flex: 1; min-height: 0; gap: 1.5rem; margin-top: 1rem;">
+      <div style="flex: 1;">
+        <div class="gmu-block" style="flex: 1; display: flex; flex-direction: column; justify-content: center;">
+          <h3 style="margin-top: 0;">Disciplinary Silos</h3>
+          <ul style="margin: 0; padding-left: 1.2em; font-size: 0.85em;">
+            <li>Physicists study the Sun</li>
+            <li>Engineers study power grids</li>
+            <li>Economists estimate losses</li>
+          </ul>
+          <p class="text-dim" style="margin: 0.5rem 0 0 0; font-size: 0.75em;">But nobody connects them with rigorous UQ</p>
+        </div>
+      </div>
+
+      <div style="flex: 1;">
+        <div class="gmu-block" style="flex: 1; display: flex; flex-direction: column; justify-content: center;">
+          <h3 style="margin-top: 0;">Policy Mandate</h3>
+          <p style="margin: 0; font-size: 0.85em;"><strong>National Space Weather Strategy</strong></p>
+          <ul style="margin: 0.3rem 0 0 0; padding-left: 1.2em; font-size: 0.8em;">
+            <li>2015: Initial strategy</li>
+            <li>2019: Updated strategy</li>
+            <li>2023: Implementation plan</li>
+          </ul>
+          <p class="text-dim" style="margin: 0.5rem 0 0 0; font-size: 0.75em;">Calls for quantitative infrastructure impact assessment</p>
+        </div>
+      </div>
+
+      <div style="flex: 1;">
+        <div class="gmu-block" style="flex: 1; display: flex; flex-direction: column; justify-content: center;">
+          <h3 style="margin-top: 0;">The Challenge</h3>
+          <p style="margin: 0; font-size: 0.85em;">How do emergency managers prioritize space weather when dealing with:</p>
+          <ul style="margin: 0.3rem 0 0 0; padding-left: 1.2em; font-size: 0.8em;">
+            <li>Hurricanes</li>
+            <li>Floods</li>
+            <li>Earthquakes</li>
+          </ul>
+          <p class="text-dim" style="margin: 0.5rem 0 0 0; font-size: 0.75em;">Need: Direct, quantitative comparison</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
   
   <!-- Slide 4: RQ1 -->
   <section class="theme-light">
@@ -599,7 +620,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`),D=T,N=R),y===void 0&&(
     </div>
   </section>
 
-  <section class="theme-light">
+  <section class="theme-skim">
     <div class="slide-dark"></div>
     <div class="slide-content">
       <h2>Literature Positioning</h2>
@@ -657,7 +678,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`),D=T,N=R),y===void 0&&(
     </div>
   </section>
 
-  <section class="theme-light full-viewport-figure">
+  <section class="theme-skim full-viewport-figure">
     <div class="slide-dark"></div>
     <div class="slide-content">
       <h2>Methodology</h2>
@@ -730,7 +751,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`),D=T,N=R),y===void 0&&(
     </div>
   </section>
 
-<section class="theme-conclusion">
+<section class="theme-light">
     <div class="slide-dark"></div>
     <div class="slide-content">
       <h2>Results: Hazard Characterization</h2>
@@ -782,7 +803,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`),D=T,N=R),y===void 0&&(
     </div>
   </section>
 
-<section class="theme-conclusion">
+<section class="theme-light">
     <div class="slide-dark"></div>
     <div class="slide-content">
       <h2>Results: GIC Exposure &amp; Failures</h2>
@@ -870,7 +891,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`),D=T,N=R),y===void 0&&(
     </div>
   </section>
 
-  <section class="theme-conclusion">
+  <section class="theme-skim">
     <div class="slide-dark"></div>
     <div class="slide-content">
       <h2>Model Validation: SECS &amp; GIC Time-Domain</h2>
@@ -994,7 +1015,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`),D=T,N=R),y===void 0&&(
     .full-viewport-figure .figure-img { width: 100%; height: calc(100vh - 20vh); max-height: none; object-fit: contain; }
   </style>
 
-  <section class="compact theme-light">
+  <section class="compact theme-conclusion">
     <div class="slide-dark"></div>
     <div class="slide-content">
       <h2>Publication II: Satellite System Vulnerability</h2>
@@ -1028,7 +1049,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`),D=T,N=R),y===void 0&&(
     </div>
   </section>
   
-  <section class="theme-light">
+  <section class="theme-conclusion theme-skim">
     <div class="slide-dark"></div>
     <div class="slide-content">
       <h2>Research Questions & Objectives</h2>
@@ -1059,7 +1080,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`),D=T,N=R),y===void 0&&(
     </div>
   </section>
   
-  <section class="theme-light">
+  <section class="theme-skim">
     <div class="slide-dark"></div>
     <div class="slide-content">
       <h2>Literature Positioning</h2>
@@ -1114,7 +1135,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`),D=T,N=R),y===void 0&&(
     </div>
   </section>
 
-  <section class="theme-light full-viewport-figure">
+  <section class="theme-skim full-viewport-figure">
     <div class="slide-dark"></div>
     <div class="slide-content">
       <h2>Methodology</h2>
@@ -1130,7 +1151,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`),D=T,N=R),y===void 0&&(
     </div>
   </section>
 
-<section class="theme-light">
+<section class="theme-conclusion">
   <div class="slide-dark"></div>
   <div class="slide-content">
     <h2>Methodology: Orbital Mechanics & Classification</h2>
@@ -1177,7 +1198,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`),D=T,N=R),y===void 0&&(
 </section>
 
 
-<section class="theme-conclusion">
+<section class="theme-skim">
     <div class="slide-dark"></div>
     <div class="slide-content">
       <h2>Results: Drag Model (Starlink LEO Case)</h2>
@@ -1259,7 +1280,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`),D=T,N=R),y===void 0&&(
 </section>
 
 
-<section class="theme-conclusion">
+<section class="theme-conclusion theme-skim">
   <div class="slide-dark"></div>
   <div class="slide-content">
     <h2>Validation: Penumbra Model vs GOES Observations</h2>
@@ -1308,7 +1329,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`),D=T,N=R),y===void 0&&(
 </section>
 
 
-<section class="theme-light">
+<section class="theme-conclusion">
   <div class="slide-dark"></div>
   <div class="slide-content">
     <h2>Results: Satellite Cost Distribution</h2>
@@ -1346,7 +1367,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`),D=T,N=R),y===void 0&&(
   </div>
 </section>
 
-<section class="theme-light">
+<section class="theme-light theme-skim">
   <div class="slide-dark"></div>
   <div class="slide-content">
     <h2>Expected Results: Economic Impact of Satellite Loss</h2>
@@ -1472,7 +1493,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`),D=T,N=R),y===void 0&&(
     </div>
   </section>
   
-  <section class="theme-light">
+  <section class="theme-light theme-skim">
     <div class="slide-dark"></div>
     <div class="slide-content">
       <h2>Research Questions & Objectives</h2>
@@ -1500,8 +1521,8 @@ https://github.com/highlightjs/highlight.js/issues/2277`),D=T,N=R),y===void 0&&(
         </div>
       </div>
     </section>
-  
-  <section class="theme-light">
+
+  <section class="theme-light theme-skim">
     <div class="slide-dark"></div>
     <div class="slide-content">
       <h2>Literature Positioning</h2>
@@ -1572,56 +1593,37 @@ https://github.com/highlightjs/highlight.js/issues/2277`),D=T,N=R),y===void 0&&(
     </div>
   </section>
 
-  <section class="theme-conclusion full-viewport-figure">
+<section class="theme-light">
     <div class="slide-dark"></div>
     <div class="slide-content">
       <h2>Expected Results: Comparative Risk Metrics</h2>
 
-      <div class="flex-row">
-        <div>
-          <div class="gmu-block">
-            <h3>Economic Impacts (100-yr events)</h3>
-            <ul>
-              <li><strong>Space Weather:</strong> ~$1.4B/day (power grid)</li>
-              <li><strong>Hurricane (Cat 3):</strong> $0.9–2.1B/day (regional)</li>
-              <li><strong>Earthquake (New Madrid):</strong> $3.5–4.0B/day</li>
-              <li><strong>Major Flood:</strong> $0.8–1.8B/day (basin-dependent)</li>
-            </ul>
-            <p class="text-dim">Direct comparison enables contextualization for stakeholders</p>
+      <div class="flex-row" style="flex: 1; min-height: 0; gap: 1.5rem;">
+        <div style="flex: 1;">
+          <div class="gmu-block" style="flex: 1;">
+            <h3>Economic Scale</h3>
+            <p><em>What is the daily economic impact of each hazard?</em></p>
+            <p><strong>For example:</strong> 100-yr space weather (~\\$1.4B/day) comparable to regional Cat 3 hurricane (\\$0.9–2.1B/day), less than major earthquake (\\$3.5–4.0B/day)</p>
           </div>
 
-          <div class="gmu-block">
-            <h3>Geographic Differentiation</h3>
-            <ul>
-              <li><strong>Space Weather:</strong> Northern latitudes (Northeast, Midwest, PNW)</li>
-              <li><strong>Hurricanes:</strong> Gulf & Atlantic coasts</li>
-              <li><strong>Earthquakes:</strong> Major fault systems</li>
-              <li><strong>Floods:</strong> River basins, coastal zones</li>
-            </ul>
+          <div class="gmu-block" style="flex: 1;">
+            <h3>Spatial Distribution</h3>
+            <p><em>Where are impacts concentrated?</em></p>
+            <p><strong>For example:</strong> Space weather affects northern latitudes; hurricanes impact coasts; earthquakes follow fault systems</p>
           </div>
         </div>
 
-        <div>
-          <div class="gmu-block">
-            <h3>Infrastructure Vulnerability (by hazard)</h3>
-            <ul>
-              <li><strong>Power:</strong> 5–40% (space weather), 10–30% (hurricane), 15–35% (earthquake)</li>
-              <li><strong>Transport:</strong> &lt;5% (space weather), 15–35% (flood/earthquake)</li>
-              <li><strong>Telecom:</strong> Complex dependencies across all hazards</li>
-            </ul>
+        <div style="flex: 1;">
+          <div class="gmu-block" style="flex: 1;">
+            <h3>Sectoral Vulnerability</h3>
+            <p><em>Which infrastructure sectors are most affected?</em></p>
+            <p><strong>For example:</strong> Space weather dominates power (5–40%), while floods/earthquakes affect transport (15–35%)</p>
           </div>
 
-          <div class="gmu-block">
-            <h3>Recovery Timeframes</h3>
-            <ul>
-              <li><strong>Space Weather:</strong> 12–72 hours (grid); months (satellites)</li>
-              <li><strong>Hurricane/Flood:</strong> 2–4 weeks</li>
-              <li><strong>Earthquake:</strong> 1–6 months (severe areas)</li>
-            </ul>
-          </div>
-
-          <div class="gmu-block alert">
-            <p><strong>Key Finding:</strong> Space weather comparable to regional Cat 3 hurricane but with distinct geographic footprint and recovery profile</p>
+          <div class="gmu-block" style="flex: 1;">
+            <h3>Temporal Profile</h3>
+            <p><em>How long do impacts persist?</em></p>
+            <p><strong>For example:</strong> Space weather resolves in 12–72 hrs vs 2–4 weeks (hurricanes) vs 1–6 months (earthquakes)</p>
           </div>
         </div>
       </div>
@@ -1636,10 +1638,10 @@ https://github.com/highlightjs/highlight.js/issues/2277`),D=T,N=R),y===void 0&&(
       <div class="gmu-block alert">
         <h3>Key Contributions</h3>
         <ol>
-          <li><strong>Unified Multi-Hazard Framework:</strong> First truly integrated methodology bridging space weather & terrestrial hazards with preserved physics</li>
-          <li><strong>Quantitative Contextualization:</strong> Position space weather within natural hazard landscape using familiar metrics</li>
-          <li><strong>Cross-Domain Interdependency Modeling:</strong> Explicit capture of compound events & cascading failures</li>
-          <li><strong>National-Scale Comparative Metrics:</strong> "Apples-to-apples" comparison with consistent UQ</li>
+          <li><strong>Unified Multi-Hazard Framework:</strong> First integrated methodology bridging space weather & terrestrial hazards with preserved physics</li>
+          <li><strong>Quantitative Contextualization:</strong> Position space weather within natural hazard landscape</li>
+          <li><strong>Cross-Domain Interdependency Modeling:</strong> Compound events & cascading failures</li>
+          <li><strong>National-Scale Comparative Metrics:</strong> Apples-to-apples comparison with consistent UQ</li>
         </ol>
       </div>
       
@@ -1648,10 +1650,9 @@ https://github.com/highlightjs/highlight.js/issues/2277`),D=T,N=R),y===void 0&&(
           <div class="gmu-block">
             <h3>Expected Impact</h3>
             <ul>
-              <li>Emergency managers understand space weather vs hurricanes</li>
+              <li>Emergency managers contextualize space weather risk</li>
               <li>Policymakers prioritize resilience investments</li>
-              <li>Insurers incorporate space weather into portfolios</li>
-              <li>Regional multi-hazard exposure profiles</li>
+              <li>Insurers incorporate into portfolios</li>
             </ul>
           </div>
         </div>
@@ -1671,19 +1672,23 @@ https://github.com/highlightjs/highlight.js/issues/2277`),D=T,N=R),y===void 0&&(
   </section>
   
 </section>`,x_=`<!-- HORIZONTAL SECTION: CONCLUSION -->
-<section class="theme-conclusion" data-transition="zoom" data-background-transition="fade" >
+<section class="theme-conclusion" data-transition="zoom" data-background-transition="fade">
+  
   <!-- Summary of Contributions -->
   <section>
     <div class="slide-dark"></div>
     <div class="slide-content">
       <h2>Summary of Contributions</h2>
-      <ol>
-        <li><strong>End-to-end coupling</strong> from solar forcing to economy-wide impact with preserved uncertainty</li>
-        <li><strong>Multi-system coverage</strong> spanning terrestrial infrastructure and space-based infrastructure</li>
-        <li><strong>Operator-facing and policy-facing metrics</strong> (transformer failure probability, propellant consumption, affected customers, daily GDP impact)</li>
-        <li><strong>Cross-hazard comparative assessment</strong> positioning space weather alongside familiar hazards</li>
-        <li><strong>Open-source tooling</strong> with documented workflows for validation and broader adoption</li>
-      </ol>
+      
+      <div class="gmu-block alert">
+        <ol style="margin: 0; padding-left: 1.5em; line-height: 1.6;">
+          <li><strong>End-to-end coupling</strong> from solar forcing to economy-wide impact with preserved uncertainty</li>
+          <li><strong>Multi-system coverage</strong> spanning terrestrial infrastructure and space-based infrastructure</li>
+          <li><strong>Operator-facing and policy-facing metrics</strong> (transformer failure probability, propellant consumption, affected customers, daily GDP impact)</li>
+          <li><strong>Cross-hazard comparative assessment</strong> positioning space weather alongside familiar hazards</li>
+          <li><strong>Open-source tooling</strong> with documented workflows for validation and broader adoption</li>
+        </ol>
+      </div>
     </div>
   </section>
   
@@ -1692,172 +1697,177 @@ https://github.com/highlightjs/highlight.js/issues/2277`),D=T,N=R),y===void 0&&(
     <div class="slide-dark"></div>
     <div class="slide-content">
       <h2>Project Timeline</h2>
-      <div class="table-container">
-        <table>
-          <tr>
-            <th style="width: 25%">Phase</th>
-            <th style="width: 25%">Period</th>
-            <th style="width: 50%">Key Deliverables</th>
-          </tr>
-          <tr>
-            <td>Power Systems</td>
-            <td>Oct 2023–Dec 2025</td>
-            <td>High-voltage network model, GIC computation, transformer fragility, probabilistic outage analysis, economic modeling (Publication I)</td>
-          </tr>
-          <tr>
-            <td>Satellites</td>
-            <td>Jan 2024–Jan 2026</td>
-            <td>Thermospheric drag, orbital decay, radiation environment, anomaly probability (Publication II)</td>
-          </tr>
-          <tr>
-            <td>Multi-Hazard</td>
-            <td>Jan 2026–Apr 2026</td>
-            <td>Cross-hazard comparison (TCs, floods, earthquakes), multi-infrastructure assessment (Publication III)</td>
-          </tr>
-          <tr>
-            <td>Synthesis</td>
-            <td>May 2026–Aug 2026</td>
-            <td>Dissertation writing and defense</td>
-          </tr>
-        </table>
+      
+      <div class="flex-col" style="flex: 1; gap: 0.8rem;">
+        <div class="gmu-block">
+          <h3>Power Systems (Oct 2023–Dec 2025)</h3>
+          <p>High-voltage network model, GIC computation, transformer fragility, probabilistic outage analysis, economic modeling</p>
+          <p class="text-dim">→ Publication I</p>
+        </div>
+        
+        <div class="gmu-block">
+          <h3>Satellites (Jan 2024–Jan 2026)</h3>
+          <p>Thermospheric drag, orbital decay, radiation environment, anomaly probability</p>
+          <p class="text-dim">→ Publication II</p>
+        </div>
+        
+        <div class="gmu-block">
+          <h3>Multi-Hazard (Jan 2026–Apr 2026)</h3>
+          <p>Cross-hazard comparison (tropical cyclones, floods, earthquakes), multi-infrastructure assessment</p>
+          <p class="text-dim">→ Publication III</p>
+        </div>
+        
+        <div class="gmu-block">
+          <h3>Synthesis (May 2026–Aug 2026)</h3>
+          <p>Dissertation writing and defense</p>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Publications -->
-<section>
-  <div class="slide-dark"></div>
-  <div class="slide-content">
-    <h2>Publications &amp; Contributions</h2>
-    <div class="table-container">
-      <table>
-        <tr>
-          <th style="width: 10%">#</th>
-          <th style="width: 60%">Title and Status</th>
-          <th style="width: 30%">Link/Reference</th>
-        </tr>
-        <tr>
-          <td>1</td>
-          <td>A Reproducible Method for Mapping Electricity Transmission Infrastructure for Space Weather Risk Assessment</td>
-          <td>
-            Preprint available<br>
-            <a href="https://arxiv.org/abs/2412.17685" target="_blank">arXiv:2412.17685</a>
-          </td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td>GIC-Related Observations During the May 2024 Geomagnetic Storm in the United States</td>
-          <td>
-            Preprint available<br>
-            <a href="https://arxiv.org/abs/2507.07009" target="_blank">arXiv:2507.07009</a>
-          </td>
-        </tr>
-        <tr>
-          <td>3</td>
-          <td>A Physics-Engineering-Economic Model Coupling Approach for Estimating the Socio-Economic Impacts of Space Weather Scenarios</td>
-          <td>Manuscript in preparation (Publication I)</td>
-        </tr>
-        <tr>
-          <td>4</td>
-          <td>Coupling of Physics-Engineering-Economic Models to Simulate the Vulnerability, Risk, and Resilience of the Global Satellite Fleet</td>
-          <td>Manuscript in preparation (Publication II)</td>
-        </tr>
-      </table>
+  <section>
+    <div class="slide-dark"></div>
+    <div class="slide-content">
+      <h2>Publications &amp; Contributions</h2>
+      
+      <div class="flex-col" style="flex: 1; gap: 0.7rem;">
+        <div class="gmu-block">
+          <p style="margin: 0;"><strong>1. A Reproducible Method for Mapping Electricity Transmission Infrastructure for Space Weather Risk Assessment</strong></p>
+          <p class="text-dim" style="margin: 0.3rem 0 0 0;">Preprint available: <a href="https://arxiv.org/abs/2412.17685" target="_blank" style="color: var(--gmu-gold);">arXiv:2412.17685</a></p>
+        </div>
+        
+        <div class="gmu-block">
+          <p style="margin: 0;"><strong>2. GIC-Related Observations During the May 2024 Geomagnetic Storm in the United States</strong></p>
+          <p class="text-dim" style="margin: 0.3rem 0 0 0;">Preprint available: <a href="https://arxiv.org/abs/2507.07009" target="_blank" style="color: var(--gmu-gold);">arXiv:2507.07009</a></p>
+        </div>
+        
+        <div class="gmu-block">
+          <p style="margin: 0;"><strong>3. A Physics-Engineering-Economic Model Coupling Approach for Estimating the Socio-Economic Impacts of Space Weather Scenarios</strong></p>
+          <p class="text-dim" style="margin: 0.3rem 0 0 0;">Manuscript in preparation (Publication I)</p>
+        </div>
+        
+        <div class="gmu-block">
+          <p style="margin: 0;"><strong>4. Coupling of Physics-Engineering-Economic Models to Simulate the Vulnerability, Risk, and Resilience of the Global Satellite Fleet</strong></p>
+          <p class="text-dim" style="margin: 0.3rem 0 0 0;">Manuscript in preparation (Publication II)</p>
+        </div>
+      </div>
     </div>
-  </div>
-</section>
-
+  </section>
   
   <!-- Next Steps -->
   <section>
     <div class="slide-dark"></div>
     <div class="slide-content">
       <h2>Next Steps</h2>
-      <div class="flex-row">
-        <div style="flex: 0 0 48%;">
-          <p><strong>Immediate:</strong></p>
-          <ul>
-            <li>Validate GIC predictions against May 2024 "Gannon" storm measurements (Done)</li>
-            <li>Expand satellite constellation models beyond Starlink (In Progress)</li>
-            <li>Explore data sources for Publication III</li>
-            <li>Complete CGE economic modeling to capture price adjustments (In Progress)</li>
-          </ul>
+      
+      <div class="flex-row" style="flex: 1; min-height: 0; gap: 1.5rem;">
+        <div style="flex: 1;">
+          <div class="gmu-block" style="flex: 1; display: flex; flex-direction: column; justify-content: center;">
+            <h3 style="margin-top: 0;">Immediate</h3>
+            <ul style="margin: 0; padding-left: 1.3em;">
+              <li>Validate GIC predictions against May 2024 "Gannon" storm measurements <span class="text-dim">(Done)</span></li>
+              <li>Expand satellite constellation models beyond Starlink <span class="text-dim">(In Progress)</span></li>
+              <li>Explore data sources for Publication III</li>
+              <li>Complete CGE economic modeling to capture price adjustments <span class="text-dim">(In Progress)</span></li>
+            </ul>
+          </div>
         </div>
-        <div style="flex: 0 0 48%;">
-          <p><strong>Long-term:</strong></p>
-          <ul>
-            <li>Explore cascading infrastructure dependencies</li>
-            <li>Focus on GIC and physics-engineering models</li>
-          </ul>
+        
+        <div style="flex: 1;">
+          <div class="gmu-block" style="flex: 1; display: flex; flex-direction: column; justify-content: center;">
+            <h3 style="margin-top: 0;">Long-term</h3>
+            <ul style="margin: 0; padding-left: 1.3em;">
+              <li>Explore cascading infrastructure dependencies</li>
+              <li>Continue refining GIC and physics-engineering models</li>
+              <li>Validate against additional storm events as data becomes available</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- Future Work -->
+  <section>
+    <div class="slide-dark"></div>
+    <div class="slide-content">
+      <h2>Future Work &amp; Prospects</h2>
 
-  <!-- Future Prospects (condensed) -->
-<section class="theme-conclusion">
-  <div class="slide-dark"></div>
-  <div class="slide-content">
-    <h2>Future Work &amp; Prospects</h2>
+      <div class="flex-row" style="flex: 1; min-height: 0; gap: 1.5rem;">
+        <div style="flex: 1;">
+          <div class="gmu-block" style="flex: 1; display: flex; flex-direction: column; justify-content: center;">
+            <h3 style="margin-top: 0;">Postdoctoral Focus</h3>
+            <ul style="margin: 0; padding-left: 1.3em;">
+              <li>Computational modeling of coupled space–Earth systems</li>
+              <li>Data assimilation and scalable uncertainty quantification</li>
+              <li>Open, reproducible modeling pipelines</li>
+            </ul>
+          </div>
+        </div>
 
-    <div class="flex-row" style="flex:1; min-height:0; align-items:stretch; gap:1.5rem;">
-      <div class="gmu-block" style="flex:1; display:flex; flex-direction:column; justify-content:center; padding:0.8rem 1rem;">
-        <h3 style="margin:0 0 0.3rem 0; font-size:1.05em;">Postdoctoral Focus</h3>
-        <ul style="margin:0; padding-left:1.3em; font-size:1em; line-height:1.4;">
-          <li>Computational modeling of coupled space–Earth systems</li>
-          <li>Data assimilation and scalable uncertainty quantification</li>
-          <li>Open, reproducible modeling pipelines</li>
-        </ul>
+        <div style="flex: 1;">
+          <div class="gmu-block" style="flex: 1; display: flex; flex-direction: column; justify-content: center;">
+            <h3 style="margin-top: 0;">Applied Computational Modeling</h3>
+            <ul style="margin: 0; padding-left: 1.3em;">
+              <li>Optimization: linear and nonlinear programming</li>
+              <li>AI/ML for physics-informed neural networks</li>
+              <li>High-performance computing workflows</li>
+            </ul>
+          </div>
+        </div>
       </div>
+    </div>
+  </section>
 
-      <div class="gmu-block" style="flex:1; display:flex; flex-direction:column; justify-content:center; padding:0.8rem 1rem;">
-        <h3 style="margin:0 0 0.3rem 0; font-size:1.05em;">Applied Computational Modeling</h3>
-        <ul style="margin:0; padding-left:1.3em; font-size:1em; line-height:1.4;">
-          <li>Optimization: linear and nonlinear programming</li>
-          <li>AI/ML for physics-informed neural networks</li>
-          <li>High-performance computing workflows</li>
+  <!-- Acknowledgments -->
+  <section class="theme-light">
+    <div class="slide-dark"></div>
+    <div class="slide-content">
+      <h2>Acknowledgments</h2>
+
+      <div class="gmu-block alert" style="margin-top: 2rem;">
+        <p style="margin-bottom: 1rem;">This research is supported by:</p>
+        <ul style="margin: 0; padding-left: 1.5em; line-height: 1.6;">
+          <li><strong>Dr. Edward Oughton</strong> — Committee Chair, NSF–NCAR Collaboration Lead</li>
+          <li><strong>Dr. Robert Weigel</strong> — Committee Member, NASA–HAPI Grant</li>
+          <li>Department of Geography and Geoinformation Science, George Mason University</li>
+          <li>NSF NCAR Early Career Faculty Innovators Program</li>
         </ul>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- Acknowledgments -->
-<section class="theme-light">
+  <section class="theme-light">
   <div class="slide-dark"></div>
   <div class="slide-content">
-    <h2>Acknowledgments</h2>
-
-    <p style="margin-bottom: 0.8rem;">This research is supported by:</p>
-
-    <ul style="margin: 0 0 1rem 1.2rem; font-size: 0.9em;">
-      <li>Dr. Edward Oughton — Committee Chair, NSF–NCAR Collaboration Lead</li>
-      <li>Dr. Robert Weigel — Committee Member, NASA–HAPI Grant</li>
-      <li>Department of Geography and Geoinformation Science, George Mason University</li>
-      <li>NSF NCAR Early Career Faculty Innovators Program</li>
-    </ul>
-
-    <!-- <p class="text-dim" style="font-size: 0.8em;">
-      Funding provided in part by the <strong>NSF NCAR Early Career Faculty Innovators Program</strong> (through Dr. Edward Oughton) and the
-      <strong>NASA–HAPI Grant</strong> (through Dr. Robert Weigel).
-    </p> -->
+    <h2>References</h2>
+    
+    <div id="references-list" style="columns: 2; column-gap: 2rem; max-height: 68vh; overflow-y: auto;">
+      <p class="text-dim" style="font-size: 0.7em;">Loading references...</p>
+    </div>
+    
+    <p class="text-dim" style="margin-top: 1rem; font-size: 0.65em; text-align: center;">
+      Biographies
+    </p>
   </div>
 </section>
-
   
   <!-- Q&A -->
   <section>
     <div class="slide-dark"></div>
-    <div class="slide-content final-slide">
-      <h2>Questions?</h2>
-      <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; margin-top: 2rem;">
+    <div class="slide-content">
+      <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; height: 100%; gap: 2rem;">
+        <h2 style="font-size: 2.5em; margin-bottom: 1rem;">Questions?</h2>
         <p style="font-size: 1.2em;">Thank you for your attention</p>
-        <p style="font-size: 0.8em; margin-top: 2rem;">
-          Contact: dbor@gmu.edu<br>
-          George Mason University
-        </p>
+        <div class="gmu-block" style="margin-top: 2rem; padding: 1rem 2rem;">
+          <p style="margin: 0; font-size: 1em;">
+            <strong>Contact:</strong> dbor@gmu.edu<br>
+            George Mason University
+          </p>
+        </div>
       </div>
     </div>
   </section>
-</section>`,M_="/Presentations/assets/GM_latest_logo-d9709603.png",L_="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGwAAABtCAYAAABEOoRoAAAACXBIWXMAAAsSAAALEgHS3X78AAACVklEQVR4nO3azU0kMRBA4cdqQ9oD6Wwmkwkbzh4IgkyaC0gIAdNu/5TLfu/cB0ufesZt18NxHFiefkUvwMoSLFmCJUuwZAmWLMGSJViyBEvW71NP/f9z67sMA+Dx+XbvkXNg8AI81azFTnW798C5n8TH53/A37q1WIvO/4eJNkVlmw7RwivfJYoW2rVtvWhhXf8OEy2kug9n0YZXf9Ih2tDaHE2JNqx2Z4miDant4a9o3Wt/Wi9a1/pcr4jWrX73YaJ1qe8FpmjN63/jLFrTxowIiNascTMdojVp7BCOaNWNn5oSraqYMTfRLhc3lyjapWIHSUUrLn7yV7Si4sFAtILmAAPRTjYPGIh2ornAQLQ7zQcGov3QnGAg2jfNCwaifdHcYCDap+YHA9E+lAMMRHsrDxiIRjYw2B4tHxhsjZYTDLZFywsGW6LlBoPt0PKDwVZoa4DBNmjrgMEWaGuBwfJo64HB0mhrgsGyaOuCwZJoa4PBcmjrg8FSaHuAwTJo+4DBEmh7gUF6tP3AIDXanmCQFm1fMEiJtjcYpEMTDFKhCfZeEjTBPpYATbDPTY4m2FdNjCbYd02KJthPTYgm2L0mQxPsTBOhCXa2SdAEK2kCNMFKC0YT7EqBaIJdLQhNsJoC0ASrbTCaYC0aiCZYqwahCdayAWiCta4zmmA96ogmWK86oQnWsw5ogvWuMZpgI2qIJtioGqEJNrIGaIKNrhJNsIgq0ASL6iKaYJFdQBMsukI0wWaoAO3hOI6+i7Gm+YYlS7BkCZYswZIlWLIES5ZgyRIsWa8Y47+TdUcR4AAAAABJRU5ErkJggg==",P_="/Presentations/assets/double_c_yellow-553e2d54.png",k_="/Presentations/assets/yellow_parellelo-fb5b7f1c.png",F_="/Presentations/assets/gmu-ribbon-5cf174f3.png",U_="/Presentations/assets/MAGE-0f7b84f7.png",B_="/Presentations/assets/method-box-detailed-7bd03977.png",G_="/Presentations/assets/ehv_grid-a1eb3cbc.png",Y_="/Presentations/assets/gnd_gic_panels_eff_gic-ceeb24f2.png",H_="/Presentations/assets/vulnerable_trafos_eff_gic-75a851cd.png",V_="/Presentations/assets/indirect_impact_io_eff_gic-77d0b689.png",z_="/Presentations/assets/regression_validation-933a8640.png",q_="/Presentations/assets/nerc_secs_mag_comparison-bc770245.png",$_="/Presentations/assets/gic_comparison_sim_tva-f455b643.png",W_="/Presentations/assets/event_maps_BE-0ba5cb0a.png",Q_="/Presentations/assets/hazard_maps-290b4999.png",j_="/Presentations/assets/sat_method-15704017.png",K_="/Presentations/assets/sat_dist_orb-e24e4cc8.png",X_="/Presentations/assets/sat_cost-c008d33b.png",Z_="/Presentations/assets/atmospheric_density_comparison-694a49fd.png",J_="/Presentations/assets/propellant_comparison-7c68a1df.png",em="/Presentations/assets/flux_spectra-41ce8e82.png",tm="/Presentations/assets/goes_penumbra_comparison-13fb1784.png",nm="/Presentations/assets/economic_impact_3-837912b2.png",im="/Presentations/assets/mult_method-c25926f4.png",am=document.querySelector(".slides");am.innerHTML=O_+A_+I_+D_+w_+x_;function rm(){document.querySelectorAll('img[data-asset="gm-logo"]').forEach(h=>{h&&(h.src=M_)}),document.querySelectorAll('img[data-asset="corner-accent"]').forEach(h=>{h&&(h.src=L_)}),document.querySelectorAll('img[data-asset="double-c"]').forEach(h=>{h&&(h.src=P_)}),document.querySelectorAll('img[data-asset="yellow-bar"]').forEach(h=>{h&&(h.src=k_)}),document.querySelectorAll(".ribbon-img").forEach(h=>{h&&(h.src=F_)}),document.querySelectorAll('img[data-fig="MAGE"]').forEach(h=>{h&&(h.src=U_)}),document.querySelectorAll('img[data-fig="power-method"]').forEach(h=>{h&&(h.src=B_)}),document.querySelectorAll('img[data-fig="power-network"]').forEach(h=>{h&&(h.src=G_)}),document.querySelectorAll('img[data-fig="power-gic-scenarios"]').forEach(h=>{h&&(h.src=Y_)}),document.querySelectorAll('img[data-fig="power-failures"]').forEach(h=>{h&&(h.src=H_)}),document.querySelectorAll('img[data-fig="power-economic"]').forEach(h=>{h&&(h.src=V_)}),document.querySelectorAll('img[data-fig="gic-validation"]').forEach(h=>{h&&(h.src=z_)}),document.querySelectorAll('img[data-fig="secs-validation"]').forEach(h=>{h&&(h.src=q_)}),document.querySelectorAll('img[data-fig="gic-validation"]').forEach(h=>{h&&(h.src=$_)}),document.querySelectorAll('img[data-fig="power-fields-historical"]').forEach(h=>{h&&(h.src=W_)}),document.querySelectorAll('img[data-fig="power-fields-extreme"]').forEach(h=>{h&&(h.src=Q_)}),document.querySelectorAll('img[data-fig="sat-framework"]').forEach(h=>{h&&(h.src=j_)}),document.querySelectorAll('img[data-fig="sat-dist-orb"]').forEach(h=>{h&&(h.src=K_)}),document.querySelectorAll('img[data-fig="sat-cost"]').forEach(h=>{h&&(h.src=X_)}),document.querySelectorAll('img[data-fig="sat-density"]').forEach(h=>{h&&(h.src=Z_)}),document.querySelectorAll('img[data-fig="sat-propellant"]').forEach(h=>{h&&(h.src=J_)}),document.querySelectorAll('img[data-fig="sat-flux"]').forEach(h=>{h&&(h.src=em)}),document.querySelectorAll('img[data-fig="goes-comparison"]').forEach(h=>{h&&(h.src=tm)}),document.querySelectorAll('img[data-fig="sat-econ"]').forEach(h=>{h&&(h.src=nm)}),document.querySelectorAll('img[data-fig="multi-framework"]').forEach(h=>{h&&(h.src=im)})}rm();const Et=document.createElement("div");Et.className="gmu-footer";document.body.appendChild(Et);const mt=new Ae({width:"100%",height:"100%",margin:.02,center:!0,minScale:.25,maxScale:1.5,hash:!0,controls:!0,progress:!0,transition:"slide",math:{mathjax:"https://cdn.jsdelivr.net/gh/mathjax/mathjax@2.7.8/MathJax.js",config:"TeX-AMS_HTML-full"},plugins:[qd,Wd,N_]});mt.initialize().then(()=>{function t(){const e=mt.getSlidePastCount()+1;Et&&(Et.style.visibility=e===1?"hidden":"visible")}mt.on("slidechanged",t),mt.on("ready",t)});
+  
+</section>`,M_="/Presentations/assets/GM_latest_logo-d9709603.png",L_="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGwAAABtCAYAAABEOoRoAAAACXBIWXMAAAsSAAALEgHS3X78AAACVklEQVR4nO3azU0kMRBA4cdqQ9oD6Wwmkwkbzh4IgkyaC0gIAdNu/5TLfu/cB0ufesZt18NxHFiefkUvwMoSLFmCJUuwZAmWLMGSJViyBEvW71NP/f9z67sMA+Dx+XbvkXNg8AI81azFTnW798C5n8TH53/A37q1WIvO/4eJNkVlmw7RwivfJYoW2rVtvWhhXf8OEy2kug9n0YZXf9Ih2tDaHE2JNqx2Z4miDant4a9o3Wt/Wi9a1/pcr4jWrX73YaJ1qe8FpmjN63/jLFrTxowIiNascTMdojVp7BCOaNWNn5oSraqYMTfRLhc3lyjapWIHSUUrLn7yV7Si4sFAtILmAAPRTjYPGIh2ornAQLQ7zQcGov3QnGAg2jfNCwaifdHcYCDap+YHA9E+lAMMRHsrDxiIRjYw2B4tHxhsjZYTDLZFywsGW6LlBoPt0PKDwVZoa4DBNmjrgMEWaGuBwfJo64HB0mhrgsGyaOuCwZJoa4PBcmjrg8FSaHuAwTJo+4DBEmh7gUF6tP3AIDXanmCQFm1fMEiJtjcYpEMTDFKhCfZeEjTBPpYATbDPTY4m2FdNjCbYd02KJthPTYgm2L0mQxPsTBOhCXa2SdAEK2kCNMFKC0YT7EqBaIJdLQhNsJoC0ASrbTCaYC0aiCZYqwahCdayAWiCta4zmmA96ogmWK86oQnWsw5ogvWuMZpgI2qIJtioGqEJNrIGaIKNrhJNsIgq0ASL6iKaYJFdQBMsukI0wWaoAO3hOI6+i7Gm+YYlS7BkCZYswZIlWLIES5ZgyRIsWa8Y47+TdUcR4AAAAABJRU5ErkJggg==",P_="/Presentations/assets/double_c_yellow-553e2d54.png",k_="/Presentations/assets/yellow_parellelo-fb5b7f1c.png",F_="/Presentations/assets/gmu-ribbon-5cf174f3.png",U_="/Presentations/assets/MAGE-0f7b84f7.png",B_="/Presentations/assets/method-box-detailed-7bd03977.png",G_="/Presentations/assets/ehv_grid-a1eb3cbc.png",Y_="/Presentations/assets/gnd_gic_panels_eff_gic-ceeb24f2.png",H_="/Presentations/assets/vulnerable_trafos_eff_gic-75a851cd.png",V_="/Presentations/assets/indirect_impact_io_eff_gic-77d0b689.png",z_="/Presentations/assets/regression_validation-933a8640.png",q_="/Presentations/assets/nerc_secs_mag_comparison-bc770245.png",$_="/Presentations/assets/gic_comparison_sim_tva-f455b643.png",W_="/Presentations/assets/event_maps_BE-0ba5cb0a.png",Q_="/Presentations/assets/hazard_maps-290b4999.png",j_="/Presentations/assets/sat_method-15704017.png",K_="/Presentations/assets/sat_dist_orb-e24e4cc8.png",X_="/Presentations/assets/sat_cost-c008d33b.png",Z_="/Presentations/assets/atmospheric_density_comparison-694a49fd.png",J_="/Presentations/assets/propellant_comparison-7c68a1df.png",em="/Presentations/assets/flux_spectra-41ce8e82.png",tm="/Presentations/assets/goes_penumbra_comparison-13fb1784.png",nm="/Presentations/assets/economic_impact_3-837912b2.png",im="/Presentations/assets/mult_method-c25926f4.png",am=document.querySelector(".slides");am.innerHTML=O_+A_+I_+D_+w_+x_;async function rm(){try{const e=await(await fetch("./assets/bibtex/references.json")).json();sm(e)}catch(t){console.error("Error loading references:",t)}}function sm(t){const e=document.getElementById("references-list");if(!e)return;const i=t.sort((a,r)=>{var l,_;const s=((l=a.author[0])==null?void 0:l.split(",")[0])||a.author[0]||"",o=((_=r.author[0])==null?void 0:_.split(",")[0])||r.author[0]||"";return s.localeCompare(o)}).map(a=>{let r="";a.author.length===1?r=a.author[0]:a.author.length===2?r=`${a.author[0]} & ${a.author[1]}`:a.author.length>2&&(r=`${a.author[0]} et al.`);let s=`<strong>${r}</strong> (${a.year}). ${a.title}.`;return a.journal?(s+=` <em>${a.journal}</em>`,a.volume&&(s+=`, ${a.volume}`),a.number&&(s+=`(${a.number})`),a.pages&&(s+=`, ${a.pages}`),s+="."):a.publisher&&(s+=` ${a.publisher}.`),a.doi&&(s+=` <a href="https://doi.org/${a.doi}" target="_blank" style="color: var(--gmu-gold);">doi:${a.doi}</a>`),`<p style="margin: 0.4rem 0; font-size: 0.7em; line-height: 1.3;">${s}</p>`}).join("");e.innerHTML=i}function om(){document.querySelectorAll('img[data-asset="gm-logo"]').forEach(h=>{h&&(h.src=M_)}),document.querySelectorAll('img[data-asset="corner-accent"]').forEach(h=>{h&&(h.src=L_)}),document.querySelectorAll('img[data-asset="double-c"]').forEach(h=>{h&&(h.src=P_)}),document.querySelectorAll('img[data-asset="yellow-bar"]').forEach(h=>{h&&(h.src=k_)}),document.querySelectorAll(".ribbon-img").forEach(h=>{h&&(h.src=F_)}),document.querySelectorAll('img[data-fig="MAGE"]').forEach(h=>{h&&(h.src=U_)}),document.querySelectorAll('img[data-fig="power-method"]').forEach(h=>{h&&(h.src=B_)}),document.querySelectorAll('img[data-fig="power-network"]').forEach(h=>{h&&(h.src=G_)}),document.querySelectorAll('img[data-fig="power-gic-scenarios"]').forEach(h=>{h&&(h.src=Y_)}),document.querySelectorAll('img[data-fig="power-failures"]').forEach(h=>{h&&(h.src=H_)}),document.querySelectorAll('img[data-fig="power-economic"]').forEach(h=>{h&&(h.src=V_)}),document.querySelectorAll('img[data-fig="gic-validation"]').forEach(h=>{h&&(h.src=z_)}),document.querySelectorAll('img[data-fig="secs-validation"]').forEach(h=>{h&&(h.src=q_)}),document.querySelectorAll('img[data-fig="gic-validation"]').forEach(h=>{h&&(h.src=$_)}),document.querySelectorAll('img[data-fig="power-fields-historical"]').forEach(h=>{h&&(h.src=W_)}),document.querySelectorAll('img[data-fig="power-fields-extreme"]').forEach(h=>{h&&(h.src=Q_)}),document.querySelectorAll('img[data-fig="sat-framework"]').forEach(h=>{h&&(h.src=j_)}),document.querySelectorAll('img[data-fig="sat-dist-orb"]').forEach(h=>{h&&(h.src=K_)}),document.querySelectorAll('img[data-fig="sat-cost"]').forEach(h=>{h&&(h.src=X_)}),document.querySelectorAll('img[data-fig="sat-density"]').forEach(h=>{h&&(h.src=Z_)}),document.querySelectorAll('img[data-fig="sat-propellant"]').forEach(h=>{h&&(h.src=J_)}),document.querySelectorAll('img[data-fig="sat-flux"]').forEach(h=>{h&&(h.src=em)}),document.querySelectorAll('img[data-fig="goes-comparison"]').forEach(h=>{h&&(h.src=tm)}),document.querySelectorAll('img[data-fig="sat-econ"]').forEach(h=>{h&&(h.src=nm)}),document.querySelectorAll('img[data-fig="multi-framework"]').forEach(h=>{h&&(h.src=im)})}om();const Et=document.createElement("div");Et.className="gmu-footer";document.body.appendChild(Et);const mt=new Ae({width:"100%",height:"100%",margin:.02,center:!0,minScale:.25,maxScale:1.5,hash:!0,controls:!0,progress:!0,transition:"slide",math:{mathjax:"https://cdn.jsdelivr.net/gh/mathjax/mathjax@2.7.8/MathJax.js",config:"TeX-AMS_HTML-full"},plugins:[qd,Wd,N_]});mt.initialize().then(()=>{function t(){const e=mt.getSlidePastCount()+1;Et&&(Et.style.visibility=e===1?"hidden":"visible")}mt.on("slidechanged",t),mt.on("ready",t),rm()});
