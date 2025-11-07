@@ -1,0 +1,503 @@
+[
+  {
+    "id": "larsen2023new",
+    "type": "article",
+    "title": "A new open-source geomagnetosphere propagation tool (OTSO) and its applications",
+    "author": [
+      "Larsen, Nicholas",
+      "Mishev, Alexander",
+      "Usoskin, Ilya"
+    ],
+    "year": "2023",
+    "journal": "Journal of Geophysical Research: Space Physics",
+    "publisher": "Wiley Online Library",
+    "volume": "128",
+    "number": "3",
+    "pages": "e2022JA031061",
+    "doi": "",
+    "url": ""
+  },
+  {
+    "id": "oughton_risk_2019",
+    "type": "article",
+    "title": "A Risk Assessment Framework for the Socioeconomic Impacts of Electricity Transmission Infrastructure Failure Due to Space Weather: An Application to the United Kingdom",
+    "author": [
+      "Oughton, Edward J.",
+      "Hapgood, Mike",
+      "Richardson, Gemma S.",
+      "Beggan, Ciarán D.",
+      "Thomson, Alan W. P.",
+      "Gibbs, Mark",
+      "Burnett, Catherine",
+      "Gaunt, C. Trevor",
+      "Trichas, Markos",
+      "Dada, Rabia",
+      "Horne, Richard B."
+    ],
+    "year": "2019",
+    "journal": "Risk Analysis",
+    "publisher": "",
+    "volume": "39",
+    "number": "5",
+    "pages": "1022--1043",
+    "doi": "10.1111/risa.13229",
+    "url": ""
+  },
+  {
+    "id": "undrr_report_2023",
+    "type": "misc",
+    "title": "The Report of the Midterm Review of the Implementation of the Sendai Framework for Disaster Risk Reduction 2015–2030",
+    "author": [
+      "{UNDRR"
+    ],
+    "year": "2023",
+    "journal": "",
+    "publisher": "UNDRR Geneva",
+    "volume": "",
+    "number": "",
+    "pages": "",
+    "doi": "",
+    "url": ""
+  },
+  {
+    "id": "sworm_implementation_2023",
+    "type": "misc",
+    "title": "Implementation Plan of the National Space Weather Strategy and Action Plan",
+    "author": [
+      "SWORM"
+    ],
+    "year": "2023",
+    "journal": "",
+    "publisher": "",
+    "volume": "",
+    "number": "",
+    "pages": "",
+    "doi": "",
+    "url": "https://bidenwhitehouse.archives.gov/wp-content/uploads/2023/12/Implementation-Plan-for-National-Space-Weather-Strategy-12212023.pdf"
+  },
+  {
+    "id": "sworm_national_2015",
+    "type": "misc",
+    "title": "National Space Weather Strategy",
+    "author": [
+      "SWORM"
+    ],
+    "year": "2015",
+    "journal": "",
+    "publisher": "",
+    "volume": "",
+    "number": "",
+    "pages": "",
+    "doi": "",
+    "url": "https://obamawhitehouse.archives.gov/sites/default/files/microsites/ostp/final_nationalspaceweatherstrategy_20151028.pdf"
+  },
+  {
+    "id": "sworm_national_2019-1",
+    "type": "misc",
+    "title": "National Space Weather Strategy and Action Plan",
+    "author": [
+      "SWORM"
+    ],
+    "year": "2019",
+    "journal": "",
+    "publisher": "",
+    "volume": "",
+    "number": "",
+    "pages": "",
+    "doi": "",
+    "url": "https://www.weather.gov/media/nws/National-Space-Weather-Strategy-and-Action-Plan-2019.pdf"
+  },
+  {
+    "id": "united_nations_17_nodate",
+    "type": "misc",
+    "title": "The 17 Goals | Sustainable Development",
+    "author": [
+      "{United-Nations"
+    ],
+    "year": "2015",
+    "journal": "",
+    "publisher": "",
+    "volume": "",
+    "number": "",
+    "pages": "",
+    "doi": "",
+    "url": "https://sdgs.un.org/goals"
+  },
+  {
+    "id": "parker_satellite_2024",
+    "type": "article",
+    "title": "Satellite Drag Analysis During the May 2024 Gannon Geomagnetic Storm",
+    "author": [
+      "Parker, William E.",
+      "Linares, Richard"
+    ],
+    "year": "2024",
+    "journal": "Journal of Spacecraft and Rockets",
+    "publisher": "",
+    "volume": "61",
+    "number": "5",
+    "pages": "1412--1416",
+    "doi": "10.2514/1.A36164",
+    "url": ""
+  },
+  {
+    "id": "hochrainer-stigler_toward_2023",
+    "type": "article",
+    "title": "Toward a framework for systemic multi-hazard and multi-risk assessment and management",
+    "author": [
+      "Hochrainer-Stigler, Stefan",
+      "Šakić Trogrlić, Robert",
+      "Reiter, Karina",
+      "Ward, Philip J.",
+      "de Ruiter, Marleen C.",
+      "Duncan, Melanie J.",
+      "Torresan, Silvia",
+      "Ciurean, Roxana",
+      "Mysiak, Jaroslav",
+      "Stuparu, Dana",
+      "Gottardo, Stefania"
+    ],
+    "year": "2023",
+    "journal": "iScience",
+    "publisher": "",
+    "volume": "26",
+    "number": "5",
+    "pages": "106736",
+    "doi": "10.1016/j.isci.2023.106736",
+    "url": ""
+  },
+  {
+    "id": "saruniene_risk_2024",
+    "type": "article",
+    "title": "Risk assessment of critical infrastructures: A methodology based on criticality of infrastructure elements",
+    "author": [
+      "Šarūnienė, Inga",
+      "Martišauskas, Linas",
+      "Krikštolaitis, Ričardas",
+      "Augutis, Juozas",
+      "Setola, Roberto"
+    ],
+    "year": "2024",
+    "journal": "Reliability Engineering & System Safety",
+    "publisher": "",
+    "volume": "243",
+    "number": "",
+    "pages": "109797",
+    "doi": "10.1016/j.ress.2023.109797",
+    "url": ""
+  },
+  {
+    "id": "rokhideh_rethinking_2025",
+    "type": "incollection",
+    "title": "Rethinking Disaster Risk: The Shift Towards Multi-Hazard and Systemic Risk Approaches in Research and Policy",
+    "author": [
+      "Rokhideh, Maryam"
+    ],
+    "year": "2025",
+    "journal": "Oxford Research Encyclopedia of Natural Hazard Science",
+    "publisher": "",
+    "volume": "",
+    "number": "",
+    "pages": "",
+    "doi": "10.1093/acrefore/9780199389407.013.551",
+    "url": "https://oxfordre.com/naturalhazardscience/display/10.1093/acrefore/9780199389407.001.0001/acrefore-9780199389407-e-551"
+  },
+  {
+    "id": "boni_multi-hazard_2025",
+    "type": "article",
+    "title": "A multi-hazard and multi-risk assessment methodological approach to support Civil Protection planning in wide areas",
+    "author": [
+      "Boni, Maria Pia",
+      "Faiella, Anna",
+      "Gazzola, Veronica",
+      "Pergalani, Floriana"
+    ],
+    "year": "2025",
+    "journal": "International Journal of Disaster Risk Reduction",
+    "publisher": "",
+    "volume": "119",
+    "number": "",
+    "pages": "105343",
+    "doi": "10.1016/j.ijdrr.2025.105343",
+    "url": ""
+  },
+  {
+    "id": "kataoka_unexpected_2022",
+    "type": "article",
+    "title": "Unexpected space weather causing the reentry of 38 Starlink satellites in February 2022",
+    "author": [
+      "Kataoka, Ryuho",
+      "Shiota, Daikou",
+      "Fujiwara, Hitoshi",
+      "Jin, Hidekatsu",
+      "Tao, Chihiro",
+      "Shinagawa, Hiroyuki",
+      "Miyoshi, Yasunobu"
+    ],
+    "year": "2022",
+    "journal": "Journal of Space Weather and Space Climate",
+    "publisher": "",
+    "volume": "12",
+    "number": "",
+    "pages": "41",
+    "doi": "10.1051/swsc/2022034",
+    "url": ""
+  },
+  {
+    "id": "danilchuk_impact_2025",
+    "type": "article",
+    "title": "Impact of the May 2024 Extreme Geomagnetic Storm on the Ionosphere and GNSS Positioning",
+    "author": [
+      "Danilchuk, Ekaterina",
+      "Yasyukevich, Yury",
+      "Vesnin, Artem",
+      "Klyusilov, Aleksandr",
+      "Zhang, Baocheng"
+    ],
+    "year": "2025",
+    "journal": "Remote Sensing",
+    "publisher": "",
+    "volume": "17",
+    "number": "9",
+    "pages": "1492",
+    "doi": "10.3390/rs17091492",
+    "url": ""
+  },
+  {
+    "id": "buzulukova_space_2022",
+    "type": "article",
+    "title": "Space Weather: From solar origins to risks and hazards evolving in time",
+    "author": [
+      "Buzulukova, Natalia",
+      "Tsurutani, Bruce"
+    ],
+    "year": "2022",
+    "journal": "Front. Astron. Space Sci.",
+    "publisher": "",
+    "volume": "9",
+    "number": "",
+    "pages": "",
+    "doi": "10.3389/fspas.2022.1017103",
+    "url": ""
+  },
+  {
+    "id": "jun_review_2024",
+    "type": "article",
+    "title": "A review on radiation environment pathways to impacts: Radiation effects, relevant empirical environment models, and future needs",
+    "author": [
+      "Jun, Insoo",
+      "Garrett, Henry",
+      "Kim, Wousik",
+      "Zheng, Yihua",
+      "Fung, Shing F.",
+      "Corti, Claudio",
+      "Ganushkina, Natalia",
+      "Guo, Jingnan"
+    ],
+    "year": "2024",
+    "journal": "Advances in Space Research",
+    "publisher": "",
+    "volume": "",
+    "number": "",
+    "pages": "",
+    "doi": "10.1016/j.asr.2024.03.079",
+    "url": ""
+  },
+  {
+    "id": "xue_exploring_2025",
+    "type": "article",
+    "title": "Exploring the effects of space weather-caused satellite navigation failure on fuel consumption and aircraft emissions: A simulated study",
+    "author": [
+      "Xue, Dabin",
+      "Xu, Yifan",
+      "Yu, Shiwei",
+      "Liu, Zhizhao"
+    ],
+    "year": "2025",
+    "journal": "Transport Economics and Management",
+    "publisher": "",
+    "volume": "3",
+    "number": "",
+    "pages": "391--402",
+    "doi": "10.1016/j.team.2025.10.001",
+    "url": ""
+  },
+  {
+    "id": "miteva_space_2023",
+    "type": "article",
+    "title": "Space Weather Effects on Satellites",
+    "author": [
+      "Miteva, Rositsa",
+      "Samwel, Susan W.",
+      "Tkatchova, Stela"
+    ],
+    "year": "2023",
+    "journal": "Astronomy",
+    "publisher": "",
+    "volume": "2",
+    "number": "3",
+    "pages": "165--179",
+    "doi": "10.3390/astronomy2030012",
+    "url": ""
+  },
+  {
+    "id": "cander_ionospheric_2019",
+    "type": "book",
+    "title": "Ionospheric Space Weather",
+    "author": [
+      "Cander, Ljiljana R."
+    ],
+    "year": "2019",
+    "journal": "",
+    "publisher": "Springer International Publishing",
+    "volume": "",
+    "number": "",
+    "pages": "",
+    "doi": "10.1007/978-3-319-99331-7",
+    "url": "https://link.springer.com/book/10.1007/978-3-319-99331-7"
+  },
+  {
+    "id": "caraballo_impact_2025",
+    "type": "article",
+    "title": "The Impact of Geomagnetically Induced Currents (GIC) on the Mexican Power Grid: Numerical Modeling and Observations From the 10 May 2024, Geomagnetic Storm",
+    "author": [
+      "Caraballo, R.",
+      "González-Esparza, J. A.",
+      "Pacheco, C. R.",
+      "Corona-Romero, P.",
+      "Arzate-Flores, J. A.",
+      "Castellanos-Velazco, C. I."
+    ],
+    "year": "2025",
+    "journal": "Geophysical Research Letters",
+    "publisher": "",
+    "volume": "52",
+    "number": "4",
+    "pages": "e2024GL112749",
+    "doi": "10.1029/2024GL112749",
+    "url": ""
+  },
+  {
+    "id": "lawrence_geomagnetic_2025",
+    "type": "article",
+    "title": "The geomagnetic and geoelectric response to the May 2024 geomagnetic storm in the United Kingdom",
+    "author": [
+      "Lawrence, E.",
+      "Beggan, C. D.",
+      "Richardson, G. S.",
+      "Reay, S.",
+      "Thompson, V.",
+      "Clarke, E.",
+      "Orr, L.",
+      "Hübert, J.",
+      "Smedley, A. R. D."
+    ],
+    "year": "2025",
+    "journal": "Front. Astron. Space Sci.",
+    "publisher": "",
+    "volume": "12",
+    "number": "",
+    "pages": "",
+    "doi": "10.3389/fspas.2025.1550923",
+    "url": ""
+  },
+  {
+    "id": "schulte_how_2014",
+    "type": "article",
+    "title": "How severe space weather can disrupt global supply chains",
+    "author": [
+      "Schulte, H.",
+      "Moran, D.",
+      "Lenzen, M.",
+      "Cairns, I.",
+      "Steenge, A."
+    ],
+    "year": "2014",
+    "journal": "Natural Hazards and Earth System Sciences",
+    "publisher": "",
+    "volume": "14",
+    "number": "10",
+    "pages": "2749--2759",
+    "doi": "10.5194/nhess-14-2749-2014",
+    "url": ""
+  },
+  {
+    "id": "gaunt_transformer_2007",
+    "type": "inproceedings",
+    "title": "Transformer failures in regions incorrectly considered to have low GIC-risk",
+    "author": [
+      "Gaunt, C. T",
+      "Coetzee, G."
+    ],
+    "year": "2007",
+    "journal": "2007 IEEE Lausanne Power Tech",
+    "publisher": "",
+    "volume": "",
+    "number": "",
+    "pages": "807--812",
+    "doi": "10.1109/PCT.2007.4538419",
+    "url": "https://ieeexplore.ieee.org/document/4538419"
+  },
+  {
+    "id": "pulkkinen_statistics_2008",
+    "type": "article",
+    "title": "Statistics of extreme geomagnetically induced current events",
+    "author": [
+      "Pulkkinen, A.",
+      "Pirjola, R.",
+      "Viljanen, A."
+    ],
+    "year": "2008",
+    "journal": "Space Weather",
+    "publisher": "",
+    "volume": "6",
+    "number": "7",
+    "pages": "",
+    "doi": "10.1029/2008SW000388",
+    "url": ""
+  },
+  {
+    "id": "marshalko_three-dimensional_2023",
+    "type": "article",
+    "title": "Three-Dimensional Modeling of the Ground Electric Field in Fennoscandia During the Halloween Geomagnetic Storm",
+    "author": [
+      "Marshalko, Elena",
+      "Kruglyakov, Mikhail",
+      "Kuvshinov, Alexey",
+      "Viljanen, Ari"
+    ],
+    "year": "2023",
+    "journal": "Space Weather",
+    "publisher": "",
+    "volume": "21",
+    "number": "9",
+    "pages": "e2022SW003370",
+    "doi": "10.1029/2022SW003370",
+    "url": ""
+  },
+  {
+    "id": "hughes_revealing_2022",
+    "type": "article",
+    "title": "Revealing Novel Connections Between Space Weather and the Power Grid: Network Analysis of Ground-Based Magnetometer and Geomagnetically Induced Currents (GIC) Measurements",
+    "author": [
+      "Hughes, Joseph",
+      "Mcgranaghan, Ryan",
+      "Kellerman, Adam C.",
+      "Bortnik, Jacob",
+      "Arrit, Robert F.",
+      "Venkataramani, Karthik",
+      "Perry, Charles H.",
+      "McCormick, Jackson",
+      "Ngwira, Chigomezyo M.",
+      "Cohen, Morris"
+    ],
+    "year": "2022",
+    "journal": "Space Weather",
+    "publisher": "",
+    "volume": "20",
+    "number": "2",
+    "pages": "e2021SW002727",
+    "doi": "10.1029/2021SW002727",
+    "url": ""
+  }
+]

@@ -1,11 +1,11 @@
 <!-- HORIZONTAL SECTION: INTRODUCTION -->
 <section data-transition="zoom" data-background-transition="fade">
-  
-  <!-- Slide 1: Motivation (CONDENSED) -->
+
+<!-- Slide 1: What is Space Weather + Historical Context -->
 <section class="theme-light">
   <div class="slide-dark"></div>
   <div class="slide-content">
-    <h2>Motivation</h2>
+    <h2>What is Space Weather?</h2>
 
     <div class="flex-row" style="flex: 1; min-height: 0; align-items: stretch; gap: 1.5rem;">
       <!-- Left: Image -->
@@ -21,102 +21,123 @@
         <div class="slidecred">MAGE MHD Simulation — Source: <a href="https://cgs.jhuapl.edu/MAGE/" target="_blank">https://cgs.jhuapl.edu/MAGE/</a></div>
       </div>
 
-      <!-- Right: stacked gmu blocks -->
+      <!-- Right: Definition + Historical -->
       <div style="flex: 1.2; display: flex; flex-direction: column; gap: 0.6rem;">
         <div class="gmu-block" style="flex: 1; display: flex; flex-direction: column; justify-content: center; padding: 0.6rem 0.8rem;">
-          <p><strong>Infrastructure Impacts</strong></p>
-          <ul style="margin: 0; font-size: 0.85em;">
-            <li><strong>Power:</strong> GIC → transformer heating → blackouts</li>
-            <li><strong>Satellites:</strong> Drag + radiation → orbital decay</li>
-            <li><strong>GNSS:</strong> Ionospheric disturbance → errors</li>
-          </ul>
+          <p style="margin: 0; font-size: 0.9em;"><strong>Variable conditions of the Sun, solar wind, and Earth's magnetosphere that disrupt technological systems</strong></p>
         </div>
 
         <div class="gmu-block alert" style="flex: 1; display: flex; flex-direction: column; justify-content: center; padding: 0.6rem 0.8rem;">
-          <p style="margin: 0; font-size: 0.85em;">
-            <strong>Policy Mandate:</strong> 2019 National Space Weather Strategy + 2023 Implementation Plan require quantitative infrastructure impact assessment
-          </p>
+          <p style="margin: 0 0 0.3rem 0;"><strong>Unlike other hazards:</strong></p>
+          <ul style="margin: 0; padding-left: 1.2em; font-size: 0.85em;">
+            <li>Invisible — can't see it coming</li>
+            <li>Can't evacuate from it</li>
+            <li>Continental-scale impacts</li>
+          </ul>
         </div>
 
-        <div class="gmu-block" style="flex: 1; display: flex; flex-direction: column; justify-content: center; padding: 0.6rem 0.8rem;">
-          <p style="margin: 0; font-size: 0.85em;"><strong>Research Gap:</strong> Frameworks linking geophysical forcing → engineering response → economic loss remain limited</p>
-          <p class="text-dim" style="margin: 0; font-size: 0.8em;">Schulte et al., 2014; Ishii et al., 2021; Hochrainer-Stigler et al., 2023</p>
+        <div class="gmu-block" style="flex: 1.2; display: flex; flex-direction: column; justify-content: center; padding: 0.6rem 0.8rem;">
+          <p style="margin: 0 0 0.3rem 0; font-size: 0.9em;"><strong>Known for 150+ years:</strong></p>
+          <ul style="margin: 0; padding-left: 1.2em; font-size: 0.8em;">
+            <li><strong>1859 Carrington:</strong> Telegraph fires, tropical aurora</li>
+            <li><strong>1989 Quebec:</strong> 9-hour blackout, millions affected</li>
+            <li><strong>2003 Halloween:</strong> GPS, aviation, power disruptions</li>
+            <li><strong>2024 Gannon:</strong> Most severe since 2003</li>
+          </ul>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-  
-  <!-- Slide 2: Problem Statement - Part 1 (Disciplinary Silos) -->
-  <section>
-    <div class="slide-dark"></div>
-    <div class="slide-content">
-      <h2>Problem Statement: Disciplinary Silos</h2>
-      
-      <div class="gmu-block alert">
-        <p><strong>Core Problem:</strong> Studies remain confined within disciplinary boundaries without integrated treatment of uncertainty or cascading effects</p>
-      </div>
-      
-      <div class="flex-row">
-        <div>
-          <div class="gmu-block">
-            <h3>Space Physics</h3>
-            <p>Solar-terrestrial models, magnetosphere dynamics</p>
-            <p class="text-dim">No infrastructure coupling</p>
-          </div>
-        </div>
-        <div>
-          <div class="gmu-block">
-            <h3>Engineering</h3>
-            <p>Power system modeling, component fragility</p>
-            <p class="text-dim">No economic propagation</p>
-          </div>
-        </div>
-        <div>
-          <div class="gmu-block">
-            <h3>Economics</h3>
-            <p>High-level risk estimates, scenario-based</p>
-            <p class="text-dim">No physical grounding</p>
-          </div>
+<!-- Slide 2: Infrastructure Impacts -->
+<section class="theme-light">
+  <div class="slide-dark"></div>
+  <div class="slide-content">
+    <h2>Infrastructure Impacts</h2>
+
+    <div class="flex-row" style="flex: 1; min-height: 0; gap: 1.5rem;">
+      <div style="flex: 1;">
+        <div class="gmu-block" style="flex: 1; display: flex; flex-direction: column; justify-content: center;">
+          <h3 style="margin-top: 0;">Power Grids</h3>
+          <p><strong>Geomagnetically Induced Currents (GIC)</strong></p>
+          <p class="text-dim">Quasi-DC currents in transmission lines → transformer heating → potential permanent damage</p>
+          <p style="margin: 0.5rem 0 0 0; font-size: 0.85em;"><strong>Example:</strong> 1989 Quebec — 9-hour blackout</p>
         </div>
       </div>
-      
-      <p class="text-dim">Pulkkinen et al., 2008; Marshalko et al., 2023</p>
-    </div>
-  </section>
-  
-  <!-- Slide 3: Problem Statement - Part 2 (Current Limitations) -->
-  <section>
-    <div class="slide-dark"></div>
-    <div class="slide-content">
-      <h2>Problem Statement: Current Limitations</h2>
-      
-      <div class="gmu-block">
-        <h3>Existing Approaches</h3>
-        <ul>
-          <li>Isolate infrastructures, rely on deterministic scenarios</li>
-          <li>Neglect uncertainty propagation and inter-sectoral dependencies</li>
-          <li>Treat state-level grids as electrically independent</li>
-          <li>Lack physically grounded hazard-fragility-economics linkages</li>
-        </ul>
-        <p class="text-dim">Oughton et al., 2017; Schulte et al., 2014</p>
+
+      <div style="flex: 1;">
+        <div class="gmu-block" style="flex: 1; display: flex; flex-direction: column; justify-content: center;">
+          <h3 style="margin-top: 0;">Satellites</h3>
+          <p><strong>Atmospheric Drag + Radiation</strong></p>
+          <p class="text-dim">Thermospheric expansion → orbital decay; particle flux → single-event effects</p>
+          <p style="margin: 0.5rem 0 0 0; font-size: 0.85em;"><strong>Example:</strong> Feb 2022 — SpaceX lost 40 Starlink satellites</p>
+        </div>
       </div>
-      
-      <div class="gmu-block">
-        <h3>Assessment Challenges</h3>
-        <ul>
-          <li><strong>Power:</strong> Transformer-specific vulnerability patterns from spatially varying GIC</li>
-          <li><strong>Satellites:</strong> Orbital service areas, spectrum licensing, MHD/plasma models</li>
-          <li><strong>Economics:</strong> Deterministic loss estimates without macroeconomic propagation</li>
-        </ul>
-      </div>
-      
-      <div class="gmu-block alert">
-        <p><strong>This Work:</strong> Unified stochastic framework with end-to-end uncertainty propagation from space weather forcing to national-scale economic losses</p>
+
+      <div style="flex: 1;">
+        <div class="gmu-block" style="flex: 1; display: flex; flex-direction: column; justify-content: center;">
+          <h3 style="margin-top: 0;">GNSS/Navigation</h3>
+          <p><strong>Ionospheric Disturbances</strong></p>
+          <p class="text-dim">TEC variations → positioning errors amplified 1.5–5×</p>
+          <p style="margin: 0.5rem 0 0 0; font-size: 0.85em;"><strong>Example:</strong> 2024 Gannon — GPS errors</p>
+        </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
+
+<!-- Slide 3: The Problem - No Quantitative Framework + Policy -->
+<section class="theme-light">
+  <div class="slide-dark"></div>
+  <div class="slide-content">
+    <h2>The Problem</h2>
+
+    <div class="gmu-block alert">
+      <p style="font-size: 1em; margin: 0;"><strong>Despite 150+ years of documented impacts, we lack quantitative frameworks connecting solar forcing → infrastructure response → economic loss with uncertainty quantification</strong></p>
+    </div>
+
+    <div class="flex-row" style="flex: 1; min-height: 0; gap: 1.5rem; margin-top: 1rem;">
+      <div style="flex: 1;">
+        <div class="gmu-block" style="flex: 1; display: flex; flex-direction: column; justify-content: center;">
+          <h3 style="margin-top: 0;">Disciplinary Silos</h3>
+          <ul style="margin: 0; padding-left: 1.2em; font-size: 0.85em;">
+            <li>Physicists study the Sun</li>
+            <li>Engineers study power grids</li>
+            <li>Economists estimate losses</li>
+          </ul>
+          <p class="text-dim" style="margin: 0.5rem 0 0 0; font-size: 0.75em;">But nobody connects them with rigorous UQ</p>
+        </div>
+      </div>
+
+      <div style="flex: 1;">
+        <div class="gmu-block" style="flex: 1; display: flex; flex-direction: column; justify-content: center;">
+          <h3 style="margin-top: 0;">Policy Mandate</h3>
+          <p style="margin: 0; font-size: 0.85em;"><strong>National Space Weather Strategy</strong></p>
+          <ul style="margin: 0.3rem 0 0 0; padding-left: 1.2em; font-size: 0.8em;">
+            <li>2015: Initial strategy</li>
+            <li>2019: Updated strategy</li>
+            <li>2023: Implementation plan</li>
+          </ul>
+          <p class="text-dim" style="margin: 0.5rem 0 0 0; font-size: 0.75em;">Calls for quantitative infrastructure impact assessment</p>
+        </div>
+      </div>
+
+      <div style="flex: 1;">
+        <div class="gmu-block" style="flex: 1; display: flex; flex-direction: column; justify-content: center;">
+          <h3 style="margin-top: 0;">The Challenge</h3>
+          <p style="margin: 0; font-size: 0.85em;">How do emergency managers prioritize space weather when dealing with:</p>
+          <ul style="margin: 0.3rem 0 0 0; padding-left: 1.2em; font-size: 0.8em;">
+            <li>Hurricanes</li>
+            <li>Floods</li>
+            <li>Earthquakes</li>
+          </ul>
+          <p class="text-dim" style="margin: 0.5rem 0 0 0; font-size: 0.75em;">Need: Direct, quantitative comparison</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
   
   <!-- Slide 4: RQ1 -->
   <section class="theme-light">

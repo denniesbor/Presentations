@@ -57,6 +57,63 @@ import multiFrameworkUrl from '../assets/figures/multi-hazard/mult_method.png';
 const slidesContainer = document.querySelector('.slides');
 slidesContainer.innerHTML = coverHTML + introHTML + powerHTML + satelliteHTML + multihazardHTML + conclusionHTML;
 
+
+// Load references
+async function loadReferences() {
+  try {
+    const response = await fetch('./assets/bibtex/references.json');
+    const references = await response.json();
+    renderReferences(references);
+  } catch (error) {
+    console.error('Error loading references:', error);
+  }
+}
+
+function renderReferences(references) {
+  const container = document.getElementById('references-list');
+  if (!container) return;
+
+  // Sort by first author's last name
+  const sorted = references.sort((a, b) => {
+    const authorA = a.author[0]?.split(',')[0] || a.author[0] || '';
+    const authorB = b.author[0]?.split(',')[0] || b.author[0] || '';
+    return authorA.localeCompare(authorB);
+  });
+
+  const html = sorted.map(ref => {
+    // Format authors
+    let authors = '';
+    if (ref.author.length === 1) {
+      authors = ref.author[0];
+    } else if (ref.author.length === 2) {
+      authors = `${ref.author[0]} & ${ref.author[1]}`;
+    } else if (ref.author.length > 2) {
+      authors = `${ref.author[0]} et al.`;
+    }
+
+    // Build citation string
+    let citation = `<strong>${authors}</strong> (${ref.year}). ${ref.title}.`;
+
+    if (ref.journal) {
+      citation += ` <em>${ref.journal}</em>`;
+      if (ref.volume) citation += `, ${ref.volume}`;
+      if (ref.number) citation += `(${ref.number})`;
+      if (ref.pages) citation += `, ${ref.pages}`;
+      citation += '.';
+    } else if (ref.publisher) {
+      citation += ` ${ref.publisher}.`;
+    }
+
+    if (ref.doi) {
+      citation += ` <a href="https://doi.org/${ref.doi}" target="_blank" style="color: var(--gmu-gold);">doi:${ref.doi}</a>`;
+    }
+
+    return `<p style="margin: 0.4rem 0; font-size: 0.7em; line-height: 1.3;">${citation}</p>`;
+  }).join('');
+
+  container.innerHTML = html;
+}
+
 // Load assets after HTML is injected
 function loadAssets() {
   // Cover slide assets
@@ -234,4 +291,7 @@ deck.initialize().then(() => {
 
   deck.on('slidechanged', updateFooter);
   deck.on('ready', updateFooter);
+
+  // load references after deck is ready
+  loadReferences();
 });
