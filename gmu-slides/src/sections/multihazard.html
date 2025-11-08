@@ -6,71 +6,59 @@
     .full-viewport-figure .figure-img { width: 100%; height: calc(100vh - 20vh); max-height: none; object-fit: contain; }
   </style>
 
-  <section class="compact theme-light">
-    <div class="slide-dark"></div>
-    <div class="slide-content">
-      <h2>Publication III: Multi-Hazard Comparative Assessment</h2>
+<!-- Publication III: Multi-Hazard Comparative Assessment (no references) -->
+<section class="compact theme-light">
+  <div class="slide-dark"></div>
+  <div class="slide-content">
+    <h2>Publication III: Multi-Hazard Comparative Assessment</h2>
 
-      <div class="flex-row">
-        <div class="flex-col">
-          <div class="gmu-block">
-            <h3>Motivation</h3>
-            <p>Space weather risk assessment remains embryonic compared to terrestrial hazards</p>
-            <ul>
-              <li>Studied in isolation</li>
-              <li>Policymakers cannot compare to hurricanes, floods, earthquakes</li>
-              <li>Single-hazard approaches miss compound/cascading effects</li>
-            </ul>
-            <p class="text-dim">Hochrainer-Stigler et&nbsp;al., 2023; Saruniene et&nbsp;al., 2024; Rokhideh et&nbsp;al., 2025</p>
-          </div>
-        </div>
+    <div class="content-row">
+      <div class="gmu-block" style="flex:1">
+        <h3>Proposed Integration</h3>
+        <p>Use NSF–NCAR continental, granular wind/hurricane hazard layers within the existing physics-to-economics framework for power, roads, bridges, and communications.</p>
+      </div>
 
-        <div class="flex-col">
-          <div class="gmu-block alert">
-            <p><strong>Problem:</strong> Lack of unified framework for cross-hazard comparison</p>
-            <ul>
-              <li>Existing multi-hazard tools use semi-quantitative scores</li>
-              <li>No physical grounding or uncertainty treatment</li>
-              <li>Cannot produce "apples-to-apples" risk metrics</li>
-            </ul>
-          </div>
-
-          <div class="gmu-block">
-            <p><strong>This Work:</strong> Apply same physics-to-economics framework to space weather, hurricanes, floods, earthquakes → directly comparable metrics</p>
-          </div>
-        </div>
+      <div class="gmu-block alert" style="flex:1">
+        <h3>Comparison Goal</h3>
+        <p>Place space weather alongside hurricanes using the same metrics, units, and uncertainty treatment without changing downstream pipeline.</p>
       </div>
     </div>
-  </section>
-  
-  <section class="theme-light theme-skim">
-    <div class="slide-dark"></div>
-    <div class="slide-content">
-      <h2>Research Questions & Objectives</h2>
-      
-      <div class="gmu-block alert">
-        <h3>Hypothesis</h3>
-        <p>A unified framework can produce comparable metrics across space weather, tropical cyclones, floods, earthquakes through consistent treatment of forcing, exposure, response, and propagation with explicit UQ</p>
+
+    <div class="guide-bar">
+      <div class="item"><span class="year">Layers</span> NSF–NCAR wind/hurricane</div>
+      <div class="item"><span class="year">Assets</span> Power, roads, bridges, comms</div>
+      <div class="item"><span class="year">Metrics</span> Exceedance, return levels, intervals</div>
+      <div class="item"><span class="year">Scope</span> Continental, granular</div>
+    </div>
+  </div>
+</section>
+
+<!-- Publication III: Research Questions (no references) -->
+<section class="compact theme-light theme-skim">
+  <div class="slide-dark"></div>
+  <div class="slide-content">
+    <h2>Research Questions</h2>
+
+    <div class="content-row">
+      <div class="research-question" style="flex:1">
+        <h3>RQ1</h3>
+        <p>How to harmonize NSF–NCAR wind/hurricane layers with the current framework while preserving hazard physics and uncertainty quantification?</p>
       </div>
-      
-      <div class="flex-col">
-        <div class="research-question">
-          <h3>RQ1: Methodological Integration</h3>
-          <p>How to harmonize various hazard methodologies while preserving hazard-specific physics?</p>
-        </div>
-        
-        <div class="research-question">
-          <h3>RQ2: Comparative Risk Assessment</h3>
-          <p>How do space weather impacts compare quantitatively to hurricanes, floods, earthquakes?</p>
-          <p class="text-dim">For example: "100-yr GMD ≈ Category X hurricane in region Y"</p>
-        </div>
-        
-        <div class="research-question">
-          <h3>RQ3: Cross-Hazard Interdependencies</h3>
-          <p>How do hazard interactions and infrastructure interdependencies amplify/attenuate impacts?</p>
-        </div>
+      <div class="research-question" style="flex:1">
+        <h3>RQ2</h3>
+        <p>How does space weather compare to hurricanes across power and transport networks using the same risk metrics and uncertainty bands?</p>
       </div>
-    </section>
+    </div>
+
+    <div class="guide-bar">
+      <div class="item"><span class="year">Examples</span> 100-year levels; exceedance curves</div>
+      <div class="item"><span class="year">Assets</span> Substations; primary roads</div>
+      <div class="item"><span class="year">Outputs</span> Daily GDP intervals; affected users</div>
+      <div class="item"><span class="year">UQ</span> Propagated end to end</div>
+    </div>
+  </div>
+</section>
+
 
   <section class="theme-light theme-skim">
     <div class="slide-dark"></div>
@@ -144,81 +132,87 @@
   </section>
 
 <section class="theme-light">
-    <div class="slide-dark"></div>
-    <div class="slide-content">
-      <h2>Expected Results: Comparative Risk Metrics</h2>
+  <div class="slide-dark"></div>
+  <div class="slide-content compact">
+    <h2>Expected Results: Comparative Risk Metrics</h2>
 
-      <div class="flex-row" style="flex: 1; min-height: 0; gap: 1.5rem;">
-        <div style="flex: 1;">
-          <div class="gmu-block" style="flex: 1;">
-            <h3>Economic Scale</h3>
-            <p><em>What is the daily economic impact of each hazard?</em></p>
-            <p><strong>For example:</strong> 100-yr space weather (~\$1.4B/day) comparable to regional Cat 3 hurricane (\$0.9–2.1B/day), less than major earthquake (\$3.5–4.0B/day)</p>
-          </div>
-
-          <div class="gmu-block" style="flex: 1;">
-            <h3>Spatial Distribution</h3>
-            <p><em>Where are impacts concentrated?</em></p>
-            <p><strong>For example:</strong> Space weather affects northern latitudes; hurricanes impact coasts; earthquakes follow fault systems</p>
-          </div>
+    <div class="flex-row" style="gap:1.2rem;">
+      <div style="flex:1;">
+        <div class="gmu-block">
+          <h3>Economic Scale</h3>
+          <p><em>Daily economic impact by hazard.</em></p>
+          <p><strong>Example:</strong> 100-year space weather ≈ \&dollar;1.4B/day; Cat 3 hurricane ≈ \&dollar;0.9–2.1B/day; major earthquake ≈ \&dollar;3.5–4.0B/day.</p>
         </div>
 
-        <div style="flex: 1;">
-          <div class="gmu-block" style="flex: 1;">
-            <h3>Sectoral Vulnerability</h3>
-            <p><em>Which infrastructure sectors are most affected?</em></p>
-            <p><strong>For example:</strong> Space weather dominates power (5–40%), while floods/earthquakes affect transport (15–35%)</p>
-          </div>
+        <div class="gmu-block">
+          <h3>Spatial Distribution</h3>
+          <p><em>Where impacts concentrate.</em></p>
+          <p><strong>Example:</strong> Space weather: high latitudes; hurricanes: coasts; earthquakes: fault zones.</p>
+        </div>
+      </div>
 
-          <div class="gmu-block" style="flex: 1;">
-            <h3>Temporal Profile</h3>
-            <p><em>How long do impacts persist?</em></p>
-            <p><strong>For example:</strong> Space weather resolves in 12–72 hrs vs 2–4 weeks (hurricanes) vs 1–6 months (earthquakes)</p>
-          </div>
+      <div style="flex:1;">
+        <div class="gmu-block">
+          <h3>Sectoral Vulnerability</h3>
+          <p><em>Most affected sectors.</em></p>
+          <p><strong>Example:</strong> Space weather: power (5–40%); floods/earthquakes: transport (15–35%).</p>
+        </div>
+
+        <div class="gmu-block">
+          <h3>Temporal Profile</h3>
+          <p><em>Duration of disruption.</em></p>
+          <p><strong>Example:</strong> Space weather: 12–72 hours; hurricanes: 2–4 weeks; earthquakes: 1–6 months.</p>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section class="theme-light">
-    <div class="slide-dark"></div>
-    <div class="slide-content">
-      <h2>Contributions & Expected Impact</h2>
-      
-      <div class="gmu-block alert">
-        <h3>Key Contributions</h3>
-        <ol>
-          <li><strong>Unified Multi-Hazard Framework:</strong> First integrated methodology bridging space weather & terrestrial hazards with preserved physics</li>
-          <li><strong>Quantitative Contextualization:</strong> Position space weather within natural hazard landscape</li>
-          <li><strong>Cross-Domain Interdependency Modeling:</strong> Compound events & cascading failures</li>
-          <li><strong>National-Scale Comparative Metrics:</strong> Apples-to-apples comparison with consistent UQ</li>
-        </ol>
+
+
+<section class="theme-light">
+  <div class="slide-dark"></div>
+  <div class="slide-content compact">
+    <h2>Contributions</h2>
+
+    <div class="gmu-block alert">
+      <h3>Key Contributions</h3>
+      <ol>
+        <li><strong>Unified multi-hazard framework:</strong> Integrated method bridging space weather and terrestrial hazards with preserved physics.</li>
+        <li><strong>Quantitative contextualization:</strong> Positions space weather within the natural hazard landscape.</li>
+        <li><strong>Interdependency modeling:</strong> Captures compound events and cascading failures.</li>
+        <li><strong>National comparative metrics:</strong> Apples-to-apples results with consistent uncertainty.</li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section class="theme-light">
+  <div class="slide-dark"></div>
+  <div class="slide-content compact">
+    <h2>Expected Impact and Policy Alignment</h2>
+
+    <div class="content-row">
+      <div class="gmu-block" style="flex:1">
+        <h3>Expected Impact</h3>
+        <ul>
+          <li>Enables emergency managers to contextualize space weather risk.</li>
+          <li>Guides policy and investment for resilience.</li>
+          <li>Supports insurer portfolios with probabilistic metrics.</li>
+        </ul>
       </div>
-      
-      <div class="flex-row">
-        <div>
-          <div class="gmu-block">
-            <h3>Expected Impact</h3>
-            <ul>
-              <li>Emergency managers contextualize space weather risk</li>
-              <li>Policymakers prioritize resilience investments</li>
-              <li>Insurers incorporate into portfolios</li>
-            </ul>
-          </div>
-        </div>
-        
-        <div>
-          <div class="gmu-block">
-            <h3>Policy Alignment</h3>
-            <ul>
-              <li>Sendai Framework: compound/cascading hazards</li>
-              <li>National Space Weather Strategy: comparative risk</li>
-              <li>UNDRR: national resilience metrics</li>
-            </ul>
-          </div>
-        </div>
+
+      <div class="gmu-block" style="flex:1">
+        <h3>Policy Alignment</h3>
+        <ul>
+          <li>Sendai Framework: compound and cascading hazards.</li>
+          <li>National Space Weather Strategy: comparative risk.</li>
+          <li>UNDRR: national resilience metrics.</li>
+        </ul>
       </div>
     </div>
-  </section>
+  </div>
+</section>
+
   
 </section>

@@ -6,70 +6,86 @@
     .full-viewport-figure .figure-img { width: 100%; height: calc(100vh - 20vh); max-height: none; object-fit: contain; }
   </style>
 
-  <section class="compact theme-conclusion">
-    <div class="slide-dark"></div>
-    <div class="slide-content">
-      <h2>Publication II: Satellite System Vulnerability</h2>
+<section class="compact theme-conclusion">
+  <div class="slide-dark"></div>
+  <div class="slide-content">
+    <h2>Publication II: Satellite System Vulnerability</h2>
 
-      <div class="flex-row">
-        <div class="flex-col">
-          <div class="gmu-block">
-            <h3>Historical Context</h3>
-            <ul>
-              <li><strong>February 2022:</strong> Starlink orbital decay, unexpected loss of LEO units</li>
-              <li><strong>May 2024 "Gannon":</strong> Orbital perturbations, radiation exposure, service degradation</li>
-              <li><strong>GPS errors:</strong> 1.5–5× amplification during ionospheric disturbances</li>
-            </ul>
-            <p class="text-dim">Kataoka et&nbsp;al., 2022; Parker & Linares, 2024; Danilchuk et&nbsp;al., 2025</p>
-          </div>
-        </div>
+    <div class="content-row">
+      <div class="gmu-block" style="flex:1">
+        <h3>Historical</h3>
+        <ul>
+          <li><strong>Feb 2022:</strong> Starlink orbital decay, unexpected LEO losses</li>
+          <li><strong>May 2024 “Gannon”:</strong> Elevated drag, radiation, service degradation</li>
+          <li><strong>GNSS:</strong> 1.5–5x error amplification during disturbances</li>
+        </ul>
+        <p class="text-dim" style="font-size: 0.8em; font-style: italic;">Kataoka 2022; Parker & Linares 2024; Danilchuk 2025</p>
+      </div>
 
-        <div class="flex-col">
-          <div class="gmu-block alert">
-            <p><strong>Problem:</strong> Unique assessment challenges for space-based infrastructure</p>
-            <ul>
-              <li>Mapping orbital service areas to ground footprints</li>
-              <!-- <li>Spectrum licensing across jurisdictions</li> -->
-              <li>Sophisticated MHD/plasma models required</li>
-              <li>Few end-to-end frameworks linking physics to economics with UQ</li>
-            </ul>
-            <p class="text-dim">Buzulukova & Tsurutani, 2022; Jun et&nbsp;al., 2024</p>
-          </div>
-        </div>
+      <div class="gmu-block alert" style="flex:1">
+        <h3>Problem</h3>
+        <ul>
+          <li>Linking orbital effects to ground coverage and users</li>
+          <li>Complex modeling required</li>
+          <li>Few end-to-end physics→economics frameworks with UQ</li>
+        </ul>
+        <p class="text-dim" style="font-size: 0.8em; font-style: italic;">Buzulukova & Tsurutani 2022; Jun 2024</p>
       </div>
     </div>
-  </section>
-  
-  <section class="theme-conclusion theme-skim">
-    <div class="slide-dark"></div>
-    <div class="slide-content">
-      <h2>Research Questions & Objectives</h2>
-      
-      <div class="gmu-block alert">
-        <h3>Hypothesis</h3>
-        <p>Extreme geomagnetic storms can be translated physically into (i) altitude/inclination-dependent orbital decay and propellant demand, (ii) orbit-class-dependent radiation upset risk, and (iii) probabilistic distributions of service disruption and economic loss across LEO/MEO/GEO</p>
-      </div>
-      
-      <div class="flex-col">
-        <div class="research-question">
-          <h3>RQ1: Physical Vulnerability Assessment</h3>
-          <p>Spatial and orbital distribution of degradation risk for current satellite architectures under extreme space weather?</p>
-          <p class="text-dim">(a) Drag-driven orbital decay, (b) Radiation-induced SEE and anomaly probability across LEO/MEO/GEO with Monte Carlo UQ</p>
-        </div>
-        
-        <div class="research-question">
-          <h3>RQ2: Socio-Economic Impact Quantification</h3>
-          <p>Daily service and economic impacts, with uncertainty bounds, of physical effects?</p>
-          <p class="text-dim">Link degradation → coverage loss → continuity of service → IO/CGE propagation using broadband constellations as case study</p>
-        </div>
-      </div>
-      
-      <div class="gmu-block">
-        <h3>Technical Objectives</h3>
-        <p>Storm-time density (NRLMSISE-00, validated vs MAGE MHD) → orbital propagation with drag → radiation environment (AE9/AP9 + L1 flux, OTSO cutoff tracing) → SEE probabilities → service disruption → IO/CGE propagation</p>
-      </div>
+
+    <div class="guide-bar">
+      <div class="item"><span class="year">Events</span> 2022 Starlink; 2024 Gannon</div>
+      <div class="item"><span class="year">Gap</span> Orbit effects → service → cost</div>
+      <div class="item"><span class="year">Bands</span> LEO, MEO, GEO</div>
+      <div class="item"><span class="year">UQ</span> Density and radiation</div>
     </div>
-  </section>
+  </div>
+</section>
+
+<section class="compact theme-conclusion theme-skim">
+  <div class="slide-dark"></div>
+  <div class="slide-content">
+    <h2>Satellites: Research Questions and Objectives</h2>
+
+    <div class="gmu-block alert">
+      <h3>Hypothesis</h3>
+      <p>Extreme storms map to altitude- and inclination-dependent decay and propellant demand, orbit-class radiation upset risk, and daily service and economic impacts with uncertainty.</p>
+    </div>
+
+  <div class="content-row">
+    <div class="research-question" style="flex:1; margin-top: 1rem;">
+      <h3>RQ1</h3>
+      <p>What is the degradation risk across LEO/MEO/GEO under extreme conditions, with quantified uncertainty?</p>
+    </div>
+    <div class="research-question" style="flex:1; margin-top: 1rem;">
+      <h3>RQ2</h3>
+      <p>What are the daily service and economic impacts with uncertainty bounds?</p>
+    </div>
+  </div>
+
+
+    <div class="guide-bar">
+      <div class="item"><span class="year">Hazard</span> Density and radiation</div>
+      <div class="item"><span class="year">System</span> Drag → decay; SEE → anomalies</div>
+      <div class="item"><span class="year">Exposure</span> Coverage and users</div>
+      <div class="item"><span class="year">Economy</span> IO/CGE → daily loss</div>
+    </div>
+  </div>
+</section>
+
+<section class="theme-conclusion theme-skim">
+  <div class="slide-dark"></div>
+  <div class="slide-content compact">
+    <h2>Satellites: Technical Objective</h2>
+
+    <div class="gmu-block">
+      <h3>Pipeline</h3>
+      <p>Storm-time density (NRLMSISE-00; validated vs MAGE) → orbit propagation with drag → radiation environment (AE9/AP9, L1 flux, cutoff tracing) → SEE probabilities → service maps → IO/CGE losses.</p>
+    </div>
+  </div>
+</section>
+
+
   
   <section class="theme-skim">
     <div class="slide-dark"></div>
@@ -161,23 +177,22 @@
         <div class="slidecred">~12,000 active satellites: LEO dominates, MEO navigation at 55°, GEO equatorial</div>
       </div>
 
-      <!-- Right: Method blocks -->
       <div style="flex: 1.2; display: flex; flex-direction: column; gap: 0.6rem;">
         <div class="gmu-block" style="flex: 1; display: flex; flex-direction: column; justify-content: center; padding: 0.6rem 0.8rem;">
-          <h3 style="margin: 0 0 0.3rem 0; font-size: 1em;">Data Sources</h3>
-          <p style="margin: 0; font-size: 0.85em;">Space-Track.org (TLEs) + planet4589.org (mission metadata, physical specs)</p>
-          <p class="text-dim" style="margin: 0.3rem 0 0 0; font-size: 0.8em;">~5,800 active payloads after filtering</p>
+          <h3 style="margin: 0 0 0.3rem 0; font-size: 1.2em;">Data Sources</h3>
+          <p style="margin: 0; font-size: 1em;">Space-Track.org (TLEs) + planet4589.org (mission metadata, physical specs)</p>
+          <p class="text-dim" style="margin: 0.3rem 0 0 0; font-size: 0.8em;">~12000 active payloads after filtering</p>
         </div>
 
         <div class="gmu-block" style="flex: 1; display: flex; flex-direction: column; justify-content: center; padding: 0.6rem 0.8rem;">
           <h3 style="margin: 0 0 0.3rem 0; font-size: 1em;">Orbital Propagation</h3>
-          <p style="margin: 0; font-size: 0.85em;">SGP4 algorithm: 1-min resolution → WGS84 geodetic coordinates</p>
-          <p style="margin: 0.3rem 0 0 0; font-size: 0.85em;">Drag force: $\mathbf{F}_D = -\frac{1}{2}\rho C_D A v^2 / m$</p>
+          <p style="margin: 0; font-size: 1em;">SGP4 algorithm: 1-min resolution → WGS84 geodetic coordinates</p>
+          <p style="margin: 0.3rem 0 0 0; font-size: 1em;">Drag force: $\mathbf{F}_D = -\frac{1}{2}\rho C_D A v^2 / m$</p>
         </div>
 
         <div class="gmu-block" style="flex: 1; display: flex; flex-direction: column; justify-content: center; padding: 0.6rem 0.8rem;">
           <h3 style="margin: 0 0 0.3rem 0; font-size: 1em;">Regime Classification</h3>
-          <ul style="margin: 0; padding-left: 1.3em; font-size: 0.85em;">
+          <ul style="margin: 0; padding-left: 1.3em; font-size: 1em;">
             <li style="margin: 0.25rem 0;"><strong>GEO:</strong> Period ≈ 1436 min or perigee 35,000–36,500 km</li>
             <li style="margin: 0.25rem 0;"><strong>LEO:</strong> Period &lt; 128 min or perigee &lt; 2,000 km</li>
             <li style="margin: 0.25rem 0;"><strong>MEO:</strong> Intermediate</li>
@@ -189,43 +204,78 @@
 </section>
 
 
-<section class="theme-skim">
-    <div class="slide-dark"></div>
-    <div class="slide-content">
-      <h2>Results: Drag Model (Starlink LEO Case)</h2>
+<!-- Results: Drag Model (Starlink LEO) — Density -->
+<section class="theme-conclusion theme-skim">
+  <div class="slide-dark"></div>
+  <div class="slide-content">
+    <h2>Results: Drag Model (Starlink LEO Case)</h2>
 
-      <div class="flex-row">
-        <div style="flex: 1;">
-          <div class="figure-container">
-            <img data-fig="sat-density" alt="Atmospheric density" class="figure-img" style="max-height: 68vh;" />
-          </div>
-          <div class="slidecred">May 2024 "Gannon": 300% density increase at 400 km</div>
+    <div class="flex-row" style="flex: 1; min-height: 0; align-items: stretch; gap: 1.5rem;">
+      <!-- Left: Figure -->
+      <div style="flex: 1.8; display: flex; flex-direction: column; min-height: 0;">
+        <div class="figure-container" style="flex: 1; min-height: 0;">
+          <img
+            data-fig="sat-density"
+            alt="Atmospheric density"
+            class="figure-img"
+            style="width: 100%; height: 100%; max-height: none; object-fit: contain;"
+          />
+        </div>
+        <div class="slidecred">May 2024 “Gannon”: about 300% density at 400 km</div>
+      </div>
 
-          <!-- <div class="gmu-block" style="margin-top: 1rem;">
-            <h3>Validation</h3>
-            <p>NRLMSISE-00 validated against MAGE MHD for Gannon storm</p>
-          </div> -->
+      <!-- Right: Results blocks -->
+      <div style="flex: 1.2; display: flex; flex-direction: column; gap: 0.6rem;">
+        <div class="gmu-block" style="flex: 1; display: flex; flex-direction: column; justify-content: center; padding: 0.6rem 0.8rem;">
+          <h3 style="margin: 0 0 0.3rem 0; font-size: 1.2em;">Density and Drag</h3>
+          <p style="margin: 0; font-size: 1.1em;">Storm-time thermospheric expansion captured with NRLMSISE-00.</p>
         </div>
 
-        <div style="flex: 1;">
-          <div class="figure-container">
-            <img data-fig="sat-propellant" alt="Propellant usage" class="figure-img" style="max-height: 50vh;" />
-          </div>
-          <div class="slidecred">Storm-induced excess propellant (red bars)</div>
-
-          <div class="gmu-block" style="margin-top: 1rem;">
-            <h3>Key Findings</h3>
-            <ul>
-              <li>Thermospheric expansion: 300% density @ 400 km</li>
-              <li class="text-dim">LEO lifetime reduction: 15–40%</li>
-              <li>Very low LEO (200–300 km): highest proportional impact</li>
-              <li class="text-dim">Exponential density sensitivity</li>
-            </ul>
-          </div>
+        <div class="gmu-block" style="flex: 1; display: flex; flex-direction: column; justify-content: center; padding: 0.6rem 0.8rem;">
+          <h3 style="margin: 0 0 0.3rem 0; font-size: 1.2em;">Key Findings</h3>
+          <ul style="margin: 0; padding-left: 1.2em; font-size: 1.1em;">
+            <li>Approximate 300 percent density increase at 400 km.</li>
+            <li>Strong altitude sensitivity; very low LEO most exposed.</li>
+          </ul>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
+
+<!-- Results: Drag Model (Starlink LEO) — Propellant and Operations -->
+<section class="theme-conclusion theme-skim">
+  <div class="slide-dark"></div>
+  <div class="slide-content">
+    <h2>Results: Drag Model -- Propellant Use</h2>
+
+    <div class="flex-row" style="flex: 1; min-height: 0; align-items: stretch; gap: 1.5rem;">
+      <div style="flex: 1.8; display: flex; flex-direction: column; min-height: 0;">
+        <div class="figure-container" style="flex: 1; min-height: 0;">
+          <img
+            data-fig="sat-propellant"
+            alt="Propellant usage under storm conditions"
+            class="figure-img"
+            style="width: 100%; height: 100%; max-height: none; object-fit: contain;"
+          />
+        </div>
+        <div class="slidecred">Storm-induced excess propellant demand (red bars)</div>
+      </div>
+
+      <!-- Right: Results blocks -->
+      <div style="flex: 1.2; display: flex; flex-direction: column; gap: 0.6rem;">
+        <div class="gmu-block" style="flex: 1; display: flex; flex-direction: column; justify-content: center; padding: 0.6rem 0.8rem;">
+          <h3 style="margin: 0 0 0.3rem 0; font-size: 1.3em;">Operational Effects</h3>
+          <ul style="margin: 0; padding-left: 1.2em; font-size: 1.1em;">
+            <li>Lifetime reduction about 15 to 40 percent (case dependent).</li>
+            <li>Higher station-keeping demand</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
 <section class="theme-conclusion">
   <div class="slide-dark"></div>
@@ -243,27 +293,25 @@
             style="width: 100%; height: 100%; max-height: none; object-fit: contain;"
           />
         </div>
-        <div class="slidecred">ACE/EPAM, SOHO/ERNE, STEREO-A/HET: multi-peak structure</div>
+        <div class="slidecred">ACE/EPAM, SOHO/ERNE, STEREO-A/HET ``Gannon" storm measured integral flux</div>
       </div>
 
       <!-- Right: Results blocks -->
       <div style="flex: 1.2; display: flex; flex-direction: column; gap: 0.6rem;">
         <div class="gmu-block" style="flex: 1; display: flex; flex-direction: column; justify-content: center; padding: 0.6rem 0.8rem;">
           <h3 style="margin: 0 0 0.3rem 0; font-size: 1em;">Radiation Modeling</h3>
-          <p style="margin: 0; font-size: 0.85em;"><strong>OTSO:</strong> Backward particle tracing through IGRF-13 + TSY01 fields</p>
+          <p style="margin: 0; font-size: 1em;"><strong>OTSO:</strong> Backward particle tracing through IGRF + TSY01 fields</p>
           <p class="text-dim" style="margin: 0.2rem 0; font-size: 0.8em;">Larsen et al., 2023; similar to magnetocosmics</p>
-          <p style="margin: 0; font-size: 0.85em;">Cutoff rigidities: $R_l$, $R_c$, $R_u$ define penumbra transmission</p>
         </div>
 
         <div class="gmu-block" style="flex: 1; display: flex; flex-direction: column; justify-content: center; padding: 0.6rem 0.8rem;">
           <h3 style="margin: 0 0 0.3rem 0; font-size: 1em;">SEE Probability</h3>
-          <p style="margin: 0; font-size: 0.85em;">AE9/AP9 climatology + L1 flux (ERNE, EPAM) → LET spectra → IRPP method (CREME96) + FOM framework</p>
+          <p style="margin: 0; font-size: 1em;">AE9/AP9 climatology + L1 flux (ERNE, EPAM) → LET spectra → IRPP method (CREME96) + FOM framework</p>
         </div>
 
         <div class="gmu-block" style="flex: 1; display: flex; flex-direction: column; justify-content: center; padding: 0.6rem 0.8rem;">
           <h3 style="margin: 0 0 0.3rem 0; font-size: 1em;">Validation</h3>
-          <p style="margin: 0; font-size: 0.85em;">Penumbra model predictions vs GOES-16/18 in-situ measurements: captures temporal evolution, storm onset/peak</p>
-          <p class="text-dim" style="margin: 0.2rem 0 0 0; font-size: 0.8em;">High-frequency variability from 5-min TSY01 solar wind driver</p>
+          <p style="margin: 0; font-size: 1em;">Penumbra model predictions vs GOES-16/18 in-situ measurements captures temporal evolution, storm onset/peak</p>
         </div>
       </div>
     </div>
@@ -294,7 +342,7 @@
       <div style="flex: 1.2; display: flex; flex-direction: column; gap: 0.6rem;">
         <div class="gmu-block" style="flex: 1; display: flex; flex-direction: column; justify-content: center; padding: 0.6rem 0.8rem;">
           <h3 style="margin: 0 0 0.3rem 0; font-size: 1em;">Model Performance</h3>
-          <ul style="margin: 0; padding-left: 1.3em; font-size: 0.85em;">
+          <ul style="margin: 0; padding-left: 1.3em; font-size: 1em;">
             <li>Captures temporal structure, major flux enhancements</li>
             <li class="text-dim">Peak timings match within 5-min cadence</li>
             <li>Storm onset ~May 10 18:00 UTC, peak May 11, decay through May 15</li>
@@ -303,16 +351,10 @@
 
         <div class="gmu-block" style="flex: 1; display: flex; flex-direction: column; justify-content: center; padding: 0.6rem 0.8rem;">
           <h3 style="margin: 0 0 0.3rem 0; font-size: 1em;">Key Observations</h3>
-          <ul style="margin: 0; padding-left: 1.3em; font-size: 0.85em;">
-            <li>13–24 MeV: best agreement</li>
-            <li>40–100 MeV: larger discrepancies (cutoff sensitivity)</li>
-            <li class="text-dim">Both GOES-18/16 show similar characteristics despite 140° separation</li>
+          <ul style="margin: 0; padding-left: 1.3em; font-size: 1em;">
+            <li>40-100 MeV: best agreement</li>
+            <li>13-24 MeV: larger discrepancies (cutoff sensitivity)</li>
           </ul>
-        </div>
-
-        <div class="gmu-block" style="flex: 1; display: flex; flex-direction: column; justify-content: center; padding: 0.6rem 0.8rem;">
-          <h3 style="margin: 0 0 0.3rem 0; font-size: 1em;">High-Frequency Variability</h3>
-          <p style="margin: 0; font-size: 0.85em;">Discontinuous structure in predictions reflects rapid cutoff changes (0.2–0.5 GV/timestep) from TSY01 response to 5-min solar wind variations</p>
         </div>
       </div>
     </div>
@@ -342,14 +384,14 @@
       <!-- Right: Cost model summary -->
       <div style="flex: 1.2; display: flex; flex-direction: column; justify-content: center;">
         <div class="gmu-block" style="padding: 0.6rem 0.8rem;">
-          <h3 style="margin: 0 0 0.3rem 0; font-size: 1em;">Cost Model</h3>
-          <ul style="margin: 0; padding-left: 1.3em; font-size: 0.85em;">
+          <h3 style="margin: 0 0 0.3rem 0;">Cost Model</h3>
+          <ul style="margin: 0; padding-left: 1.3em;">
             <li>LEO (Starlink): $0.25–0.5M</li>
             <li>Comm GEO: $300–500M</li>
             <li>Nav MEO: $200–500M</li>
             <li>Military GEO: $1–3B</li>
           </ul>
-          <p class="text-dim" style="margin: 0.3rem 0 0 0; font-size: 0.8em;">
+          <p class="text-dim" style="margin: 0.3rem 0 0 0;">
             Driven by mass, age, and production series
           </p>
         </div>
@@ -395,48 +437,49 @@
   </div>
 </section>
 
+<section class="theme-light">
+  <div class="slide-dark"></div>
+  <div class="slide-content compact">
+    <h2>Contributions</h2>
 
+    <div class="gmu-block alert">
+      <h3>Key Contributions</h3>
+      <ol>
+        <li><strong>Multi-orbit modeling with UQ:</strong> Drag, lifetime, radiation, anomalies across LEO/MEO/GEO.</li>
+        <li><strong>Physics to economics:</strong> Degradation to daily GDP losses with uncertainty.</li>
+        <li><strong>Open and policy-ready:</strong> End-to-end pipeline, reproducible tools.</li>
+      </ol>
+    </div>
+  </div>
+</section>
 
-  <section class="theme-light">
-    <div class="slide-dark"></div>
-    <div class="slide-content">
-      <h2>Contributions & Expected Impact</h2>
-      
-      <div class="gmu-block alert">
-        <h3>Key Contributions</h3>
-        <ol>
-          <li><strong>Multi-orbit hazard modeling with UQ:</strong> Drag, lifetime, radiation dose, anomaly probability (LEO/MEO/GEO) with explicit UQ</li>
-          <li><strong>Novel socio-economic impact analysis:</strong> First quantitative economic assessment linking orbital degradation to GDP losses</li>
-          <li><strong>End-to-end uncertainty propagation:</strong> Space environment → atmospheric density → orbital mechanics → radiation → service → economics</li>
-          <li><strong>Policy relevance + open-source tools</strong></li>
-        </ol>
+<section class="theme-light">
+  <div class="slide-dark"></div>
+  <div class="slide-content compact">
+    <h2>Expected Impact & Future Work</h2>
+
+    <div class="content-row">
+      <div class="gmu-block" style="flex:1">
+        <h3>Expected Impact</h3>
+        <ul>
+          <li>Operator awareness of storm-time risks.</li>
+          <li>Constellation hardening and redundancy choices.</li>
+          <li>Insurance models using probabilistic losses.</li>
+        </ul>
       </div>
-      
-      <div class="flex-row">
-        <div>
-          <div class="gmu-block">
-            <h3>Expected Impact</h3>
-            <ul>
-              <li>Constellation hardening decisions (drag, radiation)</li>
-              <li>Redundancy investment analysis</li>
-              <li>Insurance modeling (probabilistic losses)</li>
-              <li>Continuity planning (dependent terrestrial systems)</li>
-            </ul>
-          </div>
-        </div>
-        
-        <div>
-          <div class="gmu-block">
-            <h3>Future Work</h3>
-            <ul>
-              <li>Extend to mid/high-inclination constellations beyond Starlink</li>
-              <li>Apply CGE for price elasticities + substitution during prolonged outages</li>
-              <li>Refine OTSO penumbra model for high-frequency variability</li>
-            </ul>
-          </div>
-        </div>
+
+      <div class="gmu-block" style="flex:1">
+        <h3>Future Work</h3>
+        <ul>
+          <li>Extend to mid/high-inclination constellations.</li>
+          <li>CGE for price and substitution effects.</li>
+          <li>Refine cutoff/penumbra models for variability.</li>
+        </ul>
       </div>
     </div>
-  </section>
+  </div>
+</section>
+
+
   
 </section>

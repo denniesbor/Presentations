@@ -254,7 +254,7 @@ loadAssets();
 // Add GMU footer (simplified, no nav hints)
 const footer = document.createElement('div');
 footer.className = 'gmu-footer';
-document.body.appendChild(footer);
+// document.body.appendChild(footer);
 
 // Initialize Reveal with better settings
 const deck = new Reveal({

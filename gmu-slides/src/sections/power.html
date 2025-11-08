@@ -14,99 +14,83 @@
     }
   </style>
 
-  <section class="compact theme-light">
-    <div class="slide-dark"></div>
-    <div class="slide-content">
-      <h2>Publication I: Power System Vulnerability</h2>
+<section class="compact theme-light">
+  <div class="slide-dark"></div>
+  <div class="slide-content">
+    <h2>Publication I: Power System Vulnerability</h2>
 
-      <div class="flex-row">
-        <div class="flex-col">
-          <div class="gmu-block">
-            <h3>Historical Context</h3>
-            <ul>
-              <li>
-                <strong>March 1989:</strong> Hydro-Québec collapse, 9-hour
-                blackout
-              </li>
-              <li>
-                <strong>May 2024 "Gannon":</strong> Widespread GIC across North
-                America
-              </li>
-            </ul>
-            <p class="text-dim">
-              Cander, 2019; Caraballo et&nbsp;al., 2025; Lawrence et&nbsp;al.,
-              2025
-            </p>
-          </div>
-        </div>
+    <div class="content-row">
+      <div class="gmu-block" style="flex:1">
+        <h3>Historical</h3>
+        <p>1989 Hydro-Quebec blackout; 2024 Gannon widespread GIC.</p>
+        <p class="text-dim">Cander 2019; Caraballo 2025; Lawrence 2025</p>
+      </div>
 
-        <div class="flex-col">
-          <div class="gmu-block alert">
-            <p>
-              <strong>Problem:</strong> Disconnect between physics and economics
-            </p>
-            <ul>
-              <li>Economic studies assume blackouts without physical basis</li>
-              <li>Physics studies don't extend to economic impacts</li>
-              <li>Earlier models treat state grids as independent</li>
-            </ul>
-            <p class="text-dim">
-              Schulte et&nbsp;al., 2014; Oughton et&nbsp;al., 2017
-            </p>
-          </div>
-        </div>
+      <div class="gmu-block alert" style="flex:1">
+        <h3>Problem</h3>
+        <ul>
+          <li>Economics assumes outages without physics linkage.</li>
+          <li>Physics work stops before economic impacts.</li>
+          <li>State grids modeled as independent.</li>
+        </ul>
+        <p class="text-dim">Schulte 2014; Oughton 2017</p>
       </div>
     </div>
-  </section>
 
-  <section class="theme-light">
-    <div class="slide-dark"></div>
-    <div class="slide-content">
-      <h2>Research Questions & Objectives</h2>
+    <div class="guide-bar">
+      <div class="item"><span class="year">1989</span> Quebec blackout</div>
+      <div class="item"><span class="year">2024</span> Gannon GIC</div>
+      <div class="item"><span class="year">Gap</span> Physics to economics</div>
+      <div class="item"><span class="year">Scope</span> Interconnected grid</div>
+    </div>
+  </div>
+</section>
 
-      <div class="gmu-block alert">
-        <h3>Hypothesis</h3>
-        <p>
-          Large-scale GMDs can be translated into geographically resolved
-          failure probabilities with quantified uncertainties, then propagated
-          into macroeconomic loss distributions
-        </p>
+<!-- Slide: Power — Research Questions -->
+<section class="compact theme-light">
+  <div class="slide-dark"></div>
+  <div class="slide-content">
+    <h2>Power: Research Questions</h2>
+
+    <div class="gmu-block alert">
+      <h3>Hypothesis</h3>
+      <p>Geomagnetic disturbances are translated into power system impacts, including GIC, transformer overheating, and service loss, and then into daily macroeconomic loss distributions.</p>
+    </div>
+
+    <div class="content-row">
+      <div class="research-question" style="flex:1">
+        <h3>RQ1</h3>
+        <p>Where are transformer and substation failure risks highest under extreme storms?</p>
       </div>
-
-      <div class="flex-col">
-        <div class="research-question">
-          <h3>RQ1: Vulnerability Assessment</h3>
-          <p>
-            Spatial distribution of transformer/substation failure risk across
-            U.S. grid under extreme storms?
-          </p>
-          <p class="text-dim">
-            Probabilistic: "40% failure probability under 150-yr storm"
-          </p>
-        </div>
-
-        <div class="research-question">
-          <h3>RQ2: Economic Impact Quantification</h3>
-          <p>
-            Per-day economic impact, population, business exposures from
-            failures?
-          </p>
-          <p class="text-dim">
-            Direct loss + indirect sectoral propagation via IO/CGE
-          </p>
-        </div>
-      </div>
-
-      <div class="gmu-block">
-        <h3>Technical Objectives</h3>
-        <p>
-          Compute geoelectric fields → GIC flows (Lehtinen-Pirjola) → failure
-          probability (fragility + aging) → service territories → IO/CGE
-          propagation
-        </p>
+      <div class="research-question" style="flex:1">
+        <h3>RQ2</h3>
+        <p>What are the daily losses, affected population, and sector exposures?</p>
       </div>
     </div>
-  </section>
+
+    <div class="guide-bar">
+      <div class="item"><span class="year">Hazard</span> Geoelectric fields</div>
+      <div class="item"><span class="year">System</span> GIC → failure probability</div>
+      <div class="item"><span class="year">Exposure</span> Service territories</div>
+      <div class="item"><span class="year">Economy</span> IO/CGE → daily loss</div>
+    </div>
+  </div>
+</section>
+
+<!-- Slide: Power — Technical Objective -->
+<section class="compact theme-light">
+  <div class="slide-dark"></div>
+  <div class="slide-content">
+    <h2>Power: Technical Objective</h2>
+
+    <div class="gmu-block">
+      <h3>Pipeline</h3>
+      <p>Geoelectric fields → GIC (Lehtinen–Pirjola) → failure probability (fragility, aging) → service territories → IO/CGE propagation.</p>
+    </div>
+  </div>
+</section>
+
+
 
   <section class="theme-skim">
     <div class="slide-dark"></div>
@@ -329,7 +313,7 @@
         <div style="flex: 1; display: flex; flex-direction: column;">
           <div class="gmu-block" style="flex: 1; display: flex; flex-direction: column; justify-content: center;">
             <h3 style="margin-top: 0; margin-bottom: 0.8rem;">Takeaways</h3>
-            <ul style="margin: 0; padding-left: 1.3em;">
+            <ul style="margin: 0; padding-left: 1.3em; font-size: 1.2em;">
               <li>Hotspots align with conductive subsurface &amp; dense HV topology</li>
               <li class="text-dim">Higher return period ⇒ broader 200–400 A/phase spread</li>
               <li>Failure risk concentrates in Northeast &amp; Upper Midwest</li>
@@ -439,59 +423,47 @@
     </div>
   </section>
 
-  <section class="theme-light">
-    <div class="slide-dark"></div>
-    <div class="slide-content">
-      <h2>Contributions & Expected Impact</h2>
+<section class="theme-light">
+  <div class="slide-dark"></div>
+  <div class="slide-content compact">
+    <h2>Contributions & Expected Impact</h2>
 
-      <div class="gmu-block alert">
-        <h3>Key Contributions</h3>
-        <ol>
-          <li>
-            <strong>Physics-to-infrastructure coupling with UQ:</strong>
-            Continental-scale, Monte Carlo across all stages
-          </li>
-          <li>
-            <strong>Spatially explicit probabilistic mapping:</strong>
-            Asset-level failure probabilities (not generic regions)
-          </li>
-          <li>
-            <strong>End-to-end uncertainty propagation:</strong> Physics →
-            economics with confidence intervals
-          </li>
-          <li>
-            <strong>Policy relevance + open-source tools:</strong> NERC GMD
-            standards, reproducible workflows
-          </li>
-        </ol>
-      </div>
-
-      <div class="flex-row">
-        <div>
-          <div class="gmu-block">
-            <h3>Expected Impact</h3>
-            <ul>
-              <li>
-                Risk-informed grid hardening (target high-failure substations)
-              </li>
-              <li>Regulatory compliance (FERC TPL-007)</li>
-              <li>Insurance modeling (probabilistic loss distributions)</li>
-            </ul>
-          </div>
-        </div>
-
-        <div>
-          <div class="gmu-block">
-            <h3>Future Work</h3>
-            <ul>
-              <li>
-                Further Validation work against cross-storm measurement datasets
-              </li>
-              <li>Apply CGE for price adjustments + factor substitution</li>
-            </ul>
-          </div>
-        </div>
-      </div>
+    <div class="gmu-block alert">
+      <h3>Key Contributions</h3>
+      <ol>
+        <li><strong>End-to-end model coupling with UQ:</strong> Continental scale, Monte Carlo across stages.</li>
+        <li><strong>Spatial risk maps:</strong> Asset-level failure probabilities.</li>
+        <li><strong>Uncertainty carried through:</strong> Physics to economics with intervals.</li>
+        <li><strong>Policy-ready, open tools:</strong> Aligned with NERC GMD standards.</li>
+      </ol>
     </div>
-  </section>
+
+    <!-- <div class="content-row">
+      <div class="gmu-block" style="flex:1">
+        <h3>Expected Impact</h3>
+        <ul>
+          <li>Targeted grid hardening at high-risk substations.</li>
+          <li>Support for FERC TPL-007 compliance.</li>
+          <li>Probabilistic loss estimates for insurers.</li>
+        </ul>
+      </div>
+
+      <div class="gmu-block" style="flex:1">
+        <h3>Future Work</h3>
+        <ul>
+          <li>Cross-storm validation with measurements.</li>
+          <li>CGE extensions for prices and substitution.</li>
+        </ul>
+      </div>
+    </div> -->
+
+    <div class="guide-bar">
+      <div class="item"><span class="year">Scale</span> Continental, end-to-end</div>
+      <div class="item"><span class="year">Maps</span> Asset-level probabilities</div>
+      <div class="item"><span class="year">UQ</span> Preserved to economics</div>
+      <div class="item"><span class="year">Policy</span> NERC-aligned, open tools</div>
+    </div>
+  </div>
+</section>
+
 </section>

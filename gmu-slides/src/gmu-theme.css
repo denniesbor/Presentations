@@ -29,8 +29,8 @@ body {
 
 .reveal {
   font-family: "Times New Roman", Times, serif;
-  font-size: 30px;
-  line-height: 1.4;
+  font-size: 34px;
+  line-height: 1.5;
   color: var(--text-light);
   background-color: #000000;
 }
@@ -67,30 +67,32 @@ body {
 }
 
 .reveal h1 {
-  font-size: 1.8em;
+  font-size: 3em;
 }
 .reveal h2 {
-  font-size: 1.5em;
+  font-size: 1.7em;
 }
 .reveal h3 {
-  font-size: 1.15em;
+  font-size: 1.5em;
   color: #fff8d1;
 }
 
 .reveal p {
   color: var(--text-light);
-  margin-top: 0.3em;
-  margin-bottom: 0.5em;
-  line-height: 1.4;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  line-height: 1.3;
   text-align: left;
+  font-size: 1.3em;
 }
 
 .reveal ul,
 .reveal ol {
-  margin-top: 0.4em;
-  margin-bottom: 0.4em;
+  margin-top: 0.2em;
+  margin-bottom: 0.2em;
   padding-left: 1.5em;
   text-align: left;
+  font-size: 1.3em;
 }
 
 .reveal li {
@@ -139,36 +141,30 @@ p {
 .slide-content {
   position: relative;
   z-index: 2;
-  width: 92%;
-  max-width: 1700px;
+  width: 92vw;
   height: 88vh;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 6vh;
-  margin-bottom: 6vh;
-  padding-top: 1.5rem;
-  padding-right: 1.8rem;
-  padding-bottom: 1.5rem;
-  padding-left: 1.8rem;
+  margin: 6vh auto;
+  padding: clamp(0.8rem, 1.5vh, 1.5rem) clamp(1rem, 2vw, 2rem);
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: flex-start; 
+  align-items: stretch;
   overflow: hidden;
-  overscroll-behavior: contain;
 }
 
 .slide-content h2 {
   flex-shrink: 0;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
 }
 
 .slide-content > .flex-row {
   flex: 1 1 auto;
   display: flex;
-  gap: 1.5rem;
+  gap: 2rem;
   min-height: 0;
-  align-items: stretch;
+  align-items: center;
 }
 
 .slide-content > .flex-col {
@@ -319,6 +315,7 @@ p {
   background: var(--panel-bg);
   border-left: 4px solid var(--gmu-gold);
   border-radius: 6px;
+  margin-top: 4rem;
   padding-top: 12px;
   padding-right: 15px;
   padding-bottom: 12px;
@@ -330,24 +327,24 @@ p {
   color: var(--gmu-gold);
   margin-top: 0;
   margin-bottom: 6px;
-  font-size: 0.95em;
+  font-size: 1.4em;
 }
 .research-question p {
   margin: 0;
-  font-size: 0.85em;
+  font-size: 1.3em;
 }
 
 .gmu-block {
   background: var(--panel-bg);
   border: 1px solid var(--panel-border);
   border-left: 6px solid var(--gmu-gold);
-  border-radius: 8px;
-  padding-top: 10px;
+  border-radius: 10px;
+  padding-top: 5px;
   padding-right: 15px;
-  padding-bottom: 10px;
+  padding-bottom: 15px;
   padding-left: 15px;
-  margin-top: 0.6rem;
-  margin-bottom: 0.6rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   color: var(--text-light);
   line-height: 1.4;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
@@ -779,37 +776,37 @@ p {
 /* For Full HD and below (1920x1080) */
 @media (max-height: 1080px) {
   .reveal {
-    font-size: 28px;
+    font-size: 34px;
   }
   
   .slide-content {
     height: 90vh;
     margin-top: 5vh;
     margin-bottom: 5vh;
-    padding-top: 1.2rem;
-    padding-bottom: 1.2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
   
   .slide-content h2 {
-    font-size: 1.3em;
+    font-size: 1.em;
     margin-bottom: 1rem;
   }
   
   .gmu-block {
-    padding-top: 8px;
-    padding-bottom: 8px;
+    padding-top: 2px;
+    padding-bottom: 0px;
     font-size: 0.85em;
   }
   
   .figure-img {
-    max-height: 42vh;
+    max-height: 90vh;
   }
 }
 
 /* For HD laptops (1366x768) */
 @media (max-height: 900px) {
   .reveal {
-    font-size: 24px;
+    font-size: 35px;
   }
   
   .slide-content {
@@ -850,7 +847,7 @@ p {
 /* For smaller laptops (1280x720) */
 @media (max-height: 768px) {
   .reveal {
-    font-size: 20px;
+    font-size: 34px;
   }
   
   .slide-content {
@@ -866,7 +863,7 @@ p {
   }
   
   .gmu-block {
-    padding: 5px 8px;
+    padding: 10px 15px;
     font-size: 0.8em;
   }
   
@@ -880,7 +877,6 @@ p {
   }
 }
 
-/* -------------------- Responsive (width-based) -------------------- */
 @media (max-width: 980px) {
   .reveal {
     font-size: 28px;
@@ -947,4 +943,71 @@ p {
     box-shadow: none;
     border: 1px solid #dddddd;
   }
+}
+
+.guide-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 88, 38, 0.25);
+  border-top: 3px solid var(--gmu-gold);
+  padding: clamp(0.6rem, 1.2vh, 0.9rem) clamp(1rem, 2vw, 1.5rem);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: clamp(1rem, 2vw, 2rem);
+}
+
+.guide-bar .item {
+  font-size: 25px;
+  color: var(--text-light);
+  font-weight: 600;
+  text-align: center;
+  line-height: 1.3;
+}
+
+.guide-bar .year {
+  color: var(--gmu-gold);
+  font-weight: 700;
+  display: block;
+  font-size: 28px;
+}
+
+.theme-light .guide-bar {
+  background: rgba(255, 204, 51, 0.2);
+  border-top-color: var(--gmu-green);
+}
+
+.theme-light .guide-bar .item {
+  color: #1a1a1a;
+}
+
+.theme-light .guide-bar .year {
+  color: var(--gmu-green);
+}
+
+
+.content-stacked {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: clamp(1rem, 2vh, 1.5rem);
+  padding-top: 5rem;
+}
+
+/* Standard flex row for content blocks */
+.content-row {
+  display: flex;
+  gap: 1.5rem;
+  align-items: stretch;
+  padding-top: 5rem;
+}
+
+/* Standard flex column */
+.content-col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
