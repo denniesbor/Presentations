@@ -743,13 +743,13 @@ p {
 .theme-skim h2,
 .theme-skim h3 {
   color: #8b7355;
-  opacity: 0.75;
+  opacity: 0.9;
 }
 
 .theme-skim h2::before {
-  content: "⚡ QUICK OVERVIEW";
+  content: "⚡";
   font-size: 0.45em;
-  background: rgba(139, 115, 85, 0.15);
+  /* background: rgba(139, 115, 85, 0.15); */
   color: #8b7355;
   padding: 0.3em 0.8em;
   border-radius: 6px;
