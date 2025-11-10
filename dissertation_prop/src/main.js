@@ -57,15 +57,16 @@ import multiFrameworkUrl from '../assets/figures/multi-hazard/mult_method.png';
 const slidesContainer = document.querySelector('.slides');
 slidesContainer.innerHTML = coverHTML + introHTML + powerHTML + satelliteHTML + multihazardHTML + conclusionHTML;
 
+// Import referncs 
+import referencesData from '../assets/bibtex/references.json' assert { type: 'json' };
+
 
 // Load references
 async function loadReferences() {
   try {
-    const response = await fetch('./assets/bibtex/references.json');
-    const references = await response.json();
-    renderReferences(references);
-  } catch (error) {
-    console.error('Error loading references:', error);
+    renderReferences(referencesData); // Use imported data directly
+  } catch (e) {
+    console.error("Error loading references:", e);
   }
 }
 
