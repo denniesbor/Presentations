@@ -511,9 +511,9 @@ https://github.com/highlightjs/highlight.js/issues/2277`),D=T,N=R),y===void 0&&(
 
       <div class="guide-bar">
         <div class="item"><span class="year">Chain</span> Stress -> service -> IO/CGE -> loss</div>
-        <div class="item"><span class="year">Outputs</span> Exceedance curves, return levels, credible intervals</div>
+        <div class="item"><span class="year">Outputs</span> Exceedance curves, <br>return levels, credible intervals</div>
         <div class="item"><span class="year">Economy</span> Sectoral loss and daily GDP</div>
-        <div class="item"><span class="year">Note</span> Full distributions, not point estimates</div>
+        <div class="item"><span class="year">Note</span> Full distributions, <br>not point estimates</div>
       </div>
     </div>
   </section>
