@@ -2,23 +2,23 @@ import { defineConfig } from 'vite';
 import { resolve } from 'path';
 
 export default defineConfig({
-    base: '/Presentations/',
+  base: "/Presentations/",
 
-    build: {
-        outDir: 'dist',
-        emptyOutDir: true,
+  build: {
+    outDir: "dist",
+    emptyOutDir: true,
 
-        // Copy all assets to a consistent location
-        assetsDir: 'assets',
+    // Copy all assets to a consistent location
+    assetsDir: "assets",
 
-        rollupOptions: {
-            input: {
-                main: resolve(__dirname, 'index.html'),
-                gmuSlides: resolve(__dirname, 'gmu-slides/index.html'),
-            }
-        }
+    rollupOptions: {
+      input: {
+        main: resolve(__dirname, "index.html"),
+        gmuSlides: resolve(__dirname, "/dissertation_prop/index.html"),
+      },
     },
+  },
 
-    // Make sure these directories are publicly accessible
-    publicDir: 'public'
+  // Make sure these directories are publicly accessible
+  publicDir: "public",
 });

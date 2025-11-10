@@ -83,12 +83,45 @@
   <div class="slide-content">
     <h2>Power: Technical Objective</h2>
 
-    <div class="gmu-block">
-      <h3>Pipeline</h3>
-      <p>Geoelectric fields → GIC (Lehtinen–Pirjola) → failure probability (fragility, aging) → service territories → IO/CGE propagation.</p>
+    <div class="flow-grid">
+
+      <!-- Physics -->
+      <div class="flow-grid-box flow-physics">
+        <h3>Physics</h3>
+        <ul>
+          <li>Geoelectric fields (E)</li>
+        </ul>
+      </div>
+
+      <!-- Engineering -->
+      <div class="flow-grid-box flow-engineering two-col">
+        <h3>Engineering</h3>
+        <ul>
+          <li>GIC (Lehtinen–Pirjola)</li>
+        </ul>
+      </div>
+
+      <!-- Failure -->
+      <div class="flow-grid-box flow-failure">
+        <h3>Failure</h3>
+        <ul>
+          <li>Failure probability (fragility)</li>
+        </ul>
+      </div>
+
+      <!-- Impacts -->
+      <div class="flow-grid-box flow-impacts two-col">
+        <h3>Impacts</h3>
+        <ul>
+          <li>Service territories</li>
+          <li>IO/CGE propagation</li>
+        </ul>
+      </div>
+
     </div>
   </div>
 </section>
+
 
 
 
@@ -191,7 +224,7 @@
 
         <!-- Right: 4 methodology blocks stacked -->
         <div style="flex: 1.2; display: flex; flex-direction: column; gap: 0.6rem;">
-          <div class="gmu-block" style="flex: 1; display: flex; flex-direction: column; justify-content: center; padding: 0.6rem 0.8rem;">
+          <div class="gmu-block" style="flex: 1; display: flex; flex-direction: column; justify-content: center; padding: 0.2rem 0.8rem;">
             <h3 style="margin: 0 0 0.3rem 0; font-size: 1em;">1. Geomagnetic Model</h3>
             <p style="margin: 0; font-size: 0.85em;">
               INTERMAGNET/USGS/NRCan (1985–2024) → SECS interpolation → EarthScope MT → power-law extrapolation
@@ -215,7 +248,7 @@
           <div class="gmu-block" style="flex: 1; display: flex; flex-direction: column; justify-content: center; padding: 0.6rem 0.8rem;">
             <h3 style="margin: 0 0 0.3rem 0; font-size: 1em;">4. Economics</h3>
             <p style="margin: 0; font-size: 0.85em;">
-              Voronoi territories → dasymetric → Ghosh IO → GDP ($/day$) with CIs
+              Voronoi territories → dasymetric → Ghosh IO → GDP ($/day) with conf intervals
             </p>
           </div>
         </div>
@@ -261,7 +294,7 @@
 
         <!-- Column 3: Findings -->
         <div style="flex: 1; display: flex; flex-direction: column;">
-          <div class="gmu-block" style="flex: 1; display: flex; flex-direction: column; justify-content: center;">
+          <div class="gmu-block" style="flex: 1; display: flex; flex-direction: column; justify-content: center; margin: 0;">
             <h3 style="margin-top: 0; margin-bottom: 0.8rem;">Findings</h3>
             <ul style="margin: 0; padding-left: 1.3em;">
               <li>Geoelectric maxima in Upper Midwest &amp; Atlantic seaboard</li>
@@ -313,7 +346,7 @@
         <div style="flex: 1; display: flex; flex-direction: column;">
           <div class="gmu-block" style="flex: 1; display: flex; flex-direction: column; justify-content: center;">
             <h3 style="margin-top: 0; margin-bottom: 0.8rem;">Takeaways</h3>
-            <ul style="margin: 0; padding-left: 1.3em; font-size: 1.2em;">
+            <ul style="margin: 0; padding-left: 1.3em; font-size: 1em;">
               <li>Hotspots align with conductive subsurface &amp; dense HV topology</li>
               <li class="text-dim">Higher return period ⇒ broader 200–400 A/phase spread</li>
               <li>Failure risk concentrates in Northeast &amp; Upper Midwest</li>
