@@ -1116,56 +1116,65 @@ p {
   }
 }
 
+/* ==================== MEDIA QUERIES ==================== */
+
 /* For HD laptops (1366x768) */
 @media (max-height: 900px) {
   :root {
-    --guide-item-size: 20px;
-    --guide-year-size: 24px;
+    --guide-item-size: 22px;
+    --guide-year-size: 26px;
   }
 
   .reveal {
-    font-size: 35px;
+    font-size: 32px;
   }
 
   .slide-content {
-    height: 92vh;
-    margin-top: 4vh;
-    margin-bottom: 4vh;
-    padding: 1rem 1.5rem;
+    height: 88vh;
+    margin-top: 6vh;
+    margin-bottom: 6vh;
+    padding: 0.8rem 1.2rem;
   }
 
   .slide-content h2 {
-    font-size: 1.2em;
+    font-size: 1.4em;
     margin-bottom: 0.8rem;
   }
 
   .gmu-block {
-    padding: 6px 10px;
-    font-size: 0.82em;
+    padding: 8px 12px;
+    font-size: 0.9em;
   }
 
   .gmu-block h3 {
-    font-size: 1em;
+    font-size: 1.1em;
+    margin-bottom: 0.4rem;
+  }
+
+  .gmu-block p {
+    margin-top: 0.6rem;
     margin-bottom: 0.3rem;
+    font-size: 1.1em;
+    line-height: 1.4;
   }
 
   .figure-img {
-    max-height: 38vh;
+    max-height: 35vh;
   }
 
   .flex-row {
-    gap: 1rem;
+    gap: 0.8rem;
   }
 
   .flex-col {
-    gap: 0.6rem;
+    gap: 0.5rem;
   }
 
   .guide-bar {
     flex-wrap: wrap;
     justify-content: center;
-    gap: 0.8rem 1.2rem;
-    padding: 0.6rem 1rem;
+    gap: 0.6rem 1rem;
+    padding: 0.5rem 0.8rem;
   }
   .guide-bar .item {
     flex: 1 1 45%;
@@ -1176,111 +1185,213 @@ p {
   }
 
   .flow-grid {
-    gap: 3.5rem 4.5rem;
-    margin-bottom: 2rem;
+    gap: 2rem 3rem;
+    margin-bottom: 5rem; /* INCREASED to avoid guide bar overlap */
   }
+  
   .flow-grid-box {
-    min-height: 180px;
-    padding: 1.2rem 1.8rem;
+    min-height: 160px;
+    padding: 0.8rem 1.2rem;
+    margin-top: 20px;
+  }
+
+  .flow-grid-box h3 {
+    font-size: var(--font-xl);
+    margin-bottom: 0.5rem;
+  }
+
+  .flow-grid-box li {
+    font-size: var(--font-lg);
+    margin: 0.2em 0;
+  }
+
+  /* Adjust connector sizes */
+  .flow-physics::after,
+  .flow-failure::after {
+    width: clamp(2rem, 5vw, 3rem);
+    height: 4px;
+  }
+
+  .flow-physics::before {
+    left: calc(100% + clamp(2rem, 5vw, 3rem));
+  }
+
+  .flow-failure::before {
+    right: calc(100% + clamp(2rem, 5vw, 3rem));
+  }
+
+  .flow-engineering::after {
+    height: clamp(1.5rem, 4vh, 2.5rem);
+    width: 4px;
+  }
+
+  .flow-engineering::before {
+    top: calc(100% + clamp(1.5rem, 4vh, 2.5rem));
   }
 }
 
 /* For smaller laptops (1280x720) */
 @media (max-height: 768px) {
   :root {
-    --guide-item-size: 18px;
-    --guide-year-size: 22px;
+    --guide-item-size: 20px;
+    --guide-year-size: 24px;
   }
 
   .reveal {
-    font-size: 34px;
+    font-size: 30px;
   }
 
   .slide-content {
-    height: 94vh;
-    margin-top: 3vh;
-    margin-bottom: 3vh;
-    padding: 0.8rem 1.2rem;
+    height: 86vh;
+    margin-top: 7vh;
+    margin-bottom: 7vh;
+    padding: 0.7rem 1rem;
   }
 
   .slide-content h2 {
-    font-size: 1.1em;
+    font-size: 1.3em;
     margin-bottom: 0.6rem;
   }
 
   .gmu-block {
-    padding: 10px 15px;
-    font-size: 0.8em;
+    padding: 8px 12px;
+    font-size: 0.85em;
   }
-  
+
+  .gmu-block h3 {
+    font-size: 1em;
+    margin-bottom: 0.3rem;
+  }
+
+  .gmu-block p {
+    margin-top: 0.5rem;
+    margin-bottom: 0.2rem;
+    font-size: 1em;
+    line-height: 1.3;
+  }
 
   .figure-img {
-    max-height: 32vh;
+    max-height: 30vh;
   }
 
   .research-question {
-    padding: 8px 12px;
-    margin-bottom: 0.5em;
+    padding: 6px 10px;
+    margin-top: 3rem;
+    margin-bottom: 0.4em;
+  }
+
+  .research-question h3 {
+    font-size: 1.2em;
+  }
+
+  .research-question p {
+    font-size: var(--font-lg);
   }
 
   .guide-bar {
     flex-wrap: wrap;
     justify-content: center;
-    gap: 0.6rem 1rem;
-    padding: 0.5rem 0.9rem;
+    gap: 0.5rem 0.8rem;
+    padding: 0.4rem 0.7rem;
   }
   .guide-bar .item {
     flex: 1 1 48%;
     font-size: var(--guide-item-size);
-    line-height: 1.25;
+    line-height: 1.2;
   }
   .guide-bar .year {
     font-size: var(--guide-year-size);
   }
 
   .flow-grid {
-    gap: 3rem 4rem;
-    margin-bottom: 1.8rem;
+    gap: 1.5rem 2.5rem;
+    margin-bottom: 6rem; /* INCREASED for guide bar clearance */
   }
+  
   .flow-grid-box {
-    min-height: 160px;
-    padding: 1rem 1.5rem;
+    min-height: 140px;
+    padding: 0.7rem 1rem;
+    margin-top: 15px;
   }
 
-  .flow-physics::before,
+  .flow-grid-box h3 {
+    font-size: var(--font-lg);
+    margin-bottom: 0.4rem;
+  }
+
+  .flow-grid-box li {
+    font-size: var(--font-base);
+    margin: 0.1em 0;
+  }
+
+  .flow-grid-box.two-col ul {
+    gap: 0.2rem 0.8rem;
+  }
+
+  /* Smaller connectors */
+  .flow-physics::after,
+  .flow-failure::after {
+    width: clamp(1.5rem, 4vw, 2.5rem);
+    height: 3px;
+  }
+
+  .flow-physics::before {
+    left: calc(100% + clamp(1.5rem, 4vw, 2.5rem));
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-left: 14px solid var(--gmu-green);
+  }
+
   .flow-failure::before {
-    border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent;
+    right: calc(100% + clamp(1.5rem, 4vw, 2.5rem));
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-right: 14px solid var(--gmu-green);
+  }
+
+  .flow-engineering::after {
+    height: clamp(1.2rem, 3vh, 2rem);
+    width: 3px;
   }
 
   .flow-engineering::before {
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
+    top: calc(100% + clamp(1.2rem, 3vh, 2rem));
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 14px solid var(--gmu-green);
   }
 }
 
 @media (max-width: 980px) {
   :root {
-    --guide-item-size: 18px;
-    --guide-year-size: 22px;
+    --guide-item-size: 20px;
+    --guide-year-size: 24px;
   }
 
   .reveal {
-    font-size: 28px;
+    font-size: 26px;
   }
+  
   .flex-row {
     flex-direction: column;
   }
+  
   .flex-row > div {
     width: 100%;
   }
+  
   .cover-inner {
     flex-direction: column;
     text-align: center;
   }
+  
   .cover-text-col,
   .cover-logo-col {
     width: 100%;
+  }
+
+  .gmu-block p {
+    font-size: 1em;
   }
 
   .guide-bar {
@@ -1288,13 +1399,16 @@ p {
     margin-top: 0.6rem;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 0.6rem 0.8rem;
+    gap: 0.5rem 0.7rem;
   }
+  
   .guide-bar .item {
     flex: 1 1 46%;
     text-align: center;
     font-size: var(--guide-item-size);
+    line-height: 1.3;
   }
+  
   .guide-bar .year {
     font-size: var(--guide-year-size);
   }
@@ -1302,8 +1416,8 @@ p {
   .flow-grid {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    gap: clamp(2.5rem, 5vh, 4rem);
-    margin-bottom: 2rem;
+    gap: 2rem;
+    margin-bottom: 7rem; /* INCREASED for stacked layout */
   }
 
   .flow-physics,
@@ -1314,6 +1428,19 @@ p {
     grid-row: auto;
   }
 
+  .flow-grid-box {
+    padding: 0.8rem 1.2rem;
+  }
+
+  .flow-grid-box h3 {
+    font-size: var(--font-lg);
+  }
+
+  .flow-grid-box li {
+    font-size: var(--font-base);
+  }
+
+  /* Remove horizontal connectors */
   .flow-physics::after,
   .flow-physics::before,
   .flow-failure::after,
@@ -1321,6 +1448,7 @@ p {
     content: none;
   }
 
+  /* All arrows point down */
   .flow-physics::after,
   .flow-engineering::after {
     content: "";
@@ -1328,21 +1456,21 @@ p {
     left: 50%;
     right: auto;
     width: 3px;
-    height: clamp(1.5rem, 3vh, 2.5rem);
-    background: var(--gmu-gold);
+    height: 1.5rem;
+    background: var(--gmu-green);
     transform: translateX(-50%);
   }
 
   .flow-physics::before,
   .flow-engineering::before {
-    top: calc(100% + clamp(1.5rem, 3vh, 2.5rem));
+    top: calc(100% + 1.5rem);
     left: 50%;
     right: auto;
     transform: translateX(-50%);
     border: none;
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-top: 15px solid var(--gmu-gold);
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 12px solid var(--gmu-green);
   }
 
   .flow-failure::after {
@@ -1350,20 +1478,20 @@ p {
     top: 100%;
     left: 50%;
     width: 3px;
-    height: clamp(1.5rem, 3vh, 2.5rem);
-    background: var(--gmu-gold);
+    height: 1.5rem;
+    background: var(--gmu-green);
     transform: translateX(-50%);
   }
 
   .flow-failure::before {
     content: "";
-    top: calc(100% + clamp(1.5rem, 3vh, 2.5rem));
+    top: calc(100% + 1.5rem);
     left: 50%;
     transform: translateX(-50%);
     border: none;
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-top: 15px solid var(--gmu-gold);
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 12px solid var(--gmu-green);
   }
 
   .flow-impacts::after,
@@ -1374,79 +1502,107 @@ p {
 
 @media (max-width: 720px) {
   :root {
-    --guide-item-size: 16px;
-    --guide-year-size: 20px;
+    --guide-item-size: 18px;
+    --guide-year-size: 22px;
   }
 
   .reveal {
-    font-size: 22px;
+    font-size: 24px;
   }
+  
   .slide-content {
     width: 95%;
-    padding: 0.9rem 1rem;
+    padding: 0.8rem 0.9rem;
+  }
+
+  .gmu-block p {
+    font-size: 0.95em;
   }
 
   .guide-bar {
-    gap: 0.5rem;
-    padding: 0.5rem 0.8rem;
+    gap: 0.4rem;
+    padding: 0.4rem 0.6rem;
   }
+  
   .guide-bar .item {
     flex: 1 1 100%;
     font-size: var(--guide-item-size);
   }
-  .guide-bar .year {
-    font-size: var(--guide-year-size);
-  }
-
-  .flow-grid {
-    gap: 2rem;
-    margin-bottom: 1.5rem;
-  }
-  .flow-grid-box {
-    min-height: 140px;
-    padding: 0.9rem 1.3rem;
-  }
-}
-
-@media (max-width: 480px) {
-  :root {
-    --guide-item-size: 15px;
-    --guide-year-size: 18px;
-  }
-
-  .reveal {
-    font-size: 18px;
-  }
-  .gmu-footer {
-    height: 24px;
-  }
-
-  .guide-bar {
-    border-top-width: 2px;
-    gap: 0.4rem;
-    padding: 0.45rem 0.7rem;
-  }
-  .guide-bar .item {
-    font-size: var(--guide-item-size);
-  }
+  
   .guide-bar .year {
     font-size: var(--guide-year-size);
   }
 
   .flow-grid {
     gap: 1.5rem;
-    margin-bottom: 1.2rem;
+    margin-bottom: 6rem;
   }
+  
   .flow-grid-box {
     min-height: 120px;
-    padding: 0.8rem 1.1rem;
+    padding: 0.7rem 1rem;
+  }
+
+  .flow-grid-box h3 {
+    font-size: var(--font-base);
+  }
+
+  .flow-grid-box li {
+    font-size: var(--font-sm);
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --guide-item-size: 16px;
+    --guide-year-size: 20px;
+  }
+
+  .reveal {
+    font-size: 20px;
+  }
+  
+  .gmu-footer {
+    height: 24px;
+  }
+
+  .guide-bar {
+    border-top-width: 2px;
+    gap: 0.3rem;
+    padding: 0.35rem 0.5rem;
+  }
+  
+  .guide-bar .item {
+    font-size: var(--guide-item-size);
+  }
+  
+  .guide-bar .year {
+    font-size: var(--guide-year-size);
+  }
+
+  .flow-grid {
+    gap: 1.2rem;
+    margin-bottom: 5rem;
+  }
+  
+  .flow-grid-box {
+    min-height: 100px;
+    padding: 0.6rem 0.8rem;
+  }
+
+  .flow-grid-box h3 {
+    font-size: var(--font-sm);
+  }
+
+  .flow-grid-box li {
+    font-size: var(--font-xs);
   }
 }
 
 @media (max-height: 600px) {
   :root {
-    --guide-item-size: 16px;
-    --guide-year-size: 20px;
+    --guide-item-size: 18px;
+    --guide-year-size: 22px;
   }
 
   .reveal .controls {
@@ -1454,24 +1610,47 @@ p {
     right: 12px !important;
   }
 
-  .guide-bar {
-    padding: 0.4rem 0.8rem;
-    gap: 0.5rem;
+  .slide-content {
+    height: 82vh;
+    margin-top: 9vh;
+    margin-bottom: 9vh;
   }
+
+  .guide-bar {
+    padding: 0.3rem 0.6rem;
+    gap: 0.4rem;
+  }
+  
   .guide-bar .item {
     font-size: var(--guide-item-size);
+    line-height: 1.2;
   }
+  
   .guide-bar .year {
     font-size: var(--guide-year-size);
   }
 
   .flow-grid {
-    gap: 2.5rem 3.5rem;
-    margin-bottom: 1.5rem;
+    gap: 1.2rem 2rem;
+    margin-bottom: 6rem; /* CRITICAL for very short screens */
   }
+  
   .flow-grid-box {
-    min-height: 120px;
-    padding: 0.7rem 1rem;
+    min-height: 100px;
+    padding: 0.5rem 0.8rem;
+  }
+
+  .flow-grid-box h3 {
+    font-size: var(--font-base);
+    margin-bottom: 0.3rem;
+  }
+
+  .flow-grid-box li {
+    font-size: var(--font-sm);
+  }
+
+  .gmu-block {
+    padding: 6px 10px;
   }
 }
 
