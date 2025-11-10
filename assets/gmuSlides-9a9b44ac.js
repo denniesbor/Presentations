@@ -113,46 +113,51 @@ https://github.com/highlightjs/highlight.js/issues/2277`),D=T,N=R),y===void 0&&(
 <section>
   <!-- Background -->
   <div class="cover-slide"></div>
-  
+
   <!-- Decorative brand elements -->
   <div class="brand-layer">
     <!-- <img data-asset="corner-accent" class="corner-accent" alt="" /> -->
     <img data-asset="double-c" class="double-c-bg" alt="" />
     <!-- <img data-asset="yellow-bar" class="yellow-bar" alt="" /> -->
   </div>
-  
+
   <!-- Main content -->
   <div class="cover-content">
     <div class="cover-inner">
       <!-- Logo column -->
       <div class="cover-logo-col">
-        <img data-asset="gm-logo" class="gmu-logo" alt="George Mason University" />
+        <img
+          data-asset="gm-logo"
+          class="gmu-logo"
+          alt="George Mason University"
+        />
       </div>
-      
+
       <!-- Text column -->
       <div class="cover-text-col">
         <div class="cover-title">
-          A Transferable Framework for Multi-Hazard Risk Assessment of Critical Infrastructure:
-          Application to Space Weather Impacts on U.S. Power and Satellite Systems
+          A Transferable Framework for Multi-Hazard Risk Assessment of Critical
+          Infrastructure: Application to Space Weather Impacts on U.S. Power and
+          Satellite Systems
         </div>
-        
+
         <div class="cover-subtitle">
-          Department of Geography and Geoinformation Sciences<br>
+          Department of Geography and Geoinformation Sciences<br />
           George Mason University
         </div>
-        
-        <div class="cover-author">
-          Dennies K. Bor
+
+        <div class="cover-degree">
+          PhD in Earth Systems and Geoinformation Sciences
         </div>
-        
-        <div class="cover-date">
-          Fall Semester 2025
-        </div>
+
+        <div class="cover-author">Dennies K. Bor</div>
+
+        <div class="cover-date">Fall Semester 2025</div>
       </div>
     </div>
   </div>
-  
-</section>`,A_=`<!-- HORIZONTAL SECTION: INTRODUCTION -->
+</section>
+`,A_=`<!-- HORIZONTAL SECTION: INTRODUCTION -->
 <section data-transition="zoom" data-background-transition="fade">
 
   <!-- Slide 1: What is Space Weather + Historical Context -->
