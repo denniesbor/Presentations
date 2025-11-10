@@ -155,99 +155,183 @@ https://github.com/highlightjs/highlight.js/issues/2277`),D=T,N=R),y===void 0&&(
 </section>`,A_=`<!-- HORIZONTAL SECTION: INTRODUCTION -->
 <section data-transition="zoom" data-background-transition="fade">
 
-<!-- Slide 1: What is Space Weather + Historical Context -->
+  <!-- Slide 1: What is Space Weather + Historical Context -->
+  <section class="theme-light">
+    <div class="slide-dark"></div>
+    <div class="slide-content">
+      <h2>What is Space Weather?</h2>
+
+      <div class="flex-row">
+
+        <div class="flex-col">
+          <div class="figure-container">
+            <img data-fig="MAGE" alt="MAGE MHD" class="figure-img" />
+          </div>
+          <div class="slidecred">
+            MAGE MHD Simulation — Source: 
+            <a href="https://cgs.jhuapl.edu/MAGE/" target="_blank">JHU/APL</a>
+          </div>
+        </div>
+
+        <div class="flex-col">
+          <div class="gmu-block">
+            <p><strong>Variable conditions of the Sun, solar wind, and Earth's magnetosphere that disrupt technological systems</strong></p>
+          </div>
+
+          <div class="gmu-block alert">
+            <ul>
+              <li>Invisible</li>
+              <li>Cannot evacuate</li>
+              <li>Continental scale</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- GUIDE BAR -->
+      <div class="guide-bar">
+        <div class="item">
+          <span class="year">1859</span>
+          Carrington Event
+        </div>
+        <div class="item">
+          <span class="year">1989</span>
+          Quebec Blackout
+        </div>
+        <div class="item">
+          <span class="year">2003</span>
+          Halloween Storms
+        </div>
+        <div class="item">
+          <span class="year">2024</span>
+          Gannon Storm
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+<!-- Slide 2A: Power Grid Impacts -->
 <section class="theme-light">
   <div class="slide-dark"></div>
   <div class="slide-content">
-    <h2>What is Space Weather?</h2>
+    <h2>Infrastructure Impacts: Power Grids</h2>
 
-    <div class="flex-row" style="flex: 1; min-height: 0; align-items: center; gap: 2rem;">
-      
-      <div style="flex: 1.5;">
-        <div class="figure-container">
-          <img data-fig="MAGE" alt="MAGE MHD" class="figure-img" 
-               style="width: 100%; height: auto; max-height: 65vh; object-fit: contain;"/>
-        </div>
-        <div class="slidecred">MAGE MHD Simulation — Source: <a href="https://cgs.jhuapl.edu/MAGE/" target="_blank">JHU/APL</a></div>
+    <div class="flow-grid">
+
+      <!-- Physics (top left) -->
+      <div class="flow-grid-box flow-physics two-col">
+        <h3>Physics</h3>
+        <ul>
+          <li>CME</li>
+          <li>GMD</li>
+          <li>Geoelectric field</li>
+        </ul>
       </div>
 
-      <div style="flex: 1.5; display: flex; flex-direction: column; justify-content: center; gap: 1rem;">
-        
-        <div class="gmu-block">
-          <p style="margin: 0;"><strong>Variable conditions of Sun, solar wind, magnetosphere that disrupt technological systems</strong></p>
-        </div>
-
-        <div class="gmu-block alert">
-          <p style="margin: 0; font-size: 1.1em; font-weight: 700;">Invisible • Can't evacuate • Continental-scale</p>
-        </div>
-
+      <!-- Engineering (top right) -->
+      <div class="flow-grid-box flow-engineering two-col">
+        <h3>Engineering</h3>
+        <ul>
+          <li>Power network</li>
+          <li>GIC</li>
+          <li>Harmonic saturation</li>
+          <li>Thermal heating</li>
+        </ul>
       </div>
+
+      <!-- Failure (bottom right) -->
+      <div class="flow-grid-box flow-failure">
+        <h3>Failure</h3>
+        <ul>
+          <li>Blackout</li>
+        </ul>
+      </div>
+
+      <!-- Impacts (bottom left) -->
+      <div class="flow-grid-box flow-impacts two-col">
+        <h3>Impacts</h3>
+        <ul>
+          <li>Population affected</li>
+          <li>Business disruption</li>
+          <li>Daily economic loss</li>
+          <li>Total economic impact</li>
+        </ul>
+      </div>
+
     </div>
 
     <!-- GUIDE BAR -->
     <div class="guide-bar">
       <div class="item">
-        <span class="year">1859</span>
-        Carrington Event
-      </div>
-      <div class="item">
         <span class="year">1989</span>
-        Quebec Blackout
+        Quebec blackout
       </div>
       <div class="item">
         <span class="year">2003</span>
-        Halloween Storms
+        Halloween storms
       </div>
       <div class="item">
         <span class="year">2024</span>
-        Gannon Storm
+        Gannon power impacts
       </div>
     </div>
-
   </div>
 </section>
 
-
-<!-- Slide 2: Infrastructure Impacts -->
+<!-- Slide: Satellites Impacts -->
 <section class="theme-light">
   <div class="slide-dark"></div>
   <div class="slide-content">
-    <h2>Infrastructure Impacts</h2>
+    <h2>Infrastructure Impacts: Satellites</h2>
 
-    <div class="content-row">
-      
-      <!-- Power Grids -->
-      <div style="flex: 1;">
-        <div class="gmu-block" style="display: flex; flex-direction: column; justify-content: center;">
-          <h3 style="margin: 0 0 0.5rem 0;">Power Grids</h3>
-          <p style="margin: 0;"><strong>GIC</strong> → transformer heating → permanent damage</p>
-        </div>
+    <div class="flow-grid">
+
+      <!-- Physics (top left) -->
+      <div class="flow-grid-box flow-physics two-col">
+        <h3>Physics</h3>
+        <ul>
+          <li>Solar flare/CME</li>
+          <li>SEP</li>
+          <li>Thermospheric expansion</li>
+        </ul>
       </div>
 
-      <!-- Satellites -->
-      <div style="flex: 1;">
-        <div class="gmu-block" style="display: flex; flex-direction: column; justify-content: center;">
-          <h3 style="margin: 0 0 0.5rem 0;">Satellites</h3>
-          <p style="margin: 0;"><strong>Atmospheric drag + radiation</strong> → orbital decay, single-event effects</p>
-        </div>
+      <!-- Engineering (top right) -->
+      <div class="flow-grid-box flow-engineering two-col">
+        <h3>Engineering</h3>
+        <ul>
+          <li>Orbital decay</li>
+          <li>TID</li>
+          <li>SEE</li>
+          <li>Surface charging</li>
+          <li>Internal charging</li>
+        </ul>
       </div>
 
-      <!-- GNSS -->
-      <div style="flex: 1;">
-        <div class="gmu-block" style="display: flex; flex-direction: column; justify-content: center;">
-          <h3 style="margin: 0 0 0.5rem 0;">GNSS/Navigation</h3>
-          <p style="margin: 0;"><strong>Ionospheric disturbances</strong> → positioning errors 1.5-5x</p>
-        </div>
+      <!-- Failure (bottom right) -->
+      <div class="flow-grid-box flow-failure two-col">
+        <h3>Failure</h3>
+        <ul>
+          <li>Service degradation</li>
+          <li>Component damage</li>
+        </ul>
+      </div>
+
+      <!-- Impacts (bottom left) -->
+      <div class="flow-grid-box flow-impacts two-col">
+        <h3>Impacts</h3>
+        <ul>
+          <li>Communication disruption</li>
+          <li>Navigation errors</li>
+        </ul>
       </div>
 
     </div>
 
     <!-- GUIDE BAR -->
     <div class="guide-bar">
-      <div class="item">
-        <span class="year">1989</span>
-        Quebec 9-hr blackout
-      </div>
       <div class="item">
         <span class="year">2022</span>
         SpaceX lost 40 Starlink
@@ -256,180 +340,212 @@ https://github.com/highlightjs/highlight.js/issues/2277`),D=T,N=R),y===void 0&&(
         <span class="year">2024</span>
         Gannon GPS errors
       </div>
-      <div class="item" style="color: var(--gmu-green); font-weight: 700;">
-        Yet No quantitative framework to assess the risk
-      </div>
     </div>
 
   </div>
 </section>
 
-<!-- Slide 3 -->
-<section class="theme-light">
-  <div class="slide-dark"></div>
-  <div class="slide-content">
-    <h2>The Problem</h2>
 
-    <div class="content-stacked">
-      
-      <!-- Main problem statement -->
-      <div class="gmu-block alert">
-        <p style="margin: 0; font-size: 1.2em; font-weight: 700;">
-          Disciplinary silos + no UQ in existing work + no quantitative cross-hazard comparison
-        </p>
-      </div>
+  <!-- Slide: Policy Context -->
+  <section class="theme-light">
+    <div class="slide-dark"></div>
+    <div class="slide-content">
+      <h2>Policy Context</h2>
 
       <div class="content-row">
-        
-        <!-- Challenge -->
-        <div class="content-col">
-          <div class="gmu-block">
-            <h3 style="margin: 0 0 0.5rem 0;">Another Challenge</h3>
-            <p style="margin: 0;">How does space weather compare to hurricanes, floods, earthquakes using quantitative metrics?</p>
-          </div>
+
+        <div class="gmu-block alert">
+          <p>National Space Weather Strategy mandates quantitative infrastructure assessment</p>
         </div>
 
-        <!-- Policy Mandate -->
-        <div class="content-col">
-          <div class="gmu-block">
-            <h3 style="margin: 0 0 0.5rem 0;">What does Policy Mandates?</h3>
-            <p style="margin: 0;"><strong>National Space Weather Strategy</strong> — whole-of-government approach: 6 goals, 3 pillars, research-to-operations</p>
-          </div>
+        <div class="gmu-block">
+          <p><strong>Whole-of-government approach</strong> to prepare, forecast, characterize, recover (e.g., NOAA SWPC, USGS Geomagnetism Program)</p>
         </div>
 
       </div>
 
-    </div>
+      <!-- GUIDE BAR -->
+      <div class="guide-bar">
+        <div class="item">
+          <span class="year">2015 SWORM</span>
+          6 goals: benchmarks, response, mitigation, <br>assessment, forecasting, cooperation
+        </div>
+        <div class="item">
+          <span class="year">2019 Natl SW Strategy</span>
+          3 pillars: asset protection, <br>forecasting, coordinated response
+        </div>
+        <div class="item">
+          <span class="year">2020 PROSWIFT</span>
+          NOAA operational mandate
+        </div>
+        <div class="item">
+          <span class="year">2023 Plan</span>
+          5-year roadmap
+        </div>
+      </div>
 
-    <!-- GUIDE BAR -->
-<div class="guide-bar">
-  <div class="item">
-    <span class="year">2015 SWORM</span>
-    6 goals: benchmarks, response, mitigation, assessment, forecasting, cooperation
-  </div>
-  <div class="item">
-    <span class="year">2019 NSWSAP</span>
-    3 pillars: asset protection, forecasting, coordinated response
-  </div>
-  <div class="item">
-    <span class="year">2020 PROSWIFT</span>
-    NOAA operational mandate
-  </div>
-  <div class="item">
-    <span class="year">2023 Plan</span>
-    5-year implementation roadmap
-  </div>
-</div>
     </div>
+  </section>
 
-  </div>
-</section>
-  
+  <!-- Slide: The Problem -->
+  <section class="theme-light">
+    <div class="slide-dark"></div>
+    <div class="slide-content">
+      <h2>The Problem</h2>
+
+      <div class="content-stacked">
+
+        <div class="content-row">
+
+          <div class="content-col">
+            <div class="gmu-block">
+              <h3>Disciplinary Silos</h3>
+              <p>Physics, engineering, economics work separately</p>
+            </div>
+          </div>
+
+          <div class="content-col">
+            <div class="gmu-block">
+              <h3>No UQ</h3>
+              <p>Scenario-based estimates without uncertainty propagation</p>
+            </div>
+          </div>
+
+          <div class="content-col">
+            <div class="gmu-block">
+              <h3>No Comparison Framework</h3>
+              <p>Cannot compare to hurricanes, floods, earthquakes</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- GUIDE BAR -->
+      <div class="guide-bar">
+        <div class="item">
+          <span class="year">Physics</span>
+          Study space environment
+        </div>
+        <div class="item">
+          <span class="year">Engineering</span>
+          Study infrastructure
+        </div>
+        <div class="item">
+          <span class="year">Economics</span>
+          Estimate losses
+        </div>
+        <div class="item">
+          Nobody connects them with rigorous UQ
+        </div>
+      </div>
+
+    </div>
+  </section>
+
   <!-- Slide 4: RQ1 -->
-<section class="theme-light">
-  <div class="slide-dark"></div>
-  <div class="slide-content compact">
-    <h2>Research Question 1</h2>
+  <section class="theme-light">
+    <div class="slide-dark"></div>
+    <div class="slide-content compact">
+      <h2>Research Question 1</h2>
 
-    <div class="research-question">
-      <h3>Physical Vulnerability</h3>
-      <p><strong>How does extreme space weather stress power grids and orbital assets, with quantified uncertainty?</strong></p>
+      <div class="research-question">
+        <h3>Physical Vulnerability</h3>
+        <p><strong>How does extreme space weather stress power grids and orbital assets, with quantified uncertainty?</strong></p>
+      </div>
+
+      <div class="guide-bar">
+        <div class="item"><span class="year">Focus</span> Physical stress + UQ</div>
+        <div class="item"><span class="year">Grid</span> GIC -> transformer overheating risk</div>
+        <div class="item"><span class="year">Space</span> Drag/radiation -> service loss</div>
+        <div class="item"><span class="year">UQ</span> Topology, grounding, density models</div>
+      </div>
     </div>
+  </section>
 
-    <div class="guide-bar">
-      <div class="item"><span class="year">Focus</span> Physical stress + UQ</div>
-      <div class="item"><span class="year">Grid</span> GIC -> transformer overheating risk</div>
-      <div class="item"><span class="year">Space</span> Drag/radiation -> service loss</div>
-      <div class="item"><span class="year">UQ</span> Topology, grounding, density models</div>
+  <!-- Slide 5: RQ2  -->
+  <section class="theme-light">
+    <div class="slide-dark"></div>
+    <div class="slide-content compact">
+      <h2>Research Question 2</h2>
+
+      <div class="research-question">
+        <h3>Socio-Economic Consequence</h3>
+        <p><strong>How do physical stresses translate to service disruption, affected population, and daily economic loss?</strong></p>
+      </div>
+
+      <div class="guide-bar">
+        <div class="item"><span class="year">Chain</span> Stress -> service -> IO/CGE -> loss</div>
+        <div class="item"><span class="year">Outputs</span> Exceedance curves, return levels, credible intervals</div>
+        <div class="item"><span class="year">Economy</span> Sectoral loss and daily GDP</div>
+        <div class="item"><span class="year">Note</span> Full distributions, not point estimates</div>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- Slide 5: RQ2  -->
-<section class="theme-light">
-  <div class="slide-dark"></div>
-  <div class="slide-content compact">
-    <h2>Research Question 2</h2>
+  <!-- Slide 6: RQ3 -->
+  <section class="theme-light">
+    <div class="slide-dark"></div>
+    <div class="slide-content compact">
+      <h2>Research Question 3</h2>
 
-    <div class="research-question">
-      <h3>Socio-Economic Consequence</h3>
-      <p><strong>How do physical stresses translate to service disruption, affected population, and daily economic loss?</strong></p>
+      <div class="research-question">
+        <h3>Comparative Risk Assessment</h3>
+        <p><strong>How does space weather compare to hurricanes, floods, and earthquakes on the same quantitative scale?</strong></p>
+      </div>
+
+      <div class="guide-bar">
+        <div class="item"><span class="year">Approach</span> Physics to economics pipeline</div>
+        <div class="item"><span class="year">Models</span> NSF-NCAR high resolution <br> (add road networks and other infrastructure)</div>
+        <div class="item"><span class="year">Context</span> Builds on existing multi-hazard frameworks</div>
+      </div>
     </div>
+  </section>
 
-    <div class="guide-bar">
-      <div class="item"><span class="year">Chain</span> Stress -> service -> IO/CGE -> loss</div>
-      <div class="item"><span class="year">Outputs</span> Exceedance curves, return levels, credible intervals</div>
-      <div class="item"><span class="year">Economy</span> Sectoral loss and daily GDP</div>
-      <div class="item"><span class="year">Note</span> Full distributions, not point estimates</div>
-    </div>
-  </div>
-</section>
-
-<!-- Slide 6: RQ3 -->
-<section class="theme-light">
-  <div class="slide-dark"></div>
-  <div class="slide-content compact">
-    <h2>Research Question 3</h2>
-
-    <div class="research-question">
-      <h3>Comparative Risk Assessment</h3>
-      <p><strong>How does space weather compare to hurricanes, floods, and earthquakes on the same quantitative scale?</strong></p>
-    </div>
-
-    <div class="guide-bar">
-      <div class="item"><span class="year">Approach</span> Physics to economics pipeline</div>
-      <div class="item"><span class="year">Models</span> NSF-NCAR high resolution; add road networks and other infrastructure</div>
-      <div class="item"><span class="year">Context</span> Builds on existing multi-hazard frameworks</div>
-      <div class="item"><span class="year">Goal</span> National apples-to-apples with credible intervals</div>
-    </div>
-  </div>
-</section>
-  
   <!-- Slide 7: Objectives -->
-<section class="theme-light">
-  <div class="slide-dark"></div>
-  <div class="slide-content compact">
-    <h2>Research Objectives</h2>
+  <section class="theme-light">
+    <div class="slide-dark"></div>
+    <div class="slide-content compact">
+      <h2>Research Objectives</h2>
 
-    <div class="content-row" style="gap: 1rem;">
-      <div class="gmu-block" style="flex:1">
-        <h3 style="margin:0 0 .3rem 0;">Objective 1</h3>
-        <p style="margin:0; font-size:.9em;">Quantify component stress and failure probabilities with explicit uncertainty propagation.</p>
+      <div class="content-row">
+        <div class="gmu-block">
+          <h3>Objective 1</h3>
+          <p>Quantify component stress and failure probabilities with explicit uncertainty propagation.</p>
+        </div>
+
+        <div class="gmu-block">
+          <h3>Objective 2</h3>
+          <p>Translate degradation into service loss and probabilistic nationwide economic impacts.</p>
+        </div>
+
+        <div class="gmu-block">
+          <h3>Objective 3</h3>
+          <p>Compare hazards on a common scale for planning and prioritization.</p>
+        </div>
+
+        <div class="gmu-block">
+          <h3>Objective 4</h3>
+          <p>Integrate granular NSF-NCAR models within multi-hazard infrastructure assessment frameworks nationally.</p>
+        </div>
       </div>
 
-      <div class="gmu-block" style="flex:1">
-        <h3 style="margin:0 0 .3rem 0;">Objective 2</h3>
-        <p style="margin:0; font-size:.9em;">Translate degradation into service loss and probabilistic nationwide economic impacts.</p>
-      </div>
-
-      <div class="gmu-block" style="flex:1">
-        <h3 style="margin:0 0 .3rem 0;">Objective 3</h3>
-        <p style="margin:0; font-size:.9em;">Compare hazards on a common scale for planning and prioritization.</p>
-      </div>
-
-      <div class="gmu-block" style="flex:1">
-        <h3 style="margin:0 0 .3rem 0;">Objective 4</h3>
-        <p style="margin:0; font-size:.9em;">Integrate granular NSF-NCAR models within multi-hazard infrastructure assessment frameworks nationally.</p>
+      <div class="guide-bar">
+        <div class="item"><span class="year">Metrics</span> GIC, decay, delta v, dose, SEE</div>
+        <div class="item"><span class="year">Chain</span> Stress to service area to <br> direct GDP toIO or CGE</div>
+        <div class="item"><span class="year">Context</span> Multi hazard baseline, apples to apples</div>
+        <div class="item"><span class="year">UQ</span> Propagated across all stages</div>
       </div>
     </div>
+  </section>
 
-    <div class="guide-bar">
-      <div class="item"><span class="year">Metrics</span> GIC, thermal load, decay, delta v, dose, SEE</div>
-      <div class="item"><span class="year">Chain</span> Stress to service to IO or CGE to GDP</div>
-      <div class="item"><span class="year">Context</span> Multi hazard baseline, apples to apples</div>
-      <div class="item"><span class="year">UQ</span> Propagated across all stages</div>
-    </div>
-  </div>
-</section>
-
-
-  
   <!-- Slide 8: Literature Positioning & Novelty -->
-  <section>
+  <section class="theme-light">
     <div class="slide-dark"></div>
     <div class="slide-content">
       <h2>Literature Positioning & Novelty</h2>
-      
+
       <div class="table-container">
         <table>
           <thead>
@@ -468,7 +584,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`),D=T,N=R),y===void 0&&(
             <tr>
               <td><strong>This Work</strong></td>
               <td><strong>US power + satellites</strong></td>
-              <td><strong>Physics→Engineering→Economics</strong></td>
+              <td><strong>Physics->Engineering->Economics</strong></td>
               <td><strong>End-to-end with preserved UQ</strong></td>
             </tr>
           </tbody>
@@ -476,69 +592,67 @@ https://github.com/highlightjs/highlight.js/issues/2277`),D=T,N=R),y===void 0&&(
       </div>
     </div>
   </section>
-  
-  <!-- Slide 9: Significance - Part 1 (Contributions) -->
-<section>
-  <div class="slide-dark"></div>
-  <div class="slide-content compact">
-    <h2>Significance</h2>
 
-    <div class="content-row" style="gap:1rem;">
-      <div class="gmu-block" style="flex:1">
-        <h3 style="margin:0 0 .3rem 0;">End-to-end with UQ</h3>
-        <p style="margin:0; font-size:.9em;">Solar forcing to engineering stress to economic impact, uncertainty preserved.</p>
+  <!-- Slide 9: Significance -->
+  <section class="theme-light">
+    <div class="slide-dark"></div>
+    <div class="slide-content compact">
+      <h2>Significance</h2>
+
+      <div class="content-row">
+        <div class="gmu-block">
+          <h3>End-to-end with UQ</h3>
+          <p>Solar forcing to engineering stress to economic impact, uncertainty preserved.</p>
+        </div>
+
+        <div class="gmu-block">
+          <h3>Multi-system and cross-hazard</h3>
+          <p>Power grids and satellites; same framework for hurricanes, floods, earthquakes; national scope.</p>
+        </div>
+
+        <div class="gmu-block">
+          <h3>Actionable metrics</h3>
+          <p>Failure probabilities, propellant demand, service loss, affected customers, daily GDP with intervals.</p>
+        </div>
       </div>
 
-      <div class="gmu-block" style="flex:1">
-        <h3 style="margin:0 0 .3rem 0;">Multi-system and cross-hazard</h3>
-        <p style="margin:0; font-size:.9em;">Power grids and satellites; same framework for hurricanes, floods, earthquakes; national scope.</p>
-      </div>
-
-      <div class="gmu-block" style="flex:1">
-        <h3 style="margin:0 0 .3rem 0;">Actionable metrics</h3>
-        <p style="margin:0; font-size:.9em;">Failure probabilities, propellant demand, service loss, affected customers, daily GDP with intervals.</p>
+      <div class="guide-bar">
+        <div class="item"><span class="year">Chain</span> End to end with uncertainty</div>
+        <div class="item"><span class="year">Systems + hazards</span> Grid, satellites, hurricanes, floods, earthquakes</div>
+        <div class="item"><span class="year">Metrics</span> Probabilities, coverage, GDP</div>
+        <div class="item"><span class="year">Tools</span> Open and reproducible</div>
       </div>
     </div>
+  </section>
 
-    <div class="guide-bar">
-      <div class="item"><span class="year">Chain</span> End to end with uncertainty</div>
-      <div class="item"><span class="year">Systems + hazards</span> Grid, satellites, hurricanes, floods, earthquakes</div>
-      <div class="item"><span class="year">Metrics</span> Probabilities, coverage, GDP</div>
-      <div class="item"><span class="year">Tools</span> Open and reproducible</div>
+  <!-- Slide 10: Policy Alignment -->
+  <section class="theme-light">
+    <div class="slide-dark"></div>
+    <div class="slide-content compact">
+      <h2>Policy Alignment</h2>
+
+      <div class="content-row">
+        <div class="gmu-block">
+          <h3>National</h3>
+          <p>2019 National Space Weather Strategy and 2023 Implementation Plan: quantitative infrastructure assessment.</p>
+        </div>
+        <div class="gmu-block">
+          <h3>Global</h3>
+          <p>Sendai Framework; SDGs 7, 9, 11, 13: resilience and risk-informed planning.</p>
+        </div>
+      </div>
+
+      <div class="guide-bar">
+        <div class="item"><span class="year">Mandate</span> Assessment and mitigation</div>
+        <div class="item"><span class="year">Scope</span> National and global</div>
+        <div class="item"><span class="year">Use</span> Planning, investment, preparedness</div>
+        <div class="item"><span class="year">Fit</span> Multi hazard context</div>
+      </div>
     </div>
-  </div>
+  </section>
+
 </section>
-  
-  <!-- Slide 10: Significance - Part 2 (Policy Alignment) -->
-
-<section>
-  <div class="slide-dark"></div>
-  <div class="slide-content compact">
-    <h2>Policy Alignment</h2>
-
-    <div class="content-row" style="gap:1rem;">
-      <div class="gmu-block" style="flex:1">
-        <h3 style="margin:0 0 .3rem 0;">National</h3>
-        <p style="margin:0; font-size:.9em;">2019 National Space Weather Strategy and 2023 Implementation Plan: quantitative infrastructure assessment.</p>
-      </div>
-      <div class="gmu-block" style="flex:1">
-        <h3 style="margin:0 0 .3rem 0;">Global</h3>
-        <p style="margin:0; font-size:.9em;">Sendai Framework; SDGs 7, 9, 11, 13: resilience and risk-informed planning.</p>
-      </div>
-    </div>
-
-    <div class="guide-bar">
-      <div class="item"><span class="year">Mandate</span> Assessment and mitigation</div>
-      <div class="item"><span class="year">Scope</span> National and global</div>
-      <div class="item"><span class="year">Use</span> Planning, investment, preparedness</div>
-      <div class="item"><span class="year">Fit</span> Multi hazard context</div>
-    </div>
-  </div>
-</section>
-
-
-  
-</section>`,I_=`<!-- HORIZONTAL SECTION: POWER SYSTEMS -->
+`,I_=`<!-- HORIZONTAL SECTION: POWER SYSTEMS -->
 <section data-transition="zoom" data-background-transition="fade">
   <style>
     .full-viewport-figure .figure-container {
@@ -623,12 +737,45 @@ https://github.com/highlightjs/highlight.js/issues/2277`),D=T,N=R),y===void 0&&(
   <div class="slide-content">
     <h2>Power: Technical Objective</h2>
 
-    <div class="gmu-block">
-      <h3>Pipeline</h3>
-      <p>Geoelectric fields → GIC (Lehtinen–Pirjola) → failure probability (fragility, aging) → service territories → IO/CGE propagation.</p>
+    <div class="flow-grid">
+
+      <!-- Physics -->
+      <div class="flow-grid-box flow-physics">
+        <h3>Physics</h3>
+        <ul>
+          <li>Geoelectric fields (E)</li>
+        </ul>
+      </div>
+
+      <!-- Engineering -->
+      <div class="flow-grid-box flow-engineering two-col">
+        <h3>Engineering</h3>
+        <ul>
+          <li>GIC (Lehtinen–Pirjola)</li>
+        </ul>
+      </div>
+
+      <!-- Failure -->
+      <div class="flow-grid-box flow-failure">
+        <h3>Failure</h3>
+        <ul>
+          <li>Failure probability (fragility)</li>
+        </ul>
+      </div>
+
+      <!-- Impacts -->
+      <div class="flow-grid-box flow-impacts two-col">
+        <h3>Impacts</h3>
+        <ul>
+          <li>Service territories</li>
+          <li>IO/CGE propagation</li>
+        </ul>
+      </div>
+
     </div>
   </div>
 </section>
+
 
 
 
@@ -731,7 +878,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`),D=T,N=R),y===void 0&&(
 
         <!-- Right: 4 methodology blocks stacked -->
         <div style="flex: 1.2; display: flex; flex-direction: column; gap: 0.6rem;">
-          <div class="gmu-block" style="flex: 1; display: flex; flex-direction: column; justify-content: center; padding: 0.6rem 0.8rem;">
+          <div class="gmu-block" style="flex: 1; display: flex; flex-direction: column; justify-content: center; padding: 0.2rem 0.8rem;">
             <h3 style="margin: 0 0 0.3rem 0; font-size: 1em;">1. Geomagnetic Model</h3>
             <p style="margin: 0; font-size: 0.85em;">
               INTERMAGNET/USGS/NRCan (1985–2024) → SECS interpolation → EarthScope MT → power-law extrapolation
@@ -755,7 +902,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`),D=T,N=R),y===void 0&&(
           <div class="gmu-block" style="flex: 1; display: flex; flex-direction: column; justify-content: center; padding: 0.6rem 0.8rem;">
             <h3 style="margin: 0 0 0.3rem 0; font-size: 1em;">4. Economics</h3>
             <p style="margin: 0; font-size: 0.85em;">
-              Voronoi territories → dasymetric → Ghosh IO → GDP ($/day$) with CIs
+              Voronoi territories → dasymetric → Ghosh IO → GDP ($/day) with conf intervals
             </p>
           </div>
         </div>
@@ -801,7 +948,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`),D=T,N=R),y===void 0&&(
 
         <!-- Column 3: Findings -->
         <div style="flex: 1; display: flex; flex-direction: column;">
-          <div class="gmu-block" style="flex: 1; display: flex; flex-direction: column; justify-content: center;">
+          <div class="gmu-block" style="flex: 1; display: flex; flex-direction: column; justify-content: center; margin: 0;">
             <h3 style="margin-top: 0; margin-bottom: 0.8rem;">Findings</h3>
             <ul style="margin: 0; padding-left: 1.3em;">
               <li>Geoelectric maxima in Upper Midwest &amp; Atlantic seaboard</li>
@@ -853,7 +1000,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`),D=T,N=R),y===void 0&&(
         <div style="flex: 1; display: flex; flex-direction: column;">
           <div class="gmu-block" style="flex: 1; display: flex; flex-direction: column; justify-content: center;">
             <h3 style="margin-top: 0; margin-bottom: 0.8rem;">Takeaways</h3>
-            <ul style="margin: 0; padding-left: 1.3em; font-size: 1.2em;">
+            <ul style="margin: 0; padding-left: 1.3em; font-size: 1em;">
               <li>Hotspots align with conductive subsurface &amp; dense HV topology</li>
               <li class="text-dim">Higher return period ⇒ broader 200–400 A/phase spread</li>
               <li>Failure risk concentrates in Northeast &amp; Upper Midwest</li>
