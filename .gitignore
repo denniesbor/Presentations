@@ -32,3 +32,6 @@ logs/
 
 # Misc
 *.local
+
+portfolio_analysis.txt
+read_portfolio.py
