@@ -18,6 +18,7 @@
         color: rgb(0, 88, 38); /* GMU Green */
         border-bottom: 3px solid rgb(196, 150, 0); /* GMU Gold */
         padding-bottom: 0.5rem;
+        margin-bottom: 2rem;
       }
       .presentation-card {
         background: white;
@@ -25,22 +26,59 @@
         padding: 1.5rem;
         margin: 1.5rem 0;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+      }
+      .presentation-card:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
       }
       .presentation-card h2 {
-        margin-top: 0;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
         color: rgb(0, 88, 38);
+        font-size: 1.4rem;
       }
-      a {
-        color: rgb(0, 88, 38);
+      a.action-link {
+        display: inline-block;
+        margin-top: 1rem;
+        color: white;
+        background-color: rgb(0, 88, 38);
+        padding: 0.5rem 1rem;
+        border-radius: 4px;
         text-decoration: none;
         font-weight: bold;
+        font-size: 0.9rem;
       }
-      a:hover {
-        text-decoration: underline;
+      a.action-link:hover {
+        background-color: rgb(0, 60, 26);
+        text-decoration: none;
       }
       .date {
         color: #666;
         font-size: 0.9rem;
+        margin-bottom: 0.5rem;
+        font-style: italic;
+      }
+      
+      /* Tag Styling */
+      .tag {
+        display: inline-block;
+        font-size: 0.75rem;
+        font-weight: bold;
+        padding: 2px 8px;
+        border-radius: 4px;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+      }
+      .tag.web {
+        background-color: #e6f4ea; 
+        color: rgb(0, 88, 38); 
+        border: 1px solid rgb(0, 88, 38);
+      }
+      .tag.pdf {
+        background-color: #fff8e1; 
+        color: #b45309; 
+        border: 1px solid #b45309;
       }
     </style>
   </head>
@@ -48,18 +86,43 @@
     <h1>Dennies Bor - Presentations</h1>
 
     <div class="presentation-card">
+      <span class="tag web">Web Slides</span>
       <h2>
-        Space Weather Impact on Critical Infrastructure (Proposal defense)
+        Space Weather Impact on Critical Infrastructure (Proposal Defense)
       </h2>
+      <p class="date">November 2025</p> 
       <p>
-        A framework to assess the socio-economic impact of space weather on
-        critical infrastructure systems: power grids and satellite
+        A transferable framework to assess the socio-economic impact of space weather on
+        critical infrastructure systems, focusing on power grids and satellite
         constellations.
       </p>
-      <p class="date">November 2025</p> 
-      <a href="./dissertation_prop/">View Presentation</a>
+      <a class="action-link" href="./dissertation_prop/index.html" target="_blank">View Slides</a>
     </div>
 
-    <!-- More presentations here -->
+    <div class="presentation-card">
+      <span class="tag pdf">PDF Download</span>
+      <h2>
+        Space Radiation Risk Assessment for the Global Satellite Fleet
+      </h2>
+      <p class="date">GIS Day - November 2024</p> 
+      <p>
+        A framework linking particle flux and orbital vulnerability to probabilistic economic risk. 
+        Analyzes the May 2024 "Gannon" storm impacts on the global fleet.
+      </p>
+      <a class="action-link" href="./pdfs/Bor_GIS_Day.pdf" target="_blank">View PDF</a>
+    </div>
+
+    <div class="presentation-card">
+      <span class="tag pdf">PDF Download</span>
+      <h2>
+        Computational Physics II
+      </h2>
+      <p class="date">Spring 2024</p> 
+      <p>
+        Advanced computational methods and modeling techniques.
+      </p>
+      <a class="action-link" href="./pdfs/dennies_bor_comp_phys_2.pdf" target="_blank">View PDF</a>
+    </div>
+
   </body>
 </html>
