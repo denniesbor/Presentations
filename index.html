@@ -15,10 +15,20 @@
         background: #f9f9f9;
       }
       h1 {
-        color: rgb(0, 88, 38); /* GMU Green */
-        border-bottom: 3px solid rgb(196, 150, 0); /* GMU Gold */
+        color: rgb(0, 88, 38);
+        border-bottom: 3px solid rgb(196, 150, 0);
         padding-bottom: 0.5rem;
         margin-bottom: 2rem;
+      }
+      h2.section-heading {
+        color: #555;
+        font-size: 1.1rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-top: 2.5rem;
+        margin-bottom: 0.5rem;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 0.3rem;
       }
       .presentation-card {
         background: white;
@@ -59,8 +69,6 @@
         margin-bottom: 0.5rem;
         font-style: italic;
       }
-      
-      /* Tag Styling */
       .tag {
         display: inline-block;
         font-size: 0.75rem;
@@ -71,26 +79,33 @@
         letter-spacing: 0.5px;
       }
       .tag.web {
-        background-color: #e6f4ea; 
-        color: rgb(0, 88, 38); 
+        background-color: #e6f4ea;
+        color: rgb(0, 88, 38);
         border: 1px solid rgb(0, 88, 38);
       }
       .tag.pdf {
-        background-color: #fff8e1; 
-        color: #b45309; 
+        background-color: #fff8e1;
+        color: #b45309;
         border: 1px solid #b45309;
+      }
+      .tag.talk {
+        background-color: #e8eaf6;
+        color: #283593;
+        border: 1px solid #283593;
       }
     </style>
   </head>
   <body>
     <h1>Dennies Bor - Presentations</h1>
 
+    <h2 class="section-heading">Research</h2>
+
     <div class="presentation-card">
       <span class="tag web">Web Slides</span>
       <h2>
         Space Weather Impact on Critical Infrastructure (Proposal Defense)
       </h2>
-      <p class="date">November 2025</p> 
+      <p class="date">November 2025</p>
       <p>
         A transferable framework to assess the socio-economic impact of space weather on
         critical infrastructure systems, focusing on power grids and satellite
@@ -104,9 +119,9 @@
       <h2>
         Space Radiation Risk Assessment for the Global Satellite Fleet
       </h2>
-      <p class="date">GIS Day - November 2025</p> 
+      <p class="date">GIS Day - November 2025</p>
       <p>
-        A framework linking particle flux and orbital vulnerability to probabilistic economic risk. 
+        A framework linking particle flux and orbital vulnerability to probabilistic economic risk.
         Analyzes the May 2024 "Gannon" storm impacts on the global fleet.
       </p>
       <a class="action-link" href="./pdfs/Bor_GIS_Day.pdf" target="_blank">View PDF</a>
@@ -117,11 +132,27 @@
       <h2>
         Computational Physics II
       </h2>
-      <p class="date">Spring 2024</p> 
+      <p class="date">Spring 2024</p>
       <p>
         Advanced computational methods and modeling techniques.
       </p>
       <a class="action-link" href="./pdfs/dennies_bor_comp_phys_2.pdf" target="_blank">View PDF</a>
+    </div>
+
+    <h2 class="section-heading">Technical Talks</h2>
+
+    <div class="presentation-card">
+      <span class="tag talk">Technical Talk</span>
+      <h2>
+        Satellite Fleet Vulnerability and Failure Probability Under Extreme SEP Events
+      </h2>
+      <p class="date">March 2026</p>
+      <p>
+        Physics-based radiation dose transport and failure probability estimation
+        for 12,000+ US operational satellites under a 1-in-100-year solar
+        energetic particle scenario.
+      </p>
+      <a class="action-link" href="./interviews/syllab/index.html" target="_blank">View Slides</a>
     </div>
 
   </body>
