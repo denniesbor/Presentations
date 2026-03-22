@@ -1,5 +1,5 @@
-import { defineConfig } from 'vite';
-import { resolve } from 'path';
+import { defineConfig } from "vite";
+import { resolve } from "path";
 
 export default defineConfig({
   base: "/Presentations/",
@@ -14,7 +14,8 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, "index.html"),
-        gmuSlides: resolve(__dirname, "/dissertation_prop/index.html"),
+        gmuSlides: resolve(__dirname, "dissertation_prop/index.html"),
+        syllab: resolve(__dirname, "interviews/syllab/index.html"),
       },
     },
   },
