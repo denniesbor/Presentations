@@ -1,6 +1,7 @@
 import Reveal from "reveal.js";
 import "reveal.js/dist/reveal.css";
 import "/shared/css/gmu-theme.css";
+import "../../shared/css/interview.css";
 
 import RevealMarkdown from "reveal.js/plugin/markdown/markdown.esm.js";
 import RevealMath from "reveal.js/plugin/math/math.esm.js";

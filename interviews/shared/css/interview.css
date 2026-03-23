@@ -1,0 +1,111 @@
+/* ─── Spotlight Pipeline Effect ─── */
+
+.pipeline-stage {
+  position: relative;
+  transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ─── States ─── */
+
+/* Hero: large, centered, full detail */
+.pipeline-stage.hero {
+  padding: 1.2rem 1.5rem;
+  font-size: 1.1em;
+  opacity: 1;
+  max-height: 80vh;
+  margin-bottom: 0.8rem;
+}
+
+.pipeline-stage.hero h3 {
+  font-size: 1.3em;
+  margin-bottom: 0.5rem;
+}
+
+.pipeline-stage.hero p,
+.pipeline-stage.hero ul {
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+/* Condensed: small, stacked, muted */
+.pipeline-stage.condensed {
+  padding: 0.25rem 0.6rem;
+  font-size: 0.7em;
+  opacity: 0.55;
+  max-height: 3rem;
+  overflow: hidden;
+  margin-bottom: 0.2rem;
+  border-left: 3px solid var(--gmu-green, rgb(0, 88, 38));
+}
+
+.pipeline-stage.condensed h3 {
+  font-size: 0.85em;
+  margin: 0;
+  display: inline;
+}
+
+.pipeline-stage.condensed p,
+.pipeline-stage.condensed ul,
+.pipeline-stage.condensed .stage-detail {
+  display: none;
+}
+
+.pipeline-stage.condensed .stage-summary {
+  display: inline;
+  margin-left: 0.5rem;
+  font-size: 0.8em;
+  color: #666;
+}
+
+/* Hidden: not yet revealed */
+.pipeline-stage.hidden {
+  opacity: 0;
+  max-height: 0;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+/* ─── Layout containers ─── */
+
+.pipeline-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 0;
+  gap: 0;
+  justify-content: flex-start;
+}
+
+.pipeline-hero-area {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  min-height: 0;
+}
+
+.pipeline-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  min-height: 0;
+}
+
+/* ─── Right panel transitions ─── */
+
+.pipeline-right {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  flex: 1;
+  transition: opacity 0.4s ease;
+}
+
+.pipeline-right.dimmed {
+  opacity: 0.3;
+}
+
+.pipeline-right.active {
+  opacity: 1;
+}
