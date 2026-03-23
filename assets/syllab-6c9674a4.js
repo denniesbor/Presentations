@@ -1,4 +1,4 @@
-import{X as n,g as i,d as t,B as s,a as l}from"./double_c_yellow-a9b5100c.js";const a=`<!-- Cover slide -->
+import{X as n,g as i,d as t,B as s,a}from"./double_c_yellow-a9b5100c.js";const l=`<!-- Cover slide -->
 <section>
   <!-- Background -->
   <div class="cover-slide"></div>
@@ -46,8 +46,8 @@ import{X as n,g as i,d as t,B as s,a as l}from"./double_c_yellow-a9b5100c.js";co
 </section>`,r=`<!-- HORIZONTAL SECTION: SATELLITE VULNERABILITY -->
 <section data-transition="zoom" data-background-transition="fade">
 
-<!-- Slide 1: Pipeline with progressive fragments -->
-<section class="theme-light">
+<!-- Slide 1: Pipeline with fragments -->
+<section class="theme-conclusion">
   <div class="slide-dark"></div>
   <div class="slide-content">
     <h2>Satellite Radiation Vulnerability: Method</h2>
@@ -55,7 +55,7 @@ import{X as n,g as i,d as t,B as s,a as l}from"./double_c_yellow-a9b5100c.js";co
     <div class="flex-row" style="flex: 1; min-height: 0; align-items: stretch; gap: 1.5rem;">
       <div style="flex: 1; display: flex; flex-direction: column; gap: 0.6rem;">
 
-        <div class="gmu-block" style="flex: 1; display: flex; flex-direction: column; justify-content: center; padding: 0.6rem 0.8rem;">
+        <div class="gmu-block fragment" data-fragment-index="1" style="flex: 1; display: flex; flex-direction: column; justify-content: center; padding: 0.6rem 0.8rem;">
           <h3 style="margin: 0 0 0.3rem 0; font-size: 1em;">1. SEP Hazard Characterization</h3>
           <p style="margin: 0; font-size: 0.85em;">
             Solar Energetic Particle Environment Modelling (SEPEM) reference dataset
@@ -66,7 +66,7 @@ import{X as n,g as i,d as t,B as s,a as l}from"./double_c_yellow-a9b5100c.js";co
           </p>
         </div>
 
-        <div class="gmu-block fragment" data-fragment-index="1" style="flex: 1; display: flex; flex-direction: column; justify-content: center; padding: 0.6rem 0.8rem;">
+        <div class="gmu-block fragment" data-fragment-index="2" style="flex: 1; display: flex; flex-direction: column; justify-content: center; padding: 0.6rem 0.8rem;">
           <h3 style="margin: 0 0 0.3rem 0; font-size: 1em;">2. Geomagnetic Cutoff Rigidity</h3>
           <p style="margin: 0; font-size: 0.85em;">
             Oulu Open-source geomagneToSphere propagation tool (OTSO) traces
@@ -77,7 +77,7 @@ import{X as n,g as i,d as t,B as s,a as l}from"./double_c_yellow-a9b5100c.js";co
           </p>
         </div>
 
-        <div class="gmu-block fragment" data-fragment-index="2" style="flex: 1; display: flex; flex-direction: column; justify-content: center; padding: 0.6rem 0.8rem;">
+        <div class="gmu-block fragment" data-fragment-index="3" style="flex: 1; display: flex; flex-direction: column; justify-content: center; padding: 0.6rem 0.8rem;">
           <h3 style="margin: 0 0 0.3rem 0; font-size: 1em;">3. Radiation Dose Transport</h3>
           <p style="margin: 0; font-size: 0.85em;">
             Piecewise power-law spectral reconstruction from GPD fluence return
@@ -88,7 +88,7 @@ import{X as n,g as i,d as t,B as s,a as l}from"./double_c_yellow-a9b5100c.js";co
           </p>
         </div>
 
-        <div class="gmu-block fragment" data-fragment-index="3" style="flex: 1; display: flex; flex-direction: column; justify-content: center; padding: 0.6rem 0.8rem;">
+        <div class="gmu-block fragment" data-fragment-index="4" style="flex: 1; display: flex; flex-direction: column; justify-content: center; padding: 0.6rem 0.8rem;">
           <h3 style="margin: 0 0 0.3rem 0; font-size: 1em;">4. Failure Probability</h3>
           <p style="margin: 0; font-size: 0.85em;">
             Following Xapsos et al. (2017):
@@ -102,20 +102,6 @@ import{X as n,g as i,d as t,B as s,a as l}from"./double_c_yellow-a9b5100c.js";co
       </div>
 
       <div style="flex: 1; display: flex; flex-direction: column; gap: 0.6rem;">
-        <div class="gmu-block fragment" data-fragment-index="3" style="flex: 1; display: flex; flex-direction: column; justify-content: center; padding: 0.6rem 0.8rem;">
-          <h3 style="margin: 0 0 0.3rem 0; font-size: 1em;">Regime Assumptions</h3>
-          <ul style="margin: 0; padding-left: 1.3em; font-size: 0.85em;">
-            <li style="margin: 0.25rem 0;"><strong>LEO:</strong> 100 mil Al shielding, commercial off-the-shelf components (10 krad failure threshold)</li>
-            <li style="margin: 0.25rem 0;"><strong>MEO:</strong> 500 mil Al, radiation-hardened (1000 krad)</li>
-            <li style="margin: 0.25rem 0;"><strong>GEO:</strong> 300 mil Al, radiation-tolerant (500 krad)</li>
-            <li style="margin: 0.25rem 0;"><strong>HEO:</strong> 200 mil Al, mixed heritage (20 krad)</li>
-          </ul>
-          <p class="text-dim" style="margin: 0.5rem 0 0 0; font-size: 0.8em; font-style: italic;">
-            Satellite-specific shielding data generally proprietary;
-            regime-dependent assumptions reflect typical design practices.
-          </p>
-        </div>
-
         <div class="gmu-block" style="flex: 1; display: flex; flex-direction: column; justify-content: center; padding: 0.6rem 0.8rem;">
           <h3 style="margin: 0 0 0.3rem 0; font-size: 1em;">Fleet Population</h3>
           <p style="margin: 0; font-size: 0.85em;">
@@ -123,6 +109,19 @@ import{X as n,g as i,d as t,B as s,a as l}from"./double_c_yellow-a9b5100c.js";co
             Orbital elements from Space-Track.org supplemented with
             Jonathan's Space Report catalog data. Four regimes:
             LEO (12,548), MEO (34), GEO (179), HEO (13).
+          </p>
+        </div>
+
+        <div class="gmu-block fragment" data-fragment-index="4" style="flex: 1; display: flex; flex-direction: column; justify-content: center; padding: 0.6rem 0.8rem;">
+          <h3 style="margin: 0 0 0.3rem 0; font-size: 1em;">Regime Assumptions</h3>
+          <ul style="margin: 0; padding-left: 1.3em; font-size: 0.85em;">
+            <li style="margin: 0.25rem 0;"><strong>LEO:</strong> 100 mil Al, COTS (10 krad)</li>
+            <li style="margin: 0.25rem 0;"><strong>MEO:</strong> 500 mil Al, rad-hard (1000 krad)</li>
+            <li style="margin: 0.25rem 0;"><strong>GEO:</strong> 300 mil Al, rad-tolerant (500 krad)</li>
+            <li style="margin: 0.25rem 0;"><strong>HEO:</strong> 200 mil Al, mixed (20 krad)</li>
+          </ul>
+          <p class="text-dim" style="margin: 0.5rem 0 0 0; font-size: 0.8em; font-style: italic;">
+            Satellite-specific shielding data generally proprietary.
           </p>
         </div>
       </div>
@@ -229,4 +228,4 @@ import{X as n,g as i,d as t,B as s,a as l}from"./double_c_yellow-a9b5100c.js";co
   </div>
 </section>
 
-</section>`,o="/Presentations/assets/satellite_orbits_us-96260b11.png",d="/Presentations/assets/sep_dose_depth-9cd9159f.png",c="/Presentations/assets/xapsos_pfail_illustration-ade8c49c.png",m="/Presentations/assets/vulnerability_assessment-9be1fcbe.png",g=document.querySelector(".slides");g.innerHTML=a+r;function f(){document.querySelectorAll('img[data-asset="gm-logo"]').forEach(e=>{e.src=i}),document.querySelectorAll('img[data-asset="double-c"]').forEach(e=>{e.src=t}),document.querySelectorAll('img[data-fig="sat-orbits"]').forEach(e=>{e.src=o}),document.querySelectorAll('img[data-fig="dose-depth"]').forEach(e=>{e.src=d}),document.querySelectorAll('img[data-fig="xapsos-pfail"]').forEach(e=>{e.src=c}),document.querySelectorAll('img[data-fig="vuln-assess"]').forEach(e=>{e.src=m})}f();const h=new n({width:"100%",height:"100%",margin:.02,center:!0,minScale:.25,maxScale:1.5,hash:!0,controls:!0,progress:!0,transition:"slide",math:{mathjax:"https://cdn.jsdelivr.net/gh/mathjax/mathjax@2.7.8/MathJax.js",config:"TeX-AMS_HTML-full"},plugins:[s,l]});h.initialize();
+</section>`,o="/Presentations/assets/satellite_orbits_us-96260b11.png",d="/Presentations/assets/sep_dose_depth-9cd9159f.png",c="/Presentations/assets/xapsos_pfail_illustration-ade8c49c.png",m="/Presentations/assets/vulnerability_assessment-9be1fcbe.png",g=document.querySelector(".slides");g.innerHTML=l+r;function f(){document.querySelectorAll('img[data-asset="gm-logo"]').forEach(e=>{e.src=i}),document.querySelectorAll('img[data-asset="double-c"]').forEach(e=>{e.src=t}),document.querySelectorAll('img[data-fig="sat-orbits"]').forEach(e=>{e.src=o}),document.querySelectorAll('img[data-fig="dose-depth"]').forEach(e=>{e.src=d}),document.querySelectorAll('img[data-fig="xapsos-pfail"]').forEach(e=>{e.src=c}),document.querySelectorAll('img[data-fig="vuln-assess"]').forEach(e=>{e.src=m})}f();const p=new n({width:"100%",height:"100%",margin:.02,center:!0,minScale:.25,maxScale:1.5,hash:!0,controls:!0,progress:!0,transition:"slide",math:{mathjax:"https://cdn.jsdelivr.net/gh/mathjax/mathjax@2.7.8/MathJax.js",config:"TeX-AMS_HTML-full"},plugins:[s,a]});p.initialize();
