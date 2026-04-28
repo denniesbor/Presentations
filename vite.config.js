@@ -16,6 +16,7 @@ export default defineConfig({
         main: resolve(__dirname, "index.html"),
         gmuSlides: resolve(__dirname, "dissertation_prop/index.html"),
         syllab: resolve(__dirname, "interviews/syllab/index.html"),
+        cutoff: resolve(__dirname, "interviews/cutoff/index.html"),
       },
     },
   },
