@@ -1,4 +1,4 @@
-import{X as n,g as i,d as t,B as s,a}from"./double_c_yellow-a9b5100c.js";const l=`<!-- Cover slide -->
+import{X as n,g as i,d as t,B as s,a}from"./double_c_yellow-a9b5100c.js";/* empty css                  */const l=`<!-- Cover slide -->
 <section>
   <!-- Background -->
   <div class="cover-slide"></div>
