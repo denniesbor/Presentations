@@ -1,0 +1,58 @@
+<!-- Approach: physics side -->
+<section>
+  <div class="slide-dark"></div>
+  <div class="slide-content">
+    <h2>Approach: Tracing Particles Through the Storm Field</h2>
+
+    <div class="flex-row" style="flex: 1; min-height: 0; align-items: stretch; gap: 1.5rem;">
+
+      <div style="flex: 1; display: flex; flex-direction: column; gap: 0.9rem; justify-content: center;">
+
+        <div class="gmu-block" style="padding: 0.9rem 1.1rem;">
+          <h3 style="margin: 0 0 0.4rem 0; font-size: 1.05em;">Storm Template</h3>
+          <p style="margin: 0; font-size: 0.95em;">
+            Bastille Day 2000 used as the temporal template for both flux and
+            driver time series, then linearly scaled to the 1-in-100-year
+            amplitude across a 72-hour window at 5-minute cadence.
+          </p>
+        </div>
+
+        <div class="gmu-block" style="padding: 0.9rem 1.1rem;">
+          <h3 style="margin: 0 0 0.4rem 0; font-size: 1.05em;">Trajectory Tracing</h3>
+          <p style="margin: 0; font-size: 0.95em;">
+            OTSO integrates the relativistic Lorentz equation through IGRF-13
+            internal and Tsyganenko 2001 external fields. Test particles
+            scanned from 20 GV down in 0.1 GV steps. Trajectories that escape
+            to the magnetopause are allowed, those that hit the atmosphere
+            are forbidden.
+          </p>
+        </div>
+
+      </div>
+
+      <div style="flex: 1; display: flex; flex-direction: column; gap: 0.9rem; justify-content: center;">
+
+        <div class="gmu-block" style="padding: 0.9rem 1.1rem;">
+          <h3 style="margin: 0 0 0.4rem 0; font-size: 1.05em;">Output Grid</h3>
+          <p style="margin: 0; font-size: 0.95em;">
+            Cutoff rigidity on a 5 by 10 degree latitude-longitude grid at
+            six altitudes from 400 km through GEO, 10-minute cadence across
+            the storm window.
+          </p>
+        </div>
+
+        <div class="gmu-block" style="padding: 0.9rem 1.1rem; border-left: 3px solid rgb(196, 150, 0);">
+          <h3 style="margin: 0 0 0.4rem 0; font-size: 1em;">Scenario at Storm Peak</h3>
+          <ul style="margin: 0; padding-left: 1.3em; font-size: 0.92em;">
+            <li style="margin: 0.2rem 0;">Dst minimum of $-403$ nT</li>
+            <li style="margin: 0.2rem 0;">IMF $B_z$ of $-64$ nT</li>
+            <li style="margin: 0.2rem 0;">Dynamic pressure of 71 nPa</li>
+            <li style="margin: 0.2rem 0;">Peak flux of $3.2 \times 10^4$ pfu</li>
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>

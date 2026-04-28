@@ -1,0 +1,56 @@
+<!-- Approach: statistical side -->
+<section>
+  <div class="slide-dark"></div>
+  <div class="slide-content">
+    <h2>Approach: Setting the Scenario Amplitude</h2>
+
+    <div class="flex-row" style="flex: 1; min-height: 0; align-items: stretch; gap: 1.5rem;">
+
+      <div style="flex: 1; display: flex; flex-direction: column; gap: 0.8rem; justify-content: center;">
+
+        <div class="gmu-block" style="padding: 0.9rem 1.1rem;">
+          <h3 style="margin: 0 0 0.4rem 0; font-size: 1.05em;">Data</h3>
+          <p style="margin: 0; font-size: 0.95em;">
+            27.4 years of integral proton flux from SEPEM (1996 to 2017) and
+            GOES-16 (2020 to 2025). The gap covers solar minimum and contains
+            no events above threshold.
+          </p>
+        </div>
+
+        <div class="gmu-block" style="padding: 0.9rem 1.1rem;">
+          <h3 style="margin: 0 0 0.4rem 0; font-size: 1.05em;">Event Selection</h3>
+          <p style="margin: 0; font-size: 0.95em;">
+            NOAA SWPC criterion: integral flux above 10 MeV exceeds 10 pfu.
+            160 SEP events identified across the observation window.
+          </p>
+        </div>
+
+        <div class="gmu-block" style="padding: 0.9rem 1.1rem; border-left: 3px solid rgb(196, 150, 0);">
+          <h3 style="margin: 0 0 0.4rem 0; font-size: 1.05em;">Extreme-Value Fit</h3>
+          <p style="margin: 0; font-size: 0.95em;">
+            Generalized Pareto, method of moments. Returns 1-in-100-year
+            levels for peak flux, fluence, and storm drivers. Shape parameters
+            sit close to zero, so the tails are roughly exponential.
+          </p>
+        </div>
+
+      </div>
+
+      <div style="flex: 1.1; display: flex; flex-direction: column; min-height: 0;">
+        <div class="figure-container" style="flex: 1; min-height: 0;">
+          <img
+            data-fig="gpd-ccdf"
+            alt="GPD fits to peak proton flux at four energies"
+            class="figure-img"
+            style="width: 100%; height: 100%; object-fit: contain;"
+          />
+        </div>
+        <div class="slidecred">
+          Empirical CCDFs and fitted GPD models for peak flux at 10, 30, 50,
+          and 100 MeV. Orange dot marks the 1-in-100-year return level.
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
